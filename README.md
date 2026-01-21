@@ -7,9 +7,9 @@
 # 💫 About Me:
 💻 First year - Vidya Vardhaka College of Engineering , Mysuru .<br>⚙️ Hands-on experience with IoT systems (arduino uno , esp32 , raspberry pico) embedded devices, and full-stack development.<br>🌱 Continuously learning and innovating at the intersection of tech and problem-solving.
 # 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=sathwikshetty0&theme=one_dark_pro&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=sathwikshetty0&theme=one_dark_pro&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=sathwikshetty0&theme=one_dark_pro&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+![](https://github-readme-stats.vercel.app/api?username=bharathkumar000&theme=one_dark_pro&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=bharathkumar000&theme=one_dark_pro&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=bharathkumar000&theme=one_dark_pro&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
 ## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=sathwikshetty0&theme=material-palenight&no-frame=true&no-bg=true&margin-w=4)
+![](https://github-profile-trophy.vercel.app/?username=bharathkumar000&theme=material-palenight&no-frame=true&no-bg=true&margin-w=4)
