@@ -7,6 +7,11 @@
 # 💫 About Me:
 💻 First year - Vidya Vardhaka College of Engineering , Mysuru .<br>⚙️ Hands-on experience with IoT systems (arduino uno , esp32 , raspberry pico) embedded devices, and full-stack development.<br>🌱 Continuously learning and innovating at the intersection of tech and problem-solving.
 
+---
+ <img src="naga.svg.svg"/>
+ 
+---
+
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://www.instagram.com/_unknown.06__/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bharathkumara/)
 
