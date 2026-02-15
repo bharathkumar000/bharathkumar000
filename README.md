@@ -16,6 +16,10 @@
 <br>🌱 **Mission:** Continuously learning and innovating at the intersection of tech and 
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;problem-solving.
 ---
+<p align="center">
+ <img src="naga.svg.svg"/>
+</p>
+---
 
 ## 🛠️ Tech Stack
 
