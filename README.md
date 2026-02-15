@@ -4,6 +4,9 @@
 
 <h1 align="center">Bharath Kumar A here!!</h1>
 
+<p align="left"> <img src="https://komarev.com/ghpvc/?
+username=bharathkumar000&label=Profile%20views&color=0e75b6&style=flat" alt="Bharath" /> </p>
+
 # 💫 About Me:
 💻 First year - Vidya Vardhaka College of Engineering , Mysuru .<br>⚙️ Hands-on experience with IoT systems (arduino uno , esp32 , raspberry pico) embedded devices, and full-stack development.<br>🌱 Continuously learning and innovating at the intersection of tech and problem-solving.
 
