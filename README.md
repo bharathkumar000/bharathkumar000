@@ -11,15 +11,15 @@
 # 💫 About Me:
 
 💻 **First year** - Vidya Vardhaka College of Engineering, Mysuru.
-<br>⚙️ **Expertise:** Hands-on experience with IoT systems (Arduino Uno, ESP32, Raspberry Pi Pico)
+<br>⚙️ **Expertise** - Hands-on exp with IoT systems (Arduino Uno, ESP32, Raspberry Pi Pico)
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;embedded devices and full-stack development.
-<br>🌱 **Mission:** Continuously learning and innovating at the intersection of tech and 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;problem-solving.
+<br>🌱 **Mission** - Continuously learning and innovating at the intersection of tech and 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;problem-solving.
 ---
 <p align="center">
  <img src="naga.svg.svg"/>
 </p>
----
+
 
 ## 🛠️ Tech Stack
 
@@ -38,7 +38,7 @@
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
 </p>
----
+
 
 ## 🚀 Featured Projects:
 <p align="center">
@@ -52,6 +52,7 @@
 <p align="center">
 <a href="https://www.instagram.com/_unknown.06__/" target="blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
 <a href="https://www.linkedin.com/in/bharathkumara/" target="blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="mailto:bharathece2006@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
 # 📊 GitHub Stats:
