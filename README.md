@@ -42,11 +42,10 @@
 
 ## 🚀 Featured Projects:
 <p align="center">
-* **FESTFLOW** – Smart wearable IoT safety device for crowd monitoring using Raspberry Pi Pico and GPS.
-<br>* **MADU MAGA** – Real-time collaborative task management system and a todo app.
+FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspberry Pi Pico and GPS.
+<br>MADU MAGA – Real-time collaborative task management system and a todo app.
 </p>
 
----
 
 ## 🌐 Socials:
 <p align="center">
