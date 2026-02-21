@@ -10,11 +10,11 @@
 
 # 💫 About Me:
 
-💻 **First year** - Vidya Vardhaka College of Engineering, Mysuru.
-<br>⚙️ **Expertise** - Hands-on exp with IoT systems (Arduino Uno, ESP32, Raspberry Pi Pico)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;embedded devices and full-stack development.
-<br>🌱 **Mission** - Continuously learning and innovating at the intersection of tech and 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;problem-solving.
+💻 **First year** &nbsp; - &nbsp;&nbsp;Vidya Vardhaka College of Engineering, Mysuru.
+<br>⚙️ **Expertise**&nbsp;&nbsp; - &nbsp;&nbsp;Hands-on exp with IoT systems (Arduino Uno, ESP32, Raspberry Pi Pico)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;embedded devices and full-stack development.
+<br>🌱 **Mission**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;Continuously learning and innovating at the intersection of tech and 
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;problem-solving.
 ---
 <p align="center">
  <img src="naga.svg.svg"/>
@@ -37,6 +37,7 @@
   <img src="https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
+  <img src="https://img.shields.io/badge/Embedded_C-00599C?style=for-the-badge&logo=c&logoColor=white" />
 </p>
 
 
@@ -61,7 +62,26 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
 <br><br>
 
   
-### 🔝 Top Contributed Repo
+### 🔝 Top Contributed Repo & Stats
+
 <p align="center">
-  <img src="https://github-contributor-stats.vercel.app/api?username=bharathkumar000&limit=5&theme=one_dark_pro&combine_all_yearly_contributions=true" alt="Top Contributed Repo" />
+  <table align="center">
+    <tr>
+      <td>
+        <img src="https://github-contributor-stats.vercel.app/api?username=bharathkumar000&limit=5&theme=one_dark_pro&combine_all_yearly_contributions=true" alt="Top Contributed Repo" />
+      </td>
+      <td>
+        <img src="https://github-readme-stats-fast.vercel.app/api?username=bharathkumar000&show_icons=true&theme=one_dark_pro&rank_icon=github" alt="Bharath's Stats" />
+      </td>
+    </tr>
+  </table>
 </p>
+
+## 🏆 Achievements
+
+* **3rd PLACE – National Level Hackathon**
+  * PES College of Engineering, Mandya
+  * **Theme:** Risk Management during Natural Disasters
+  * Developed an IoT-based solution for real-time disaster monitoring and alert systems.
+
+  
