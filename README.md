@@ -86,5 +86,5 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
 
 * ** Semi-Finalist – Idea Pitching Event**
    * NIT Warangal
-   * * **Project:** [Connect & Prep](https://github.com/bharathkumar000/connect-and-prep) — A student-centric academic platform.
+   * **Project:** [Connect & Prep](https://github.com/bharathkumar000/connect-and-prep) — A student-centric academic platform.
    * Pitched a comprehensive solution for engineering students featuring a Question Paper Hub, curated Notes Repository, and collaborative P2P tutoring tools
