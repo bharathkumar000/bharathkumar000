@@ -84,4 +84,7 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
   * **Theme:** Risk Management during Natural Disasters
   * Developed an IoT-based solution for real-time disaster monitoring and alert systems.
 
-  
+* ** Semi-Finalist – Idea Pitching Event**
+   * NIT Warangal
+   *Project: Connect & Prep — A student-centric academic platform.
+   *Pitched a comprehensive solution for engineering students featuring a Question Paper Hub, curated Notes Repository, and collaborative P2P tutoring tools
