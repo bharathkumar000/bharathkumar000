@@ -79,12 +79,13 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
 
 ## 🏆 Achievements
 
-* **2nd PLACE – Parivartan 24-Hour Hackathon**
+* **🥈 2nd PLACE – Parivartan 24-Hour State level Hackathon**
   * Vidyavardhaka College of Engineering (VVCE)
-  * **Theme:** Traditional and Decentralised Economic System
-  * Developed **Mysuru Marga**, a digital bridge for heritage micro-enterprises featuring AI trip bots, multilingual interfaces, and a decentralized payment model.
+  * **Project:** [Mysuru Marga](https://github.com/bharathkumar000/mysurumarga.git) – A digital bridge for heritage micro-enterprises.
+  * **Theme:** Traditional and Decentralised Economic System.
+  * Developed a platform featuring AI trip bots, multilingual interfaces, and a decentralized payment model to empower local artisans and vendors.
 
-* **3rd PLACE – National Level Hackathon**
+* **3rd PLACE – State Level Hackathon**
   * PES College of Engineering, Mandya
   * **Theme:** Risk Management during Natural Disasters
   * Developed an IoT-based solution for real-time disaster monitoring and alert systems.
