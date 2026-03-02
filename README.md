@@ -79,6 +79,11 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
 
 ## 🏆 Achievements
 
+* **2nd PLACE – Parivartan 24-Hour Hackathon**
+  * Vidyavardhaka College of Engineering (VVCE)
+  * **Theme:** Traditional and Decentralised Economic System
+  * Developed **Mysuru Marga**, a digital bridge for heritage micro-enterprises featuring AI trip bots, multilingual interfaces, and a decentralized payment model.
+
 * **3rd PLACE – National Level Hackathon**
   * PES College of Engineering, Mandya
   * **Theme:** Risk Management during Natural Disasters
