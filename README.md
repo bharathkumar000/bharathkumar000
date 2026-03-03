@@ -80,7 +80,7 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
 ## 🏆 Achievements
 
 * **🥈 2nd PLACE – Parivartan 24-Hour State level Hackathon**
-  * Vidyavardhaka College of Engineering (VVCE)
+  * Vidyavardhaka College of Engineering Mysuru (VVCE)
   * **Project:** [Mysuru Marga](https://github.com/bharathkumar000/mysurumarga.git) – A digital bridge for heritage micro-enterprises.
   * **Theme:** Traditional and Decentralised Economic System.
   * Developed a platform featuring AI trip bots, multilingual interfaces, and a decentralized payment model to empower local artisans and vendors.
