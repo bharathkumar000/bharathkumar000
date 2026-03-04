@@ -2,7 +2,7 @@
   <img src="https://miro.medium.com/max/2048/1*OohqW5DGh9CQS4hLY5FXzA.png" height="200"/>
 </p>
 
-<h1 align="center">Bharath Kumar A here!!</h1>
+<h1 align="center">Bharath Kumar  here!!</h1>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=bharathkumar000&label=PROFILE%20VIEWS&color=0e75b6&style=flat-square" />
