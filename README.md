@@ -5,8 +5,20 @@
 <h1 align="center">Bharath Kumar here!!</h1>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=bharathkumar000&label=PROFILE%20VIEWS&color=0e75b6&style=flat-square" />
-</p>
+<div align="center">
+  <a href="https://linkedin.com/in/bharathkumara">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://instagram.com/_unknown.06__">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+  </a>
+  <a href="mailto:bharatthece2006@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+  </a>
+  <a href="https://github.com/bharathkumar000">
+    <img src="https://komarev.com/ghpvc/?username=sathwikshetty0&style=for-the-badge&color=00ffff&label=PROFILE+VIEWS" alt="Profile Views">
+  </a>
+</div>
 
 # 💫 About Me:
 
@@ -48,35 +60,14 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
 </p>
 
 
-## 🌐 Socials:
-<p align="center">
-<a href="https://www.instagram.com/_unknown.06__/" target="blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
-<a href="https://www.linkedin.com/in/bharathkumara/" target="blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:bharathece2006@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-</p>
-
 # 📊 GitHub Stats:
 
-<p align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=bharathkumar000&theme=one_dark_pro&hide_border=false" />
-<br><br>
-
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=bharathkumar000&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0d1117&title_color=00ffff&text_color=c9d1d9&icon_color=00ffff" width="48%" />
   
-### 🔝 Top Contributed Repo & Stats
-
-<p align="center">
-  <table align="center">
-    <tr>
-      <td>
-        <img src="https://github-contributor-stats.vercel.app/api?username=bharathkumar000&limit=5&theme=one_dark_pro&combine_all_yearly_contributions=true" alt="Top Contributed Repo" />
-      </td>
-      <td>
-        <img src="https://github-readme-stats-fast.vercel.app/api?username=bharathkumar000&show_icons=true&theme=one_dark_pro&rank_icon=github" alt="Bharath's Stats" />
-      </td>
-    </tr>
-  </table>
-</p>
-
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=bharathkumar000&theme=chartreuse-dark&hide_border=true&background=0d1117&ring=00ffff&fire=ff6b6b&currStreakLabel=00ffff" width="48%" />
+</div>
+  
 ## 🏆 Achievements
 
 * **🥈 2nd PLACE – Parivartan 24-Hour State level Hackathon**
