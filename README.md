@@ -94,3 +94,9 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
    * NIT Warangal
    * **Project:** [Connect & Prep](https://github.com/bharathkumar000/connect-and-prep) — A student-centric academic platform.
    * Pitched a comprehensive solution for engineering students featuring a Question Paper Hub, curated Notes Repository, and collaborative P2P tutoring tools
+     
+* **Semi-Finalist – "Hack the Hackers" 28-Hour Cybersecurity Hackathon**
+  * GSSSIETW, Mysuru
+  * **Project:** [TLS Auditor](https://github.com/bharathkumar000/tls-auditor) — An automated server encryption hardening tool.
+  * Developed a rule-based parser to identify legacy protocols (SSLv2/v3) and weak cipher suites while providing automated Nginx/Apache hardening snippets.
+   
