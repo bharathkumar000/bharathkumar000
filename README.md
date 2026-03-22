@@ -4,21 +4,21 @@
 
 <h1 align="center">Bharath Kumar A here!!</h1>
 
+
+
 <p align="center">
-<div align="center">
-  <a href="https://linkedin.com/in/bharathkumara">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-  </a>
-  <a href="https://instagram.com/_unknown.06__">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
-  </a>
-  <a href="mailto:bharatthece2006@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
-  </a>
-  <a href="https://github.com/bharathkumar000">
-    <img src="https://komarev.com/ghpvc/?username=sathwikshetty0&style=for-the-badge&color=00ffff&label=PROFILE+VIEWS" alt="Profile Views">
-  </a>
+<a href="https://www.instagram.com/_unknown.06__?igsh=OHgwdTE0djdvMzFq"><img src="https://skillicons.dev/icons?i=instagram&theme=dark" alt="Instagram" width="48" height="48"/></a>
+&nbsp;&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/bharathkumara"><img src="https://skillicons.dev/icons?i=linkedin&theme=dark" alt="LinkedIn" width="48" height="48"/></a>
+&nbsp;&nbsp;&nbsp;
+<a href="mailto:bharathece2006@gmail.com"><img src="https://skillicons.dev/icons?i=gmail&theme=dark" alt="Gmail" width="48" height="48"/></a>
+&nbsp;&nbsp;&nbsp;
+<a href="https://github.com/bharathkumar000"><img src="https://skillicons.dev/icons?i=github&theme=dark" alt="GitHub" width="48" height="48"/></a>
+
 </div>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
 
 # 💫 About Me:
 
