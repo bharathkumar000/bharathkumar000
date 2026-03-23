@@ -101,4 +101,5 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
   * GSSSIETW, Mysuru
   * **Project:** [TLS Auditor](https://github.com/bharathkumar000/tls-auditor) — An automated server encryption hardening tool.
   * Developed a rule-based parser to identify legacy protocols (SSLv2/v3) and weak cipher suites while providing automated Nginx/Apache hardening snippets.
-   
+
+   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2C2301,20:8B6508,40:FFD700,60:D4AF37,80:8B6508,100:2C2301&height=120&section=footer" width="100%"/>
