@@ -1,4 +1,12 @@
+<div align="center">
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2C2301,20:544406,40:D4AF37,60:FFD700,80:544406,100:2C2301&height=300&section=header&text=BHARATH%20KUMAR&fontSize=75&fontColor=FFD700&fontAlignY=32&desc=ECE%20Undergraduate%20%7C%20IoT%20Developer%20%7C%20Embedded%20Systems&descSize=18&descAlignY=52&descColor=D4AF37&animation=twinkling&stroke=FFD700&strokeWidth=1" width="100%"/>
+
+<br/>
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%"/>
+
+</div>
 
 <div align="center">
 <h1> ⚡ Welcome to my Digital Workspace ⚡ </h1>
