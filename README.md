@@ -1,11 +1,14 @@
-<p align="center">
-  <img src="https://miro.medium.com/max/2048/1*OohqW5DGh9CQS4hLY5FXzA.png" height="200"/>
-</p>
-
-<h1 align="center">Bharath Kumar  here!!</h1>
 
 
+<div align="center">
+<h1> ⚡ Welcome to my Digital Workspace ⚡ </h1>
 
+<div align="center">
+</div>
+<img src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" width="150"/>
+
+</div>
+<br/>
 <p align="center">
 <a href="https://www.instagram.com/_unknown.06__?igsh=OHgwdTE0djdvMzFq"><img src="https://skillicons.dev/icons?i=instagram&theme=dark" alt="Instagram" width="48" height="48"/></a>
 &nbsp;&nbsp;&nbsp;
