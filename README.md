@@ -11,10 +11,6 @@
 <div align="center">
 <h1> ⚡ Welcome to my Digital Workspace ⚡ </h1>
 
-<div align="center">
-</div>
-<img src="https://raw.githubusercontent.com/TheDudeThatCode/TheDudeThatCode/master/Assets/Developer.gif" width="150"/>
-
 </div>
 <br/>
 <p align="center">
@@ -81,25 +77,56 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
   
 ## 🏆 Achievements
 
-* **🥈 2nd PLACE – Parivartan 24-Hour State level Hackathon**
-  * Vidyavardhaka College of Engineering Mysuru (VVCE)
-  * **Project:** [Mysuru Marga](https://github.com/bharathkumar000/mysurumarga.git) – A digital bridge for heritage micro-enterprises.
-  * **Theme:** Traditional and Decentralised Economic System.
-  * Developed a platform featuring AI trip bots, multilingual interfaces, and a decentralized payment model to empower local artisans and vendors.
+# 🏆 Achievements
 
-* **3rd PLACE – State Level Hackathon**
-  * PES College of Engineering, Mandya
-  * **Theme:** Risk Management during Natural Disasters
-  * Developed an IoT-based solution for real-time disaster monitoring and alert systems.
+---
 
-* ** Semi-Finalist – Idea Pitching Event**
-   * NIT Warangal
-   * **Project:** [Connect & Prep](https://github.com/bharathkumar000/connect-and-prep) — A student-centric academic platform.
-   * Pitched a comprehensive solution for engineering students featuring a Question Paper Hub, curated Notes Repository, and collaborative P2P tutoring tools
-     
-* **Semi-Finalist – "Hack the Hackers" 28-Hour Cybersecurity Hackathon**
-  * GSSSIETW, Mysuru
-  * **Project:** [TLS Auditor](https://github.com/bharathkumar000/tls-auditor) — An automated server encryption hardening tool.
-  * Developed a rule-based parser to identify legacy protocols (SSLv2/v3) and weak cipher suites while providing automated Nginx/Apache hardening snippets.
+<table style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <td style="width: 50%; vertical-align: top; border: 1px solid #30363d; padding: 20px; background-color: #0d1117;">
+      <h3 style="margin-top: 0;">🥈 2nd PLACE — Parivartan 24-Hour State level Hackathon</h3>
+      <p style="font-size: 14px; font-weight: bold; color: #c9d1d9;">VVCE MYSURU PROJECT: MYSURU MARGA</p>
+      <p style="color: #8b949e; font-size: 14px;">A digital bridge for heritage micro-enterprises featuring AI trip bots and decentralized payment models.</p>
+      <div style="margin-top: 15px;">
+        <img src="https://img.shields.io/badge/AI_BOT-30363d?style=for-the-badge&logo=openai&logoColor=white" height="25"/>
+        <img src="https://img.shields.io/badge/BLOCKCHAIN-FF4F00?style=for-the-badge&logo=ethereum&logoColor=white" height="25"/>
+        <img src="https://img.shields.io/badge/UI-7ee787?style=for-the-badge&logo=figma&logoColor=black" height="25"/>
+      </div>
+    </td>
+    <td style="width: 50%; vertical-align: top; border: 1px solid #30363d; padding: 20px; background-color: #0d1117;">
+      <h3 style="margin-top: 0;">🥉 3rd PLACE — State Level Hackathon</h3>
+      <p style="font-size: 14px; font-weight: bold; color: #c9d1d9;">PESCE MANDYA THEME: RISK MANAGEMENT</p>
+      <p style="color: #8b949e; font-size: 14px;">Developed an IoT-based solution for real-time natural disaster monitoring and automated alert systems.</p>
+      <div style="margin-top: 15px;">
+        <img src="https://img.shields.io/badge/IOT-4AB3B1?style=for-the-badge&logo=arduino&logoColor=white" height="25"/>
+        <img src="https://img.shields.io/badge/SENSORS-1f6feb?style=for-the-badge&logo=sensortower&logoColor=white" height="25"/>
+        <img src="https://img.shields.io/badge/SYSTEMS-DA3633?style=for-the-badge&logo=raspberrypi&logoColor=white" height="25"/>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 50%; vertical-align: top; border: 1px solid #30363d; padding: 20px; background-color: #0d1117;">
+      <h3 style="margin-top: 0;">⭐ Semi-Finalist — Idea Pitching Event</h3>
+      <p style="font-size: 14px; font-weight: bold; color: #c9d1d9;">NIT WARANGAL PROJECT: CONNECT & PREP</p>
+      <p style="color: #8b949e; font-size: 14px;">Pitched a comprehensive academic platform for engineering students featuring a P2P tutoring tool.</p>
+      <div style="margin-top: 15px;">
+        <img src="https://img.shields.io/badge/REACT-61DAFB?style=for-the-badge&logo=react&logoColor=black" height="25"/>
+        <img src="https://img.shields.io/badge/PLATFORM-8957e5?style=for-the-badge&logo=vercel&logoColor=white" height="25"/>
+        <img src="https://img.shields.io/badge/P2P-D29922?style=for-the-badge&logo=peerlist&logoColor=white" height="25"/>
+      </div>
+    </td>
+    <td style="width: 50%; vertical-align: top; border: 1px solid #30363d; padding: 20px; background-color: #0d1117;">
+      <h3 style="margin-top: 0;">🛡️ Semi-Finalist — "Hack the Hackers"</h3>
+      <p style="font-size: 14px; font-weight: bold; color: #c9d1d9;">GSSSIETW MYSURU PROJECT: TLS AUDITOR</p>
+      <p style="color: #8b949e; font-size: 14px;">An automated server encryption hardening tool that identifies weak cipher suites and provides snippets.</p>
+      <div style="margin-top: 15px;">
+        <img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white" height="25"/>
+        <img src="https://img.shields.io/badge/PARSER-1f6feb?style=for-the-badge&logo=github&logoColor=white" height="25"/>
+        <img src="https://img.shields.io/badge/TLS_V1.3-238636?style=for-the-badge&logo=linux&logoColor=white" height="25"/>
+      </div>
+    </td>
+  </tr>
+</table>
+
 
    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2C2301,20:8B6508,40:FFD700,60:D4AF37,80:8B6508,100:2C2301&height=120&section=footer" width="100%"/>
