@@ -91,8 +91,9 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
       </p>
       <p style="color: #8b949e; font-size: 14px;">Digital bridge for micro-enterprises featuring AI bots and decentralized models.</p>
       <div style="margin-top: 15px;">
-        <img src="https://img.shields.io/badge/AI_BOT-00F2FF?style=flat-square&logo=openai&logoColor=black" height="20"/>
-        <img src="https://img.shields.io/badge/BLOCKCHAIN-7000FF?style=flat-square&logo=ethereum&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/AI_BOT-412991?style=flat-square&logo=openai&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/ETHEREUM-3C3C3D?style=flat-square&logo=ethereum&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/FIGMA-F24E1E?style=flat-square&logo=figma&logoColor=white" height="20"/>
       </div>
     </td>
     <td style="width: 50%; vertical-align: top; border: 1px solid #00F2FF33; padding: 20px; background-color: #0d1117;">
@@ -102,8 +103,9 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
       </p>
       <p style="color: #8b949e; font-size: 14px;">IoT-based solution for real-time natural disaster monitoring and automated alerts.</p>
       <div style="margin-top: 15px;">
-        <img src="https://img.shields.io/badge/IOT-00F2FF?style=flat-square&logo=arduino&logoColor=black" height="20"/>
-        <img src="https://img.shields.io/badge/SYSTEMS-7000FF?style=flat-square&logo=raspberrypi&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/ARDUINO-00979D?style=flat-square&logo=arduino&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/RASPBERRY_PI-C51A4A?style=flat-square&logo=raspberry-pi&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/SENSORS-0078D4?style=flat-square&logo=sensortower&logoColor=white" height="20"/>
       </div>
     </td>
   </tr>
@@ -115,8 +117,9 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
       </p>
       <p style="color: #8b949e; font-size: 14px;">Academic platform for engineering students featuring a P2P tutoring engine.</p>
       <div style="margin-top: 15px;">
-        <img src="https://img.shields.io/badge/REACT-00F2FF?style=flat-square&logo=react&logoColor=black" height="20"/>
-        <img src="https://img.shields.io/badge/P2P-7000FF?style=flat-square&logo=peerlist&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/REACT-61DAFB?style=flat-square&logo=react&logoColor=black" height="20"/>
+        <img src="https://img.shields.io/badge/VERCEL-000000?style=flat-square&logo=vercel&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/PEERLIST-24292E?style=flat-square&logo=peerlist&logoColor=white" height="20"/>
       </div>
     </td>
     <td style="width: 50%; vertical-align: top; border: 1px solid #00F2FF33; padding: 20px; background-color: #0d1117;">
@@ -126,8 +129,9 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
       </p>
       <p style="color: #8b949e; font-size: 14px;">Automated server encryption hardening tool identifying weak cipher suites.</p>
       <div style="margin-top: 15px;">
-        <img src="https://img.shields.io/badge/PYTHON-00F2FF?style=flat-square&logo=python&logoColor=black" height="20"/>
-        <img src="https://img.shields.io/badge/SECURITY-7000FF?style=flat-square&logo=linux&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/PYTHON-3776AB?style=flat-square&logo=python&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/LINUX-FCC624?style=flat-square&logo=linux&logoColor=black" height="20"/>
+        <img src="https://img.shields.io/badge/BASH-4EAA25?style=flat-square&logo=gnubash&logoColor=white" height="20"/>
       </div>
     </td>
   </tr>
