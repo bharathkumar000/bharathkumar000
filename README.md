@@ -1,18 +1,11 @@
 <div align="center">
-
 <img src="banner.svg" width="100%"/>
-
-<br/>
-
 <img src="separator.svg" width="100%"/>
-
 </div>
 
 <div align="center">
 <h1> ⚡ Welcome to my Digital Workspace ⚡ </h1>
-
 </div>
-<br/>
 <p align="center">
 <a href="https://www.instagram.com/_unknown.06__?igsh=OHgwdTE0djdvMzFq"><img src="https://skillicons.dev/icons?i=instagram&theme=dark" alt="Instagram" width="48" height="48"/></a>
 &nbsp;&nbsp;&nbsp;
@@ -21,24 +14,22 @@
 <a href="mailto:bharathece2006@gmail.com"><img src="https://skillicons.dev/icons?i=gmail&theme=dark" alt="Gmail" width="48" height="48"/></a>
 &nbsp;&nbsp;&nbsp;
 <a href="https://github.com/bharathkumar000"><img src="https://skillicons.dev/icons?i=github&theme=dark" alt="GitHub" width="48" height="48"/></a>
-
-</div>
+</p>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-
 # 👤 <span style="color: #00F2FF;">ABOUT_ME</span>
-
-```text
-NAME        : Bharath Kumar A
-ROLE        : ECE Undergraduate | IoT Developer | Embedded Systems
-LOCATION    : Mysuru, Karnataka 🇮🇳
-INSTITUTION : Vidya Vardhaka College of Engineering
-STATUS      : [ ONLINE ] – Continuously learning and innovating
-INTERESTS   : IoT · Embedded Systems · C/C++ · Python · React · UI/UX
-HARDWARE    : Arduino Uno · ESP32 · Raspberry Pi Pico
-MISSION     : Merging hardware & software to solve real-world problems
-```
+<div align="left">
+<h3>
+⚡ <b>NAME</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Bharath Kumar A <br>
+🚀 <b>ROLE</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ECE Undergraduate | IoT Developer | Full stack web dev <br>
+🏛️ <b>INSTITUTION</b> &nbsp;: Vidya Vardhaka College of Engineering <br>
+📡 <b>STATUS</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: [ ONLINE ] – Continuously learning and innovating <br>
+🧠 <b>INTERESTS</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: IoT · Embedded Systems · C/C++ · Python · React · UI/UX <br>
+🛠️ <b>HARDWARE</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Arduino Uno · ESP32 · Raspberry Pi Pico <br>
+🎯 <b>MISSION</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Merging hardware & software to solve real-world problems
+</h3>
+</div>
 ---
 <p align="center">
  <img src="naga.svg.svg"/>
