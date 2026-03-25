@@ -1,0 +1,40 @@
+<svg width="1200" height="120" viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="footer-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#050505" />
+      <stop offset="50%" stop-color="#140024" />
+      <stop offset="100%" stop-color="#050505" />
+    </linearGradient>
+    <pattern id="footer-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00F2FF" stroke-width="0.5" stroke-opacity="0.1" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="120" fill="url(#footer-grad)" />
+  <rect width="1200" height="120" fill="url(#footer-grid)" />
+
+  <!-- Top Border Glow -->
+  <rect width="1200" height="2" fill="#00F2FF" fill-opacity="0.3" />
+  
+  <!-- Circuit Lines Background -->
+  <g stroke="#00F2FF" stroke-opacity="0.08" stroke-width="1" fill="none">
+    <path d="M0 40 H120 L160 80 H300 L340 40 H500" />
+    <path d="M1200 80 H1080 L1040 40 H900 L860 80 H720" />
+    <path d="M600 0 V30 L570 60 H450" />
+    <path d="M600 120 V90 L630 60 H750" />
+    <circle cx="160" cy="80" r="2" fill="#00F2FF" fill-opacity="0.1" />
+    <circle cx="1040" cy="40" r="2" fill="#00F2FF" fill-opacity="0.1" />
+  </g>
+
+  <!-- Cyberpunk Geometric Accents -->
+  <path d="M0 20 L200 20 L240 60 H400 L440 20 H760 L800 60 H960 L1000 20 H1200" stroke="#00F2FF" stroke-opacity="0.1" stroke-width="1" />
+  
+  <rect x="0" y="0" width="100%" height="120" fill="none" stroke="#7000FF" stroke-opacity="0.1" stroke-width="2" />
+  
+  <!-- Scanning Light -->
+  <rect x="0" y="0" width="150" height="2" fill="#00F2FF">
+    <animate attributeName="x" from="-150" to="1200" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0;1;0" dur="3s" repeatCount="indefinite" />
+  </rect>
+
+</svg>
