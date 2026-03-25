@@ -36,6 +36,7 @@ LOCATION    : Mysuru, Karnataka 🇮🇳
 INSTITUTION : Vidya Vardhaka College of Engineering
 STATUS      : [ ONLINE ] – Continuously learning and innovating
 INTERESTS   : IoT · Embedded Systems · C/C++ · Python · React · UI/UX
+HARDWARE    : Arduino Uno · ESP32 · Raspberry Pi Pico
 MISSION     : Merging hardware & software to solve real-world problems
 ```
 ---
