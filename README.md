@@ -77,8 +77,6 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
   
 ## 🏆 Achievements
 
-# 🏆 Achievements
-
 # 🏆 <span style="color: #D4AF37;">Achievements</span>
 
 ---
