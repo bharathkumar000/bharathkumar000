@@ -19,16 +19,29 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 # 👤 <span style="color: #00F2FF;">ABOUT_ME</span>
-<div align="left">
-<h3>
-⚡ <b>NAME</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Bharath Kumar A <br>
-🚀 <b>ROLE</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ECE Undergraduate | IoT Developer | Full stack web dev <br>
-🏛️ <b>INSTITUTION</b> &nbsp;: Vidya Vardhaka College of Engineering <br>
-📡 <b>STATUS</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: [ ONLINE ] – Continuously learning and innovating <br>
-🧠 <b>INTERESTS</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: IoT · Embedded Systems · C/C++ · Python · React · UI/UX <br>
-🛠️ <b>HARDWARE</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Arduino Uno · ESP32 · Raspberry Pi Pico <br>
-🎯 <b>MISSION</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Merging hardware & software to solve real-world problems
-</h3>
+
+<div align="center">
+<table style="width: 100%; border: 1px solid #30363d; background-color: #0d1117; border-collapse: separate; border-spacing: 0; border-radius: 12px;">
+  <tr style="background-color: #161b22;">
+    <td style="padding: 10px; border-bottom: 1px solid #30363d; text-align: left;">
+      <span style="color: #ff5f56; font-size: 18px;">●</span> <span style="color: #ffbd2e; font-size: 18px;">●</span> <span style="color: #27c93f; font-size: 18px;">●</span>
+      &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8b949e; font-family: monospace;">bharath@macos — profile.sh</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 20px; text-align: left;">
+      <samp>
+        <b style="color: #00F2FF;">⚡ NAME</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Bharath Kumar A <br>
+        <b style="color: #00F2FF;">🚀 ROLE</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ECE Undergraduate | IoT Developer | Full stack web dev <br>
+        <b style="color: #00F2FF;">🏛️ INSTITUTION</b> &nbsp;: Vidya Vardhaka College of Engineering <br>
+        <b style="color: #00F2FF;">📡 STATUS</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span style="color: #27c93f;">[ ONLINE ]</span> – Continuously learning and innovating <br>
+        <b style="color: #00F2FF;">🧠 INTERESTS</b> &nbsp;&nbsp;&nbsp;: IoT · Embedded Systems · C/C++ · Python · React · UI/UX <br>
+        <b style="color: #00F2FF;">🛠️ HARDWARE</b> &nbsp;&nbsp;&nbsp;&nbsp;: Arduino Uno · ESP32 · Raspberry Pi Pico <br>
+        <b style="color: #00F2FF;">🎯 MISSION</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Merging hardware & software to solve real-world problems
+      </samp>
+    </td>
+  </tr>
+</table>
 </div>
 ---
 <p align="center">
@@ -96,9 +109,9 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
       </p>
       <p style="color: #8b949e; font-size: 14px;">IoT-based solution for real-time natural disaster monitoring and automated alerts.</p>
       <div style="margin-top: 15px;">
-        <img src="https://img.shields.io/badge/ARDUINO-00979D?style=flat-square&logo=arduino&logoColor=white" height="20"/>
-        <img src="https://img.shields.io/badge/RASPBERRY_PI-C51A4A?style=flat-square&logo=raspberry-pi&logoColor=white" height="20"/>
-        <img src="https://img.shields.io/badge/SENSORS-0078D4?style=flat-square&logo=sensortower&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/FIREBASE-FFCA28?style=flat-square&logo=firebase&logoColor=black" height="20"/>
+        <img src="https://img.shields.io/badge/GOOGLE_MAPS-4285F4?style=flat-square&logo=googlemaps&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/NODE.JS-339933?style=flat-square&logo=nodedotjs&logoColor=white" height="20"/>
       </div>
     </td>
   </tr>
@@ -122,9 +135,9 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
       </p>
       <p style="color: #8b949e; font-size: 14px;">Automated server encryption hardening tool identifying weak cipher suites.</p>
       <div style="margin-top: 15px;">
-        <img src="https://img.shields.io/badge/PYTHON-3776AB?style=flat-square&logo=python&logoColor=white" height="20"/>
-        <img src="https://img.shields.io/badge/LINUX-FCC624?style=flat-square&logo=linux&logoColor=black" height="20"/>
-        <img src="https://img.shields.io/badge/BASH-4EAA25?style=flat-square&logo=gnubash&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/TLS/SSL-00F2FF?style=flat-square&logo=lock&logoColor=black" height="20"/>
+        <img src="https://img.shields.io/badge/HTTPS-24292E?style=flat-square&logo=letsencrypt&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/CYBERSECURITY-000000?style=flat-square&logo=hackthebox&logoColor=white" height="20"/>
       </div>
     </td>
   </tr>

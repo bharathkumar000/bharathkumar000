@@ -59,7 +59,7 @@
   </g>
 
   <!-- Roles Bar Section -->
-  <g transform="translate(0, 15)">
+  <g transform="translate(0, -30)">
     <!-- Extended Horizontal Bar -->
     <rect x="200" y="220" width="800" height="45" rx="4" fill="#00F2FF" fill-opacity="0.03" stroke="#00F2FF" stroke-opacity="0.2" />
     
