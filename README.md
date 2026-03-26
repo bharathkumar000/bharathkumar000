@@ -1,18 +1,11 @@
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2C2301,20:544406,40:D4AF37,60:FFD700,80:544406,100:2C2301&height=300&section=header&text=BHARATH%20KUMAR&fontSize=75&fontColor=FFD700&fontAlignY=32&desc=ECE%20Undergraduate%20%7C%20IoT%20Developer%20%7C%20Embedded%20Systems&descSize=18&descAlignY=52&descColor=D4AF37&animation=twinkling&stroke=FFD700&strokeWidth=1" width="100%"/>
-
-<br/>
-
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%"/>
-
+<img src="banner.svg" width="100%"/>
+<img src="separator.svg" width="100%"/>
 </div>
 
 <div align="center">
 <h1> ⚡ Welcome to my Digital Workspace ⚡ </h1>
-
 </div>
-<br/>
 <p align="center">
 <a href="https://www.instagram.com/_unknown.06__?igsh=OHgwdTE0djdvMzFq"><img src="https://skillicons.dev/icons?i=instagram&theme=dark" alt="Instagram" width="48" height="48"/></a>
 &nbsp;&nbsp;&nbsp;
@@ -21,19 +14,36 @@
 <a href="mailto:bharathece2006@gmail.com"><img src="https://skillicons.dev/icons?i=gmail&theme=dark" alt="Gmail" width="48" height="48"/></a>
 &nbsp;&nbsp;&nbsp;
 <a href="https://github.com/bharathkumar000"><img src="https://skillicons.dev/icons?i=github&theme=dark" alt="GitHub" width="48" height="48"/></a>
-
-</div>
+</p>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
+# 👤 <span style="color: #00F2FF;">ABOUT_ME</span>
 
-# 💫 About Me:
-
-💻 **First year** &nbsp; - &nbsp;&nbsp;Vidya Vardhaka College of Engineering, Mysuru.
-<br>⚙️ **Expertise**&nbsp;&nbsp; - &nbsp;&nbsp;Hands-on exp with IoT systems (Arduino Uno, ESP32, Raspberry Pi Pico)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;embedded devices and full-stack development.
-<br>🌱 **Mission**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;Continuously learning and innovating at the intersection of tech and 
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;problem-solving.
+<div align="center">
+<table style="width: 100%; border: 1px solid #30363d; background-color: #0d1117; border-collapse: separate; border-spacing: 0; border-radius: 12px;">
+  <tr style="background-color: #161b22;">
+    <td style="padding: 12px 16px; border-bottom: 1px solid #30363d; text-align: left;">
+      <span style="font-size: 24px;">🔴</span>&nbsp;&nbsp;
+      <span style="font-size: 24px;">⚫</span>&nbsp;&nbsp;
+      <span style="font-size: 24px;">🟢</span>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding: 20px; text-align: left;">
+      <samp>
+        <b style="color: #00F2FF;">NAME</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Bharath Kumar A <br>
+        <b style="color: #00F2FF;">ROLE</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ECE Undergraduate | IoT Developer | Full stack web dev <br>
+        <b style="color: #00F2FF;">INSTITUTION</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Vidya Vardhaka College of Engineering <br>
+        <b style="color: #00F2FF;">STATUS</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span style="color: #27c93f;">[ ONLINE ]</span> – Continuously learning and innovating <br>
+        <b style="color: #00F2FF;">INTERESTS</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: IoT · Embedded Systems · C/C++ · Python · React · UI/UX <br>
+        <b style="color: #00F2FF;">HARDWARE</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Arduino Uno · ESP32 · Raspberry Pi Pico <br>
+        <b style="color: #00F2FF;">MISSION</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Merging hardware & software to solve real-world problems
+      </samp>
+    </td>
+  </tr>
+</table>
+</div>
 ---
 <p align="center">
  <img src="naga.svg.svg"/>
@@ -75,64 +85,67 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=bharathkumar000&theme=chartreuse-dark&hide_border=true&background=0d1117&ring=00ffff&fire=ff6b6b&currStreakLabel=00ffff" width="48%" />
 </div>
   
-# 🏆 <span style="color: #D4AF37;">Achievements</span>
+# 🏆 <span style="color: #00F2FF;">MISSION_LOG / ACHIEVEMENTS</span>
 
 ---
 
-<table style="width: 100%; border-collapse: collapse;">
+<table style="width: 100%; border-collapse: collapse; border: 1px solid #1A1A1D;">
   <tr>
-    <td style="width: 50%; vertical-align: top; border: 1px solid #30363d; padding: 20px; background-color: #0d1117;">
-      <h3 style="margin-top: 0; color: #D4AF37;">🥈 2nd PLACE — Parivartan 24-Hour State level Hackathon</h3>
-      <p style="font-size: 13px; margin-bottom: 8px;">
+    <td style="width: 50%; vertical-align: top; border: 1px solid #00F2FF33; padding: 20px; background-color: #0d1117;">
+      <h3 style="margin-top: 0; color: #00F2FF;">🥈 2nd PLACE — Parivartan 24H Hackathon</h3>
+      <p style="font-size: 13px; margin-bottom: 8px; font-family: monospace;">
         📂 <a href="https://github.com/bharathkumar000/mysurumarga.git" style="color: #58a6ff; text-decoration: none; font-weight: bold;">mysurumarga</a> • <b>VVCE MYSURU</b>
       </p>
-      <p style="color: #8b949e; font-size: 14px;">A digital bridge for heritage micro-enterprises featuring AI trip bots and decentralized payment models.</p>
+      <p style="color: #8b949e; font-size: 14px;">Digital bridge for micro-enterprises featuring AI bots and decentralized models.</p>
       <div style="margin-top: 15px;">
-        <img src="https://img.shields.io/badge/AI_BOT-2b3137?style=for-the-badge&logo=openai&logoColor=white" height="22"/>
-        <img src="https://img.shields.io/badge/BLOCKCHAIN-E46231?style=for-the-badge&logo=ethereum&logoColor=white" height="22"/>
-        <img src="https://img.shields.io/badge/UI-69B34C?style=for-the-badge&logo=figma&logoColor=white" height="22"/>
+        <img src="https://img.shields.io/badge/AI_BOT-412991?style=flat-square&logo=openai&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/ETHEREUM-3C3C3D?style=flat-square&logo=ethereum&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/FIGMA-F24E1E?style=flat-square&logo=figma&logoColor=white" height="20"/>
       </div>
     </td>
-    <td style="width: 50%; vertical-align: top; border: 1px solid #30363d; padding: 20px; background-color: #0d1117;">
-      <h3 style="margin-top: 0; color: #D4AF37;">🥉 3rd PLACE — State Level Hackathon</h3>
-      <p style="font-size: 13px; margin-bottom: 8px;">
+    <td style="width: 50%; vertical-align: top; border: 1px solid #00F2FF33; padding: 20px; background-color: #0d1117;">
+      <h3 style="margin-top: 0; color: #00F2FF;">🥉 3rd PLACE — State Level Hackathon</h3>
+      <p style="font-size: 13px; margin-bottom: 8px; font-family: monospace;">
         📂 <a href="https://github.com/bharathkumar000/RESQLINK.git" style="color: #58a6ff; text-decoration: none; font-weight: bold;">RESQLINK</a> • <b>PESCE MANDYA</b>
       </p>
-      <p style="color: #8b949e; font-size: 14px;">Developed an IoT-based solution for real-time natural disaster monitoring and automated alert systems.</p>
+      <p style="color: #8b949e; font-size: 14px;">IoT-based solution for real-time natural disaster monitoring and automated alerts.</p>
       <div style="margin-top: 15px;">
-        <img src="https://img.shields.io/badge/IOT-00979D?style=for-the-badge&logo=arduino&logoColor=white" height="22"/>
-        <img src="https://img.shields.io/badge/SENSORS-0078D4?style=for-the-badge&logo=sensortower&logoColor=white" height="22"/>
-        <img src="https://img.shields.io/badge/SYSTEMS-D31027?style=for-the-badge&logo=raspberrypi&logoColor=white" height="22"/>
+        <img src="https://img.shields.io/badge/FIREBASE-FFCA28?style=flat-square&logo=firebase&logoColor=black" height="20"/>
+        <img src="https://img.shields.io/badge/GOOGLE_MAPS-4285F4?style=flat-square&logo=googlemaps&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/NODE.JS-339933?style=flat-square&logo=nodedotjs&logoColor=white" height="20"/>
       </div>
     </td>
   </tr>
   <tr>
-    <td style="width: 50%; vertical-align: top; border: 1px solid #30363d; padding: 20px; background-color: #0d1117;">
-      <h3 style="margin-top: 0; color: #D4AF37;">⭐ Semi-Finalist — Idea Pitching Event</h3>
-      <p style="font-size: 13px; margin-bottom: 8px;">
-        📂 <a href="https://github.com/bharathkumar000/connect-and-prep.git" style="color: #58a6ff; text-decoration: none; font-weight: bold;">connect-and-prep</a> • <b>NIT WARANGAL</b>
+    <td style="width: 50%; vertical-align: top; border: 1px solid #00F2FF33; padding: 20px; background-color: #0d1117;">
+      <h3 style="margin-top: 0; color: #00F2FF;">⭐ Semi-Finalist — Idea Pitching</h3>
+      <p style="font-size: 13px; margin-bottom: 8px; font-family: monospace;">
+        📂 <a href="https://github.com/bharathkumar000/connect-and-prep.git" style="color: #58a6ff; text-decoration: none; font-weight: bold;">connect-prep</a> • <b>NIT WARANGAL</b>
       </p>
-      <p style="color: #8b949e; font-size: 14px;">Pitched a comprehensive academic platform for engineering students featuring a P2P tutoring tool.</p>
+      <p style="color: #8b949e; font-size: 14px;">Academic platform for engineering students featuring a P2P tutoring engine.</p>
       <div style="margin-top: 15px;">
-        <img src="https://img.shields.io/badge/REACT-61DAFB?style=for-the-badge&logo=react&logoColor=black" height="22"/>
-        <img src="https://img.shields.io/badge/PLATFORM-8957E5?style=for-the-badge&logo=vercel&logoColor=white" height="22"/>
-        <img src="https://img.shields.io/badge/P2P-D4A017?style=for-the-badge&logo=peerlist&logoColor=white" height="22"/>
+        <img src="https://img.shields.io/badge/REACT-61DAFB?style=flat-square&logo=react&logoColor=black" height="20"/>
+        <img src="https://img.shields.io/badge/VERCEL-000000?style=flat-square&logo=vercel&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/PEERLIST-24292E?style=flat-square&logo=peerlist&logoColor=white" height="20"/>
       </div>
     </td>
-    <td style="width: 50%; vertical-align: top; border: 1px solid #30363d; padding: 20px; background-color: #0d1117;">
-      <h3 style="margin-top: 0; color: #D4AF37;">🛡️ Semi-Finalist — "Hack the Hackers"</h3>
-      <p style="font-size: 13px; margin-bottom: 8px;">
+    <td style="width: 50%; vertical-align: top; border: 1px solid #00F2FF33; padding: 20px; background-color: #0d1117;">
+      <h3 style="margin-top: 0; color: #00F2FF;">🛡️ Semi-Finalist — Hack the Hackers</h3>
+      <p style="font-size: 13px; margin-bottom: 8px; font-family: monospace;">
         📂 <a href="https://github.com/bharathkumar000/tls-auditor.git" style="color: #58a6ff; text-decoration: none; font-weight: bold;">tls-auditor</a> • <b>GSSSIETW MYSURU</b>
       </p>
-      <p style="color: #8b949e; font-size: 14px;">An automated server encryption hardening tool that identifies weak cipher suites and provides snippets.</p>
+      <p style="color: #8b949e; font-size: 14px;">Automated server encryption hardening tool identifying weak cipher suites.</p>
       <div style="margin-top: 15px;">
-        <img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white" height="22"/>
-        <img src="https://img.shields.io/badge/PARSER-0078D4?style=for-the-badge&logo=github&logoColor=white" height="22"/>
-        <img src="https://img.shields.io/badge/TLS_V1.3-2EA44F?style=for-the-badge&logo=linux&logoColor=white" height="22"/>
+        <img src="https://img.shields.io/badge/TLS/SSL-00F2FF?style=flat-square&logo=lock&logoColor=black" height="20"/>
+        <img src="https://img.shields.io/badge/HTTPS-24292E?style=flat-square&logo=letsencrypt&logoColor=white" height="20"/>
+        <img src="https://img.shields.io/badge/CYBERSECURITY-000000?style=flat-square&logo=hackthebox&logoColor=white" height="20"/>
       </div>
     </td>
   </tr>
 </table>
 
 
-   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2C2301,20:8B6508,40:FFD700,60:D4AF37,80:8B6508,100:2C2301&height=120&section=footer" width="100%"/>
+<br/>
+<div align="center">
+  <img src="footer.svg" width="100%"/>
+</div>

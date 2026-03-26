@@ -1,0 +1,107 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <linearGradient id="grid-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FF" stop-opacity="0.05" />
+      <stop offset="50%" stop-color="#7000FF" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#00F2FF" stop-opacity="0.05" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="url(#grid-grad)" stroke-width="0.5" />
+    </pattern>
+    <radialGradient id="bg-glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#180030" />
+      <stop offset="100%" stop-color="#080808" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg-glow)" />
+  <rect width="1200" height="400" fill="url(#grid)" />
+
+  <!-- Abstract Circuit Lines -->
+  <g stroke="#00F2FF" stroke-opacity="0.12" stroke-width="1" fill="none">
+    <path d="M0 100 H100 L150 150 H300 L350 100 H500" />
+    <path d="M1200 300 H1100 L1050 250 H900 L850 300 H700" />
+    <path d="M600 0 V50 L550 100 H400" />
+    <path d="M600 400 V350 L650 300 H800" />
+    
+    <!-- New Lines -->
+    <path d="M100 0 V40 L140 80 H200" />
+    <path d="M1100 400 V360 L1060 320 H1000" />
+    <path d="M0 300 H80 L120 340 V400" />
+    <path d="M1200 100 H1120 L1080 60 V0" />
+    <path d="M300 0 L340 40 V100" />
+    <path d="M900 400 L860 360 V300" />
+    <path d="M0 200 H100 L130 170" />
+    <path d="M1200 200 H1100 L1070 230" />
+    
+    <!-- Animated Flow Drips -->
+    <path d="M0 100 H100 L150 150 H300 L350 100 H500" stroke="#00ffff" stroke-width="2.5" stroke-dasharray="30, 200">
+      <animate attributeName="stroke-dashoffset" from="230" to="0" dur="3s" repeatCount="indefinite" />
+    </path>
+    <path d="M1200 300 H1100 L1050 250 H900 L850 300 H700" stroke="#00ffff" stroke-width="2.5" stroke-dasharray="30, 200">
+      <animate attributeName="stroke-dashoffset" from="-230" to="0" dur="3.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M600 0 V50 L550 100 H400" stroke="#00ffff" stroke-width="2" stroke-dasharray="20, 150">
+      <animate attributeName="stroke-dashoffset" from="170" to="0" dur="2s" repeatCount="indefinite" />
+    </path>
+    <path d="M600 400 V350 L650 300 H800" stroke="#00ffff" stroke-width="2" stroke-dasharray="20, 150">
+      <animate attributeName="stroke-dashoffset" from="-170" to="0" dur="2.5s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Pulsing Nodes -->
+    <circle cx="150" cy="150" r="2.5" fill="#00ffff" fill-opacity="0.5">
+      <animate attributeName="r" values="2;5;2" dur="1.5s" repeatCount="indefinite" />
+      <animate attributeName="fill-opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1050" cy="250" r="2.5" fill="#00ffff" fill-opacity="0.5">
+      <animate attributeName="r" values="2;5;2" dur="1.2s" repeatCount="indefinite" />
+      <animate attributeName="fill-opacity" values="0.3;1;0.3" dur="1.2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="140" cy="80" r="2" fill="#00ffff" fill-opacity="0.5">
+      <animate attributeName="fill-opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1060" cy="320" r="2" fill="#00ffff" fill-opacity="0.5">
+      <animate attributeName="fill-opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Main Name Title -->
+  <g filter="url(#glow)">
+    <text x="600" y="200" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="85" fill="#FFFFFF">
+      BHARATH KUMAR A
+    </text>
+    <text x="600" y="200" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="85" fill="none" stroke="#00F2FF" stroke-width="1" stroke-opacity="0.4">
+      BHARATH KUMAR A
+    </text>
+  </g>
+
+  <!-- Roles Bar Section -->
+  <g>
+    <!-- Extended Horizontal Bar -->
+    <rect x="200" y="235" width="800" height="45" rx="4" fill="#00F2FF" fill-opacity="0.03" stroke="#00F2FF" stroke-opacity="0.2" />
+    
+    <!-- Role Text -->
+    <text x="600" y="263" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="bold" fill="#00F2FF" letter-spacing="2">
+      SYSTEM DEVELOPER | IOT · EMBEDDED · WEB DEV
+    </text>
+    
+  </g>
+
+  <!-- HUD Brackets -->
+  <g stroke="#00F2FF" stroke-width="2" fill="none">
+    <!-- Top Left -->
+    <path d="M40 40 H120 M40 40 V120" stroke-opacity="0.5" />
+    <!-- Top Right -->
+    <path d="M1160 40 H1080 M1160 40 V120" stroke-opacity="0.5" />
+    <!-- Bottom Left -->
+    <path d="M40 360 H120 M40 360 V280" stroke-opacity="0.5" />
+    <!-- Bottom Right -->
+    <path d="M1160 360 H1080 M1160 360 V280" stroke-opacity="0.5" />
+  </g>
+
+</svg>
