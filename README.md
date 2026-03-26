@@ -25,19 +25,18 @@
   <tr style="background-color: #161b22;">
     <td style="padding: 10px; border-bottom: 1px solid #30363d; text-align: left;">
       <span style="color: #ff5f56; font-size: 18px;">●</span> <span style="color: #ffbd2e; font-size: 18px;">●</span> <span style="color: #27c93f; font-size: 18px;">●</span>
-      &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #8b949e; font-family: monospace;">bharath@macos — profile.sh</span>
     </td>
   </tr>
   <tr>
     <td style="padding: 20px; text-align: left;">
       <samp>
-        <b style="color: #00F2FF;">⚡ NAME</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Bharath Kumar A <br>
-        <b style="color: #00F2FF;">🚀 ROLE</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ECE Undergraduate | IoT Developer | Full stack web dev <br>
-        <b style="color: #00F2FF;">🏛️ INSTITUTION</b> &nbsp;: Vidya Vardhaka College of Engineering <br>
-        <b style="color: #00F2FF;">📡 STATUS</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span style="color: #27c93f;">[ ONLINE ]</span> – Continuously learning and innovating <br>
-        <b style="color: #00F2FF;">🧠 INTERESTS</b> &nbsp;&nbsp;&nbsp;: IoT · Embedded Systems · C/C++ · Python · React · UI/UX <br>
-        <b style="color: #00F2FF;">🛠️ HARDWARE</b> &nbsp;&nbsp;&nbsp;&nbsp;: Arduino Uno · ESP32 · Raspberry Pi Pico <br>
-        <b style="color: #00F2FF;">🎯 MISSION</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Merging hardware & software to solve real-world problems
+        <b style="color: #00F2FF;">NAME</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Bharath Kumar A <br>
+        <b style="color: #00F2FF;">ROLE</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: ECE Undergraduate | IoT Developer | Full stack web dev <br>
+        <b style="color: #00F2FF;">INSTITUTION</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Vidya Vardhaka College of Engineering <br>
+        <b style="color: #00F2FF;">STATUS</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span style="color: #27c93f;">[ ONLINE ]</span> – Continuously learning and innovating <br>
+        <b style="color: #00F2FF;">INTERESTS</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: IoT · Embedded Systems · C/C++ · Python · React · UI/UX <br>
+        <b style="color: #00F2FF;">HARDWARE</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Arduino Uno · ESP32 · Raspberry Pi Pico <br>
+        <b style="color: #00F2FF;">MISSION</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Merging hardware & software to solve real-world problems
       </samp>
     </td>
   </tr>
