@@ -24,9 +24,9 @@
 <table style="width: 100%; border: 1px solid #30363d; background-color: #0d1117; border-collapse: separate; border-spacing: 0; border-radius: 12px;">
   <tr style="background-color: #161b22;">
     <td style="padding: 12px 16px; border-bottom: 1px solid #30363d; text-align: left;">
-      <span style="color: #ff5f56; font-size: 22px;">●</span>&nbsp;
-      <span style="color: #ffbd2e; font-size: 22px;">●</span>&nbsp;
-      <span style="color: #27c93f; font-size: 22px;">●</span>
+      <span style="font-size: 24px;">🔴</span>&nbsp;&nbsp;
+      <span style="font-size: 24px;">⚫</span>&nbsp;&nbsp;
+      <span style="font-size: 24px;">🟢</span>
     </td>
   </tr>
   <tr>

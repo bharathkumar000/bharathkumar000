@@ -13,8 +13,8 @@
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="url(#grid-grad)" stroke-width="0.5" />
     </pattern>
     <radialGradient id="bg-glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-      <stop offset="0%" stop-color="#240046" />
-      <stop offset="100%" stop-color="#0a0a0a" />
+      <stop offset="0%" stop-color="#180030" />
+      <stop offset="100%" stop-color="#080808" />
     </radialGradient>
   </defs>
 
@@ -39,13 +39,35 @@
     <path d="M0 200 H100 L130 170" />
     <path d="M1200 200 H1100 L1070 230" />
     
-    <!-- Nodes -->
-    <circle cx="150" cy="150" r="2.5" fill="#00F2FF" fill-opacity="0.2" />
-    <circle cx="1050" cy="250" r="2.5" fill="#00F2FF" fill-opacity="0.2" />
-    <circle cx="140" cy="80" r="2" fill="#00F2FF" fill-opacity="0.2" />
-    <circle cx="1060" cy="320" r="2" fill="#00F2FF" fill-opacity="0.2" />
-    <circle cx="340" cy="40" r="2" fill="#00F2FF" fill-opacity="0.2" />
-    <circle cx="860" cy="360" r="2" fill="#00F2FF" fill-opacity="0.2" />
+    <!-- Animated Flow Drips -->
+    <path d="M0 100 H100 L150 150 H300 L350 100 H500" stroke="#00ffff" stroke-width="2.5" stroke-dasharray="30, 200">
+      <animate attributeName="stroke-dashoffset" from="230" to="0" dur="3s" repeatCount="indefinite" />
+    </path>
+    <path d="M1200 300 H1100 L1050 250 H900 L850 300 H700" stroke="#00ffff" stroke-width="2.5" stroke-dasharray="30, 200">
+      <animate attributeName="stroke-dashoffset" from="-230" to="0" dur="3.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M600 0 V50 L550 100 H400" stroke="#00ffff" stroke-width="2" stroke-dasharray="20, 150">
+      <animate attributeName="stroke-dashoffset" from="170" to="0" dur="2s" repeatCount="indefinite" />
+    </path>
+    <path d="M600 400 V350 L650 300 H800" stroke="#00ffff" stroke-width="2" stroke-dasharray="20, 150">
+      <animate attributeName="stroke-dashoffset" from="-170" to="0" dur="2.5s" repeatCount="indefinite" />
+    </path>
+    
+    <!-- Pulsing Nodes -->
+    <circle cx="150" cy="150" r="2.5" fill="#00ffff" fill-opacity="0.5">
+      <animate attributeName="r" values="2;5;2" dur="1.5s" repeatCount="indefinite" />
+      <animate attributeName="fill-opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1050" cy="250" r="2.5" fill="#00ffff" fill-opacity="0.5">
+      <animate attributeName="r" values="2;5;2" dur="1.2s" repeatCount="indefinite" />
+      <animate attributeName="fill-opacity" values="0.3;1;0.3" dur="1.2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="140" cy="80" r="2" fill="#00ffff" fill-opacity="0.5">
+      <animate attributeName="fill-opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1060" cy="320" r="2" fill="#00ffff" fill-opacity="0.5">
+      <animate attributeName="fill-opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+    </circle>
   </g>
 
   <!-- Main Name Title -->
