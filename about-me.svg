@@ -1,0 +1,143 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow-ab" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <radialGradient id="bg-ab" cx="50%" cy="50%" r="60%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#0f0014" />
+      <stop offset="100%" stop-color="#060606" />
+    </radialGradient>
+    <linearGradient id="grid-ab" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FF" stop-opacity="0.04" />
+      <stop offset="50%" stop-color="#7000FF" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#00F2FF" stop-opacity="0.04" />
+    </linearGradient>
+    <pattern id="grid-p" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="url(#grid-ab)" stroke-width="0.5" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="420" fill="url(#bg-ab)" rx="12" />
+  <rect width="1200" height="420" fill="url(#grid-p)" rx="12" />
+
+  <!-- Circuit Lines -->
+  <g stroke="#00F2FF" stroke-opacity="0.1" stroke-width="1" fill="none">
+    <path d="M0 60 H80 L110 90 H200" />
+    <path d="M1200 60 H1120 L1090 90 H1000" />
+    <path d="M0 350 H60 L90 380 V420" />
+    <path d="M1200 350 H1140 L1110 380 V420" />
+    <path d="M200 0 V30 L230 60" />
+    <path d="M1000 420 V390 L970 360" />
+  </g>
+
+  <!-- Animated Flow Drips -->
+  <g fill="none">
+    <path d="M0 60 H80 L110 90 H200" stroke="#00ffff" stroke-width="2" stroke-dasharray="25, 150">
+      <animate attributeName="stroke-dashoffset" from="175" to="0" dur="3s" repeatCount="indefinite" />
+    </path>
+    <path d="M1200 60 H1120 L1090 90 H1000" stroke="#00ffff" stroke-width="2" stroke-dasharray="25, 150">
+      <animate attributeName="stroke-dashoffset" from="-175" to="0" dur="3.5s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- Pulsing Nodes -->
+  <g fill="#00ffff">
+    <circle cx="110" cy="90" r="2">
+      <animate attributeName="r" values="2;4;2" dur="1.5s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1090" cy="90" r="2">
+      <animate attributeName="r" values="2;4;2" dur="1.2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Title Bar Background -->
+  <rect x="0" y="0" width="1200" height="50" fill="#0d0d1a" fill-opacity="0.8" rx="12" />
+  <rect x="0" y="40" width="1200" height="12" fill="#0d0d1a" fill-opacity="0.8" />
+  <line x1="0" y1="50" x2="1200" y2="50" stroke="#00F2FF" stroke-opacity="0.15" stroke-width="1" />
+
+  <!-- Mac Buttons -->
+  <circle cx="35" cy="25" r="8" fill="#ff5f56" />
+  <g stroke="#990000" stroke-width="1.5" stroke-linecap="round">
+    <line x1="31.5" y1="21.5" x2="38.5" y2="28.5" />
+    <line x1="38.5" y1="21.5" x2="31.5" y2="28.5" />
+  </g>
+  <circle cx="65" cy="25" r="8" fill="#ffbd2e" />
+  <line x1="61" y1="25" x2="69" y2="25" stroke="#995700" stroke-width="1.5" stroke-linecap="round" />
+  <circle cx="95" cy="25" r="8" fill="#27c93f" />
+  <g stroke="#006500" stroke-width="1.3" stroke-linecap="round">
+    <polyline points="91,22 91,28 97,28" fill="none" />
+    <polyline points="99,28 99,22 93,22" fill="none" />
+  </g>
+
+  <!-- Terminal Title -->
+  <text x="600" y="30" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" fill="#8b949e" letter-spacing="1">
+    bharath@system ~ /about-me
+  </text>
+
+  <!-- HUD Corner Brackets -->
+  <g stroke="#00F2FF" stroke-width="1.5" fill="none" stroke-opacity="0.3">
+    <path d="M20 65 H50 M20 65 V95" />
+    <path d="M1180 65 H1150 M1180 65 V95" />
+    <path d="M20 405 H50 M20 405 V375" />
+    <path d="M1180 405 H1150 M1180 405 V375" />
+  </g>
+
+  <!-- Field Labels and Values -->
+  <g font-family="'Courier New', Courier, monospace" font-size="18">
+
+    <!-- NAME -->
+    <text x="80" y="105" fill="#00F2FF" font-weight="bold" letter-spacing="1">NAME</text>
+    <text x="310" y="105" fill="#8b949e">:</text>
+    <text x="340" y="105" fill="#c9d1d9">Bharath Kumar A</text>
+
+    <!-- ROLE -->
+    <text x="80" y="145" fill="#00F2FF" font-weight="bold" letter-spacing="1">ROLE</text>
+    <text x="310" y="145" fill="#8b949e">:</text>
+    <text x="340" y="145" fill="#c9d1d9">ECE Undergraduate | IoT Developer | Full Stack Web Dev</text>
+
+    <!-- INSTITUTION -->
+    <text x="80" y="185" fill="#00F2FF" font-weight="bold" letter-spacing="1">INSTITUTION</text>
+    <text x="310" y="185" fill="#8b949e">:</text>
+    <text x="340" y="185" fill="#c9d1d9">Vidya Vardhaka College of Engineering</text>
+
+    <!-- STATUS -->
+    <text x="80" y="225" fill="#00F2FF" font-weight="bold" letter-spacing="1">STATUS</text>
+    <text x="310" y="225" fill="#8b949e">:</text>
+    <text x="340" y="225" fill="#27c93f" font-weight="bold">[ ONLINE ]</text>
+    <text x="510" y="225" fill="#c9d1d9">– Continuously learning and innovating</text>
+    <!-- Blinking cursor after ONLINE -->
+    <rect x="495" y="213" width="2" height="16" fill="#27c93f">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+    </rect>
+
+    <!-- INTERESTS -->
+    <text x="80" y="265" fill="#00F2FF" font-weight="bold" letter-spacing="1">INTERESTS</text>
+    <text x="310" y="265" fill="#8b949e">:</text>
+    <text x="340" y="265" fill="#c9d1d9">IoT · Embedded Systems · C/C++ · Python · React · UI/UX</text>
+
+    <!-- HARDWARE -->
+    <text x="80" y="305" fill="#00F2FF" font-weight="bold" letter-spacing="1">HARDWARE</text>
+    <text x="310" y="305" fill="#8b949e">:</text>
+    <text x="340" y="305" fill="#c9d1d9">Arduino Uno · ESP32 · Raspberry Pi Pico</text>
+
+    <!-- MISSION -->
+    <text x="80" y="345" fill="#00F2FF" font-weight="bold" letter-spacing="1">MISSION</text>
+    <text x="310" y="345" fill="#8b949e">:</text>
+    <text x="340" y="345" fill="#c9d1d9">Merging hardware &amp; software to solve real-world problems</text>
+  </g>
+
+  <!-- Scanning Bar -->
+  <rect x="60" y="80" width="1080" height="1" fill="#00F2FF" fill-opacity="0.05">
+    <animate attributeName="y" from="80" to="370" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="fill-opacity" values="0;0.08;0" dur="5s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Bottom Border Glow -->
+  <rect x="0" y="418" width="1200" height="2" fill="#00F2FF" fill-opacity="0.15" rx="1">
+    <animate attributeName="fill-opacity" values="0.1;0.3;0.1" dur="3s" repeatCount="indefinite" />
+  </rect>
+</svg>
