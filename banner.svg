@@ -13,8 +13,8 @@
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="url(#grid-grad)" stroke-width="0.5" />
     </pattern>
     <radialGradient id="bg-glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-      <stop offset="0%" stop-color="#140024" />
-      <stop offset="100%" stop-color="#050505" />
+      <stop offset="0%" stop-color="#240046" />
+      <stop offset="100%" stop-color="#0a0a0a" />
     </radialGradient>
   </defs>
 
@@ -50,33 +50,24 @@
 
   <!-- Main Name Title -->
   <g filter="url(#glow)">
-    <text x="50%" y="42%" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="85" fill="#FFFFFF">
+    <text x="600" y="200" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="85" fill="#FFFFFF">
       BHARATH KUMAR A
     </text>
-    <text x="50%" y="42.5%" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="85" fill="none" stroke="#00F2FF" stroke-width="1" stroke-opacity="0.4">
+    <text x="600" y="200" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="85" fill="none" stroke="#00F2FF" stroke-width="1" stroke-opacity="0.4">
       BHARATH KUMAR A
     </text>
   </g>
 
   <!-- Roles Bar Section -->
-  <g transform="translate(0, -45)">
+  <g>
     <!-- Extended Horizontal Bar -->
-    <rect x="200" y="220" width="800" height="45" rx="4" fill="#00F2FF" fill-opacity="0.03" stroke="#00F2FF" stroke-opacity="0.2" />
+    <rect x="200" y="235" width="800" height="45" rx="4" fill="#00F2FF" fill-opacity="0.03" stroke="#00F2FF" stroke-opacity="0.2" />
     
     <!-- Role Text -->
-    <text x="590" y="248" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="bold" fill="#00F2FF" letter-spacing="2">
-      SYSTEM.DEVELOPER | IOT
-    </text>
-    <rect x="600" y="225" width="1" height="35" fill="#00F2FF" fill-opacity="0.2" />
-    <text x="610" y="248" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="bold" fill="#00F2FF" letter-spacing="2">
-      EMBEDDED · WEB DEV
+    <text x="600" y="263" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="bold" fill="#00F2FF" letter-spacing="2">
+      SYSTEM DEVELOPER | IOT · EMBEDDED · WEB DEV
     </text>
     
-    <!-- Moving Scannerline -->
-    <rect x="200" y="220" width="2" height="45" fill="#00F2FF">
-      <animate attributeName="x" from="200" to="998" dur="4s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite" />
-    </rect>
   </g>
 
   <!-- HUD Brackets -->
