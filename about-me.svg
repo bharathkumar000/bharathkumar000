@@ -20,7 +20,6 @@
 
   <!-- Background -->
   <rect width="1200" height="420" fill="url(#bg-ab)" rx="12" />
-  <rect width="1200" height="420" fill="url(#grid-p)" rx="12" />
 
   <!-- Circuit Lines -->
   <g stroke="#00F2FF" stroke-opacity="0.1" stroke-width="1" fill="none">
@@ -30,6 +29,12 @@
     <path d="M1200 350 H1140 L1110 380 V420" />
     <path d="M200 0 V30 L230 60" />
     <path d="M1000 420 V390 L970 360" />
+    
+    <!-- New Background Circuits -->
+    <path d="M400 0 V40 L370 70 H300" stroke-opacity="0.05" />
+    <path d="M800 0 V40 L830 70 H900" stroke-opacity="0.05" />
+    <path d="M0 200 H50 L80 170" stroke-opacity="0.05" />
+    <path d="M1200 200 H1150 L1120 230" stroke-opacity="0.05" />
   </g>
 
   <!-- Animated Flow Drips -->
@@ -39,6 +44,12 @@
     </path>
     <path d="M1200 60 H1120 L1090 90 H1000" stroke="#00ffff" stroke-width="2" stroke-dasharray="25, 150">
       <animate attributeName="stroke-dashoffset" from="-175" to="0" dur="3.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M200 0 V30 L230 60" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="10, 100">
+      <animate attributeName="stroke-dashoffset" from="110" to="0" dur="2s" repeatCount="indefinite" />
+    </path>
+    <path d="M1000 420 V390 L970 360" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="10, 100">
+      <animate attributeName="stroke-dashoffset" from="-110" to="0" dur="2.5s" repeatCount="indefinite" />
     </path>
   </g>
 
@@ -129,12 +140,6 @@
     <text x="310" y="345" fill="#8b949e">:</text>
     <text x="340" y="345" fill="#c9d1d9">Merging hardware &amp; software to solve real-world problems</text>
   </g>
-
-  <!-- Scanning Bar -->
-  <rect x="60" y="80" width="1080" height="1" fill="#00F2FF" fill-opacity="0.05">
-    <animate attributeName="y" from="80" to="370" dur="5s" repeatCount="indefinite" />
-    <animate attributeName="fill-opacity" values="0;0.08;0" dur="5s" repeatCount="indefinite" />
-  </rect>
 
   <!-- Bottom Border Glow -->
   <rect x="0" y="418" width="1200" height="2" fill="#00F2FF" fill-opacity="0.15" rx="1">

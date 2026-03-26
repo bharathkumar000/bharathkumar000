@@ -13,12 +13,21 @@
     </filter>
   </defs>
   <rect width="550" height="200" fill="url(#bg-2)" rx="8" stroke="#00F2FF" stroke-opacity="0.15" />
-  <rect width="550" height="200" fill="url(#grid-2)" rx="8" />
 
-  <path d="M550 40 H510 L490 60 H430" stroke="#00ffff" stroke-opacity="0.1" fill="none" />
-  <path d="M550 40 H510 L490 60 H430" stroke="#00ffff" stroke-width="2" stroke-dasharray="15, 100" fill="none">
-    <animate attributeName="stroke-dashoffset" from="-115" to="0" dur="3.5s" repeatCount="indefinite" />
-  </path>
+  <g stroke="#00F2FF" stroke-opacity="0.08" stroke-width="1" fill="none">
+    <path d="M550 40 H510 L490 60 H430" />
+    <path d="M0 160 H40 L60 140 H150" />
+    <path x1="200" y1="0" x2="230" y2="30" stroke-opacity="0.05" />
+  </g>
+  
+  <g fill="none">
+    <path d="M550 40 H510 L490 60 H430" stroke="#00ffff" stroke-width="2" stroke-dasharray="15, 100">
+      <animate attributeName="stroke-dashoffset" from="-115" to="0" dur="3.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M0 160 H40 L60 140 H150" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="15, 100">
+      <animate attributeName="stroke-dashoffset" from="115" to="0" dur="4.5s" repeatCount="indefinite" />
+    </path>
+  </g>
 
   <text x="25" y="45" font-family="sans-serif" font-size="13">🥉</text>
   <text x="50" y="45" font-family="'Courier New', monospace" font-size="16" font-weight="bold" fill="#00F2FF" filter="url(#glow-2)">3rd PLACE — State Level Hackathon</text>

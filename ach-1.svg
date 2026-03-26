@@ -13,13 +13,23 @@
     </filter>
   </defs>
   <rect width="550" height="200" fill="url(#bg-1)" rx="8" stroke="#00F2FF" stroke-opacity="0.15" />
-  <rect width="550" height="200" fill="url(#grid-1)" rx="8" />
   
   <!-- Circuit & Flow -->
-  <path d="M0 40 H40 L60 60 H120" stroke="#00ffff" stroke-opacity="0.1" fill="none" />
-  <path d="M0 40 H40 L60 60 H120" stroke="#00ffff" stroke-width="2" stroke-dasharray="15, 100" fill="none">
-    <animate attributeName="stroke-dashoffset" from="115" to="0" dur="3s" repeatCount="indefinite" />
-  </path>
+  <g stroke="#00F2FF" stroke-opacity="0.08" stroke-width="1" fill="none">
+    <path d="M0 40 H40 L60 60 H120" />
+    <path d="M550 160 H510 L490 140 H400" />
+    <path d="M300 0 V30 L270 60" stroke-opacity="0.05" />
+    <path d="M100 200 V170 L130 140" stroke-opacity="0.05" />
+  </g>
+  
+  <g fill="none">
+    <path d="M0 40 H40 L60 60 H120" stroke="#00ffff" stroke-width="2" stroke-dasharray="15, 100">
+      <animate attributeName="stroke-dashoffset" from="115" to="0" dur="3s" repeatCount="indefinite" />
+    </path>
+    <path d="M550 160 H510 L490 140 H400" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="15, 100">
+      <animate attributeName="stroke-dashoffset" from="-115" to="0" dur="4s" repeatCount="indefinite" />
+    </path>
+  </g>
 
   <!-- Content -->
   <text x="25" y="45" font-family="sans-serif" font-size="13">🥈</text>

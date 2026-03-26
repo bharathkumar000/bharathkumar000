@@ -20,7 +20,6 @@
 
   <!-- Background -->
   <rect width="1200" height="400" fill="url(#bg-glow)" />
-  <rect width="1200" height="400" fill="url(#grid)" />
 
   <!-- Abstract Circuit Lines -->
   <g stroke="#00F2FF" stroke-opacity="0.12" stroke-width="1" fill="none">

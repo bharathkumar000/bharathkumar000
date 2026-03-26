@@ -12,9 +12,6 @@
 
   <!-- High Intensity Background Rects -->
   <rect width="1200" height="120" fill="url(#footer-grad)" />
-  <rect width="1200" height="120" fill="url(#footer-grid)">
-    <animate attributeName="opacity" values="0.05;0.15;0.05" dur="4s" repeatCount="indefinite" />
-  </rect>
 
   <!-- Glitch Pixels Layer -->
   <g fill="#00F2FF" fill-opacity="0.3">
