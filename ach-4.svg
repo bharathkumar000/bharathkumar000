@@ -15,15 +15,21 @@
   <rect width="550" height="200" fill="url(#bg-4)" rx="8" stroke="#00F2FF" stroke-opacity="0.15" />
 
   <g stroke="#00F2FF" stroke-opacity="0.08" stroke-width="1" fill="none">
-    <path d="M550 120 H510 L490 100" />
-    <path d="M0 30 H40 L60 50" />
+    <path d="M550 120 H510 L490 100 H400" />
+    <path d="M0 30 H40 L60 50 H150" />
+    <path d="M300 200 V180 L320 160" stroke-opacity="0.05" />
   </g>
-  <path d="M550 120 H510 L490 100" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="10, 80" fill="none">
-    <animate attributeName="stroke-dashoffset" from="-90" to="0" dur="2.5s" repeatCount="indefinite" />
-  </path>
+  <g fill="none">
+    <path d="M550 120 H510 L490 100 H400" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="15, 100">
+      <animate attributeName="stroke-dashoffset" from="-115" to="0" dur="2.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M0 30 H40 L60 50 H150" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="15, 100">
+      <animate attributeName="stroke-dashoffset" from="115" to="0" dur="3.5s" repeatCount="indefinite" />
+    </path>
+  </g>
 
   <text x="25" y="45" font-family="sans-serif" font-size="13">🛡️</text>
-  <text x="50" y="45" font-family="'Courier New', monospace" font-size="16" font-weight="bold" fill="#00F2FF" filter="url(#glow-4)">Semi-Finalist — Hack the Hackers</text>
+  <text x="50" y="45" font-family="'Courier New', monospace" font-size="22" font-weight="bold" fill="#00F2FF" filter="url(#glow-4)">Semi-Finalist — Hack the Hackers</text>
   
   <text x="25" y="75" font-family="monospace" font-size="14" fill="#8b949e">📂</text>
   <text x="50" y="75" font-family="'Courier New', monospace" font-size="14" fill="#58a6ff" text-decoration="underline">tls-auditor</text>
