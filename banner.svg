@@ -64,8 +64,12 @@
     <rect x="200" y="220" width="800" height="45" rx="4" fill="#00F2FF" fill-opacity="0.03" stroke="#00F2FF" stroke-opacity="0.2" />
     
     <!-- Role Text -->
-    <text x="50%" y="248" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="18" font-weight="bold" fill="#00F2FF" letter-spacing="2">
-      SYSTEM.DEVELOPER | IOT · EMBEDDED · WEB DEV
+    <text x="590" y="248" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="bold" fill="#00F2FF" letter-spacing="2">
+      SYSTEM.DEVELOPER | IOT
+    </text>
+    <rect x="600" y="225" width="1" height="35" fill="#00F2FF" fill-opacity="0.2" />
+    <text x="610" y="248" text-anchor="start" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="bold" fill="#00F2FF" letter-spacing="2">
+      EMBEDDED · WEB DEV
     </text>
     
     <!-- Moving Scannerline -->
