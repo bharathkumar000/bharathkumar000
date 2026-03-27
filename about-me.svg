@@ -9,9 +9,9 @@
       <stop offset="100%" stop-color="#040404" />
     </radialGradient>
     <linearGradient id="grid-ab" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00F2FF" stop-opacity="0.04" />
-      <stop offset="50%" stop-color="#0066FF" stop-opacity="0.08" />
-      <stop offset="100%" stop-color="#00F2FF" stop-opacity="0.04" />
+      <stop offset="0%" stop-color="#00F2FF" stop-opacity="0.05" />
+      <stop offset="50%" stop-color="#7000FF" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#00F2FF" stop-opacity="0.05" />
     </linearGradient>
     <pattern id="grid-p" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="url(#grid-ab)" stroke-width="0.5" />
@@ -20,6 +20,7 @@
 
   <!-- Background -->
   <rect width="1200" height="420" fill="url(#bg-ab)" rx="12" />
+  <rect width="1200" height="420" fill="url(#grid-p)" rx="12" />
 
   <!-- Circuit Lines -->
   <g stroke="#00F2FF" stroke-opacity="0.1" stroke-width="1" fill="none">
@@ -29,12 +30,12 @@
     <path d="M1200 350 H1140 L1110 380 V420" />
     <path d="M200 0 V30 L230 60" />
     <path d="M1000 420 V390 L970 360" />
-    
-    <!-- New Background Circuits -->
     <path d="M400 0 V40 L370 70 H300" stroke-opacity="0.05" />
     <path d="M800 0 V40 L830 70 H900" stroke-opacity="0.05" />
     <path d="M0 200 H50 L80 170" stroke-opacity="0.05" />
     <path d="M1200 200 H1150 L1120 230" stroke-opacity="0.05" />
+    <path d="M600 0 V50 L570 80" stroke-opacity="0.03" />
+    <path d="M600 420 V370 L630 340" stroke-opacity="0.03" />
   </g>
 
   <!-- Animated Flow Drips -->
@@ -45,16 +46,22 @@
     <path d="M1200 60 H1120 L1090 90 H1000" stroke="#00ffff" stroke-width="2" stroke-dasharray="25, 150">
       <animate attributeName="stroke-dashoffset" from="-175" to="0" dur="3.5s" repeatCount="indefinite" />
     </path>
-    <path d="M200 0 V30 L230 60" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="10, 100">
+    <path d="M200 0 V30 L230 60" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="15, 120">
       <animate attributeName="stroke-dashoffset" from="110" to="0" dur="2s" repeatCount="indefinite" />
     </path>
-    <path d="M1000 420 V390 L970 360" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="10, 100">
+    <path d="M1000 420 V390 L970 360" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="15, 120">
       <animate attributeName="stroke-dashoffset" from="-110" to="0" dur="2.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M0 200 H50 L80 170" stroke="#00ffff" stroke-width="1" stroke-dasharray="10, 100" opacity="0.4">
+      <animate attributeName="stroke-dashoffset" from="130" to="0" dur="4s" repeatCount="indefinite" />
+    </path>
+    <path d="M1200 200 H1150 L1120 230" stroke="#00ffff" stroke-width="1" stroke-dasharray="10, 100" opacity="0.4">
+      <animate attributeName="stroke-dashoffset" from="-130" to="0" dur="4.5s" repeatCount="indefinite" />
     </path>
   </g>
 
   <!-- Pulsing Nodes -->
-  <g fill="#00ffff">
+  <g fill="#00ffff" fill-opacity="0.6">
     <circle cx="110" cy="90" r="2">
       <animate attributeName="r" values="2;4;2" dur="1.5s" repeatCount="indefinite" />
       <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite" />
@@ -63,7 +70,10 @@
       <animate attributeName="r" values="2;4;2" dur="1.2s" repeatCount="indefinite" />
       <animate attributeName="opacity" values="0.3;1;0.3" dur="1.2s" repeatCount="indefinite" />
     </circle>
+    <circle cx="80" cy="170" r="1.5" />
+    <circle cx="1120" cy="230" r="1.5" />
   </g>
+
 
   <!-- Title Bar Background -->
   <rect x="0" y="0" width="1200" height="50" fill="#0d0d1a" fill-opacity="0.8" rx="12" />
@@ -72,17 +82,8 @@
 
   <!-- Mac Buttons -->
   <circle cx="35" cy="25" r="8" fill="#ff5f56" />
-  <g stroke="#990000" stroke-width="1.5" stroke-linecap="round">
-    <line x1="31.5" y1="21.5" x2="38.5" y2="28.5" />
-    <line x1="38.5" y1="21.5" x2="31.5" y2="28.5" />
-  </g>
   <circle cx="65" cy="25" r="8" fill="#ffbd2e" />
-  <line x1="61" y1="25" x2="69" y2="25" stroke="#995700" stroke-width="1.5" stroke-linecap="round" />
   <circle cx="95" cy="25" r="8" fill="#27c93f" />
-  <g stroke="#006500" stroke-width="1.3" stroke-linecap="round">
-    <polyline points="91,22 91,28 97,28" fill="none" />
-    <polyline points="99,28 99,22 93,22" fill="none" />
-  </g>
 
   <!-- Terminal Title -->
   <text x="600" y="30" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" fill="#8b949e" letter-spacing="1">
@@ -97,52 +98,53 @@
     <path d="M1180 405 H1150 M1180 405 V375" />
   </g>
 
-  <!-- Field Labels and Values (Increased Sizes) -->
+  <!-- Field Labels and Values (Refined Alignment) -->
   <g font-family="'Courier New', Courier, monospace">
 
     <!-- NAME -->
-    <text x="80" y="110" fill="#00F2FF" font-size="22" font-weight="bold" letter-spacing="1">NAME</text>
+    <text x="80" y="110" fill="#00F2FF" font-size="20" font-weight="600" letter-spacing="1">NAME</text>
     <text x="310" y="110" fill="#8b949e" font-size="20">:</text>
-    <text x="340" y="110" fill="#c9d1d9" font-size="19">Bharath Kumar A</text>
+    <text x="340" y="110" fill="#c9d1d9" font-size="18">Bharath Kumar A</text>
 
     <!-- ROLE -->
-    <text x="80" y="155" fill="#00F2FF" font-size="22" font-weight="bold" letter-spacing="1">ROLE</text>
+    <text x="80" y="155" fill="#00F2FF" font-size="20" font-weight="600" letter-spacing="1">ROLE</text>
     <text x="310" y="155" fill="#8b949e" font-size="20">:</text>
-    <text x="340" y="155" fill="#c9d1d9" font-size="19">ECE Undergraduate | IoT Developer | Full Stack Web Dev</text>
+    <text x="340" y="155" fill="#c9d1d9" font-size="18">ECE Undergraduate | IoT Developer | Full Stack Web Dev</text>
 
     <!-- INSTITUTION -->
-    <text x="80" y="200" fill="#00F2FF" font-size="22" font-weight="bold" letter-spacing="1">INSTITUTION</text>
+    <text x="80" y="200" fill="#00F2FF" font-size="20" font-weight="600" letter-spacing="1">INSTITUTION</text>
     <text x="310" y="200" fill="#8b949e" font-size="20">:</text>
-    <text x="340" y="200" fill="#c9d1d9" font-size="19">Vidya Vardhaka College of Engineering</text>
+    <text x="340" y="200" fill="#c9d1d9" font-size="18">Vidya Vardhaka College of Engineering</text>
 
     <!-- STATUS -->
-    <text x="80" y="245" fill="#00F2FF" font-size="22" font-weight="bold" letter-spacing="1">STATUS</text>
+    <text x="80" y="245" fill="#00F2FF" font-size="20" font-weight="600" letter-spacing="1">STATUS</text>
     <text x="310" y="245" fill="#8b949e" font-size="20">:</text>
-    <text x="340" y="245" fill="#27c93f" font-size="19" font-weight="bold">[ ONLINE ]</text>
-    <text x="540" y="245" fill="#c9d1d9" font-size="18">– Continuously learning and innovating</text>
+    <text x="340" y="245" fill="#27c93f" font-size="18" font-weight="bold">[ ONLINE ]</text>
+    <text x="540" y="245" fill="#c9d1d9" font-size="16">– Continuously learning and innovating</text>
     <!-- Cursor -->
     <rect x="525" y="230" width="2" height="20" fill="#27c93f">
       <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
     </rect>
 
     <!-- INTERESTS -->
-    <text x="80" y="290" fill="#00F2FF" font-size="22" font-weight="bold" letter-spacing="1">INTERESTS</text>
+    <text x="80" y="290" fill="#00F2FF" font-size="20" font-weight="600" letter-spacing="1">INTERESTS</text>
     <text x="310" y="290" fill="#8b949e" font-size="20">:</text>
-    <text x="340" y="290" fill="#c9d1d9" font-size="19">IoT · Embedded Systems · C/C++ · Python · React · UI/UX</text>
+    <text x="340" y="290" fill="#c9d1d9" font-size="18">IoT · Embedded Systems · C/C++ · Python · React · UI/UX</text>
 
     <!-- HARDWARE -->
-    <text x="80" y="335" fill="#00F2FF" font-size="22" font-weight="bold" letter-spacing="1">HARDWARE</text>
+    <text x="80" y="335" fill="#00F2FF" font-size="20" font-weight="600" letter-spacing="1">HARDWARE</text>
     <text x="310" y="335" fill="#8b949e" font-size="20">:</text>
-    <text x="340" y="335" fill="#c9d1d9" font-size="19">Arduino Uno · ESP32 · Raspberry Pi Pico</text>
+    <text x="340" y="335" fill="#c9d1d9" font-size="18">Arduino Uno · ESP32 · Raspberry Pi Pico</text>
 
     <!-- MISSION -->
-    <text x="80" y="380" fill="#00F2FF" font-size="22" font-weight="bold" letter-spacing="1">MISSION</text>
+    <text x="80" y="380" fill="#00F2FF" font-size="20" font-weight="600" letter-spacing="1">MISSION</text>
     <text x="310" y="380" fill="#8b949e" font-size="20">:</text>
-    <text x="340" y="380" fill="#c9d1d9" font-size="19">Merging hardware &amp; software to solve real-world problems</text>
+    <text x="340" y="380" fill="#c9d1d9" font-size="18">Merging hardware &amp; software to solve real-world problems</text>
   </g>
 
   <!-- Bottom Border Glow -->
   <rect x="0" y="418" width="1200" height="2" fill="#00F2FF" fill-opacity="0.15" rx="1">
     <animate attributeName="fill-opacity" values="0.1;0.3;0.1" dur="3s" repeatCount="indefinite" />
   </rect>
+
 </svg>

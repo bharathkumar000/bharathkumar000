@@ -60,8 +60,10 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=bharathkumar000&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0d1117&title_color=00ffff&text_color=c9d1d9&icon_color=00ffff" width="48%" />
-  
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=bharathkumar000&theme=chartreuse-dark&hide_border=true&background=0d1117&ring=00ffff&fire=ff6b6b&currStreakLabel=00ffff" width="48%" />
+</div>
+
+<div align="center">
+  <img src="streak-stats.svg" width="100%"/>
 </div>
   
 # 🏆 <span style="color: #00F2FF;">MISSION_LOG / ACHIEVEMENTS</span>
