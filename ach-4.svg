@@ -26,12 +26,19 @@
     <path d="M0 30 H40 L60 50 H150" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="15, 100">
       <animate attributeName="stroke-dashoffset" from="115" to="0" dur="3.5s" repeatCount="indefinite" />
     </path>
+    <!-- New Data Flow -->
+    <path d="M200 0 V50 L170 80 H50" stroke="#00ffff" stroke-width="1" stroke-dasharray="10, 80" opacity="0.3">
+      <animate attributeName="stroke-dashoffset" from="130" to="0" dur="2s" repeatCount="indefinite" />
+    </path>
+    <path d="M550 180 H450 L420 150" stroke="#00ffff" stroke-width="1.2" stroke-dasharray="15, 100" opacity="0.4">
+      <animate attributeName="stroke-dashoffset" from="-100" to="0" dur="4s" repeatCount="indefinite" />
+    </path>
   </g>
 
-  <text x="25" y="52" font-family="sans-serif" font-size="18">🛡️</text>
-  <text x="60" y="52" font-family="'Courier New', monospace" font-size="28" font-weight="bold" fill="#00F2FF" filter="url(#glow-4)">Semi-Finalist — Hack the Hackers</text>
+  <text x="25" y="54" font-family="sans-serif" font-size="20">🛡️</text>
+  <text x="65" y="54" font-family="'Courier New', monospace" font-size="24" font-weight="bold" fill="#00F2FF" filter="url(#glow-4)">Semi-Finalist — Hack the Hackers</text>
   
-  <text x="25" y="90" font-family="monospace" font-size="16" fill="#8b949e">📂</text>
+  <text x="25" y="92" font-family="monospace" font-size="16" fill="#8b949e">📂</text>
   <text x="55" y="90" font-family="'Courier New', monospace" font-size="16" fill="#58a6ff" text-decoration="underline">tls-auditor</text>
   <text x="175" y="90" font-family="monospace" font-size="16" fill="#c9d1d9" font-weight="bold">· GSSSIETW MYSURU</text>
   

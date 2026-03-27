@@ -28,12 +28,19 @@
     <path d="M0 160 H40 L60 140 H180" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="20, 150">
       <animate attributeName="stroke-dashoffset" from="170" to="0" dur="4.5s" repeatCount="indefinite" />
     </path>
+    <!-- New Data Flow -->
+    <path d="M400 0 V40 L370 70 H250" stroke="#00ffff" stroke-width="1" stroke-dasharray="15, 100" opacity="0.3">
+      <animate attributeName="stroke-dashoffset" from="110" to="0" dur="2s" repeatCount="indefinite" />
+    </path>
+    <path d="M550 150 H490 L460 120" stroke="#00ffff" stroke-width="0.8" stroke-dasharray="10, 90" opacity="0.4">
+      <animate attributeName="stroke-dashoffset" from="-100" to="0" dur="3s" repeatCount="indefinite" />
+    </path>
   </g>
 
-  <text x="25" y="52" font-family="sans-serif" font-size="18">🥉</text>
-  <text x="60" y="52" font-family="'Courier New', monospace" font-size="28" font-weight="bold" fill="#00F2FF" filter="url(#glow-2)">3rd PLACE — State Level Hackathon</text>
+  <text x="25" y="54" font-family="sans-serif" font-size="20">🥉</text>
+  <text x="65" y="54" font-family="'Courier New', monospace" font-size="24" font-weight="bold" fill="#00F2FF" filter="url(#glow-2)">3rd PLACE — State Level Hackathon</text>
   
-  <text x="25" y="90" font-family="monospace" font-size="16" fill="#8b949e">📂</text>
+  <text x="25" y="92" font-family="monospace" font-size="16" fill="#8b949e">📂</text>
   <text x="55" y="90" font-family="'Courier New', monospace" font-size="16" fill="#58a6ff" text-decoration="underline">RESQLINK</text>
   <text x="150" y="90" font-family="monospace" font-size="16" fill="#c9d1d9" font-weight="bold">· PESCE MANDYA</text>
   

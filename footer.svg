@@ -8,6 +8,10 @@
     <pattern id="footer-grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00F2FF" stroke-width="0.5" stroke-opacity="0.2" />
     </pattern>
+    <filter id="glow-f">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
   </defs>
 
   <!-- High Intensity Background Rects -->
@@ -48,6 +52,18 @@
     <path d="M1200 80 H1080 L1040 40 H900 L860 80 H720" stroke="#00ffff" stroke-width="2.5" stroke-dasharray="30, 150">
       <animate attributeName="stroke-dashoffset" from="-180" to="0" dur="3s" repeatCount="indefinite" />
     </path>
+  </g>
+
+  <!-- Central Message -->
+  <g font-family="'Courier New', monospace" text-anchor="middle">
+    <text x="600" y="55" fill="#00F2FF" font-size="22" font-weight="bold" letter-spacing="3" filter="url(#glow-f)">
+      [ THANKS FOR VISITING ]
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite" />
+    </text>
+    <text x="600" y="85" fill="#00FF41" font-size="16" font-weight="bold" letter-spacing="2">
+      > INITIALIZING COLLABORATION PROTOCOL...
+      <animate attributeName="opacity" values="0;1;1;0" dur="2s" repeatCount="indefinite" />
+    </text>
   </g>
 
   <!-- Pulsing Nodes -->
