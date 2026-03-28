@@ -1,0 +1,62 @@
+<svg width="550" height="200" viewBox="0 0 550 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg-1" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#001529" />
+      <stop offset="100%" stop-color="#040404" />
+    </radialGradient>
+    <pattern id="grid-1" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00F2FF" stroke-width="0.5" stroke-opacity="0.05" />
+    </pattern>
+    <filter id="glow-1">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="550" height="200" fill="url(#bg-1)" rx="8" stroke="#00F2FF" stroke-opacity="0.15" />
+  
+  <!-- Circuit & Flow -->
+  <g stroke="#00F2FF" stroke-opacity="0.08" stroke-width="1" fill="none">
+    <path d="M0 40 H40 L60 60 H120" />
+    <path d="M550 160 H510 L490 140 H380" />
+    <path d="M300 0 V30 L270 60" stroke-opacity="0.05" />
+    <path d="M100 200 V170 L130 140" stroke-opacity="0.05" />
+    <path d="M450 0 V20 L470 40 H550" stroke-opacity="0.05" />
+  </g>
+  
+  <g fill="none">
+    <path d="M0 40 H40 L60 60 H120" stroke="#00ffff" stroke-width="2" stroke-dasharray="15, 100">
+      <animate attributeName="stroke-dashoffset" from="115" to="0" dur="3s" repeatCount="indefinite" />
+    </path>
+    <path d="M550 160 H510 L490 140 H380" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="20, 150">
+      <animate attributeName="stroke-dashoffset" from="-170" to="0" dur="4s" repeatCount="indefinite" />
+    </path>
+    <path d="M450 0 V20 L470 40 H550" stroke="#00ffff" stroke-width="1" stroke-dasharray="10, 80">
+      <animate attributeName="stroke-dashoffset" from="90" to="0" dur="2.5s" repeatCount="indefinite" />
+    </path>
+    <!-- New Data Flow -->
+    <path d="M150 0 V40 L180 70 H300" stroke="#00ffff" stroke-width="0.8" stroke-dasharray="5, 60" opacity="0.3">
+      <animate attributeName="stroke-dashoffset" from="105" to="0" dur="1.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M0 120 H60 L90 150 V200" stroke="#00ffff" stroke-width="1" stroke-dasharray="20, 120" opacity="0.4">
+      <animate attributeName="stroke-dashoffset" from="180" to="0" dur="5s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- Content -->
+  <text x="25" y="54" font-family="sans-serif" font-size="20">🥈</text>
+  <text x="65" y="54" font-family="'Courier New', monospace" font-size="24" font-weight="bold" fill="#00F2FF" filter="url(#glow-1)">2nd PLACE — Parivartan 24H</text>
+  
+  <text x="25" y="92" font-family="monospace" font-size="16" fill="#8b949e">📂</text>
+  <text x="55" y="90" font-family="'Courier New', monospace" font-size="16" fill="#58a6ff" text-decoration="underline">mysurumarga</text>
+  <text x="175" y="90" font-family="monospace" font-size="16" fill="#c9d1d9" font-weight="bold">· VVCE MYSURU</text>
+  
+  <text x="25" y="125" font-family="sans-serif" font-size="15" fill="#8b949e">Digital bridge for micro-enterprises featuring</text>
+  <text x="25" y="145" font-family="sans-serif" font-size="15" fill="#8b949e">AI bots and decentralized models.</text>
+
+  <rect x="25" y="165" width="60" height="22" rx="4" fill="#412991" />
+  <text x="55" y="180" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#fff">AI BOT</text>
+  <rect x="95" y="165" width="85" height="22" rx="4" fill="#3C3C3D" />
+  <text x="137" y="180" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#fff">ETHEREUM</text>
+  <rect x="190" y="165" width="60" height="22" rx="4" fill="#F24E1E" />
+  <text x="220" y="180" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#fff">FIGMA</text>
+</svg>

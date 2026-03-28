@@ -13,14 +13,13 @@
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="url(#grid-grad)" stroke-width="0.5" />
     </pattern>
     <radialGradient id="bg-glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-      <stop offset="0%" stop-color="#180030" />
-      <stop offset="100%" stop-color="#080808" />
+      <stop offset="0%" stop-color="#001529" />
+      <stop offset="100%" stop-color="#040404" />
     </radialGradient>
   </defs>
 
   <!-- Background -->
   <rect width="1200" height="400" fill="url(#bg-glow)" />
-  <rect width="1200" height="400" fill="url(#grid)" />
 
   <!-- Abstract Circuit Lines -->
   <g stroke="#00F2FF" stroke-opacity="0.12" stroke-width="1" fill="none">
