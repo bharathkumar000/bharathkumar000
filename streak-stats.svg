@@ -96,16 +96,16 @@
   <g>
     <!-- Big Number -->
     <text x="200" y="145" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="72" font-weight="900" fill="#39FF14" filter="url(#glow-streak)">
-      684
+      686
     </text>
 
     <!-- Label -->
-    <text x="200" y="185" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="bold" fill="#39FF14" letter-spacing="1">
+    <text x="200" y="190" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="22" font-weight="bold" fill="#39FF14" letter-spacing="1">
       Total Contributions
     </text>
 
     <!-- Date Range -->
-    <text x="200" y="215" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="14" fill="#8b949e">
+    <text x="200" y="222" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="18" fill="#8b949e">
       Jan 7 - Present
     </text>
   </g>
@@ -149,17 +149,17 @@
 
     <!-- Big Number -->
     <text x="600" y="155" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="52" font-weight="900" fill="#FFFFFF" filter="url(#glow-streak)">
-      19
+      21
     </text>
 
     <!-- Label -->
-    <text x="600" y="230" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="bold" fill="#00F2FF" letter-spacing="1" filter="url(#glow-streak)">
+    <text x="600" y="235" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="22" font-weight="bold" fill="#00F2FF" letter-spacing="1" filter="url(#glow-streak)">
       Current Streak
     </text>
 
     <!-- Date Range -->
-    <text x="600" y="255" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="14" fill="#8b949e">
-      Mar 8 - Mar 26
+    <text x="600" y="265" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="18" fill="#8b949e">
+      Mar 8 - Mar 28
     </text>
   </g>
 
@@ -171,12 +171,12 @@
     </text>
 
     <!-- Label -->
-    <text x="1000" y="185" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="bold" fill="#39FF14" letter-spacing="1">
+    <text x="1000" y="190" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="22" font-weight="bold" fill="#39FF14" letter-spacing="1">
       Longest Streak
     </text>
 
     <!-- Date Range -->
-    <text x="1000" y="215" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="14" fill="#8b949e">
+    <text x="1000" y="222" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="18" fill="#8b949e">
       Jan 18 - Mar 6
     </text>
   </g>
