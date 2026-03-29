@@ -77,7 +77,16 @@
 # 🚀 <span style="color: #00F2FF;">REPOS_DEEP_DIVE / FEATURED_PROJECTS</span>
 
 <div align="center">
-  <img src="pinned-repos.svg" width="100%"/>
+  <table border="0">
+    <tr>
+      <td><a href="https://github.com/bharathkumar000/connect-and-prep"><img src="repo-card-0.svg" width="100%"></a></td>
+      <td><a href="https://github.com/bharathkumar000/RESQLINK"><img src="repo-card-1.svg" width="100%"></a></td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/bharathkumar000/FESTFLOW"><img src="repo-card-2.svg" width="100%"></a></td>
+      <td><a href="https://github.com/bharathkumar000/mysurumarga"><img src="repo-card-3.svg" width="100%"></a></td>
+    </tr>
+  </table>
 </div>
 
 
