@@ -33,5 +33,5 @@ jobs:
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          git add streak-stats.svg pinned-repos.svg
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update streak and repo stats [skip ci]" && git push)
+          git add streak-stats.svg repo-card-*.svg
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update streak and repo card stats [skip ci]" && git push)
