@@ -6,6 +6,7 @@ on:
   push:
     branches:
       - main
+      - v1
   workflow_dispatch: # Manual trigger
 
 jobs:

@@ -5,7 +5,7 @@ import urllib.request
 from datetime import datetime, timedelta
 
 # Configuration
-USERNAME = "bharathkumar000"
+USERNAME = os.getenv("GITHUB_REPOSITORY_OWNER", "bharathkumar000")
 SVG_PATH = "streak-stats.svg"
 TOKEN = os.getenv("GITHUB_TOKEN")
 
