@@ -48,14 +48,6 @@
   <img src="https://img.shields.io/badge/Embedded_C-00599C?style=for-the-badge&logo=c&logoColor=white" />
 </p>
 
-
-## 🚀 Featured Projects:
-<p align="center">
-FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspberry Pi Pico and GPS.
-<br>MADU MAGA – Real-time collaborative task management system and a todo app.
-</p>
-
-
 # 📊 GitHub Stats:
 
 <div align="center">
@@ -79,6 +71,13 @@ FESTFLOW – Smart wearable IoT safety device for crowd monitoring using Raspber
       <td><a href="https://github.com/bharathkumar000/tls-auditor"><img src="ach-4.svg" width="100%"></a></td>
     </tr>
   </table>
+</div>
+
+
+# 🚀 <span style="color: #00F2FF;">REPOS_DEEP_DIVE / FEATURED_PROJECTS</span>
+
+<div align="center">
+  <img src="pinned-repos.svg" width="100%"/>
 </div>
 
 

@@ -23,6 +23,32 @@ query($username: String!) {
         }
       }
     }
+    pinnedItems(first: 6, types: REPOSITORY) {
+      nodes {
+        ... on REPOSITORY {
+          name
+          description
+          stargazerCount
+          forkCount
+          primaryLanguage {
+            name
+            color
+          }
+        }
+      }
+    }
+    repositories(first: 6, orderBy: {field: STARGAZERS, direction: DESC}) {
+      nodes {
+        name
+        description
+        stargazerCount
+        forkCount
+        primaryLanguage {
+          name
+          color
+        }
+      }
+    }
   }
 }
 """
@@ -109,12 +135,17 @@ def calculate_streaks(data):
                 else:
                     break
     
+    # Get Repo Data
+    pinned = data["data"]["user"]["pinnedItems"]["nodes"]
+    repos = pinned if len(pinned) > 0 else data["data"]["user"]["repositories"]["nodes"]
+    
     return {
         "total": total_contributions,
         "current": current_streak,
         "current_range": f"{format_date(curr_start)} - {format_date(curr_end)}" if curr_start else "No active streak",
         "longest": longest_streak,
-        "longest_range": f"{format_date(longest_streak_start)} - {format_date(longest_streak_end)}" if longest_streak_start else "N/A"
+        "longest_range": f"{format_date(longest_streak_start)} - {format_date(longest_streak_end)}" if longest_streak_start else "N/A",
+        "repos": repos[:6]
     }
 
 def format_date(date_str):
@@ -151,6 +182,49 @@ def update_svg(stats):
     with open(SVG_PATH, "w") as f:
         f.write(content)
 
+def update_pinned_repos(repos):
+    try:
+        with open("pinned-repos.svg", "r") as f:
+            content = f.read()
+
+        for i, repo in enumerate(repos):
+            group_pattern = rf'<g id="repo-{i}"[^>]*>(.*?)</g>'
+            match = re.search(group_pattern, content, re.DOTALL)
+            if match:
+                group_content = match.group(0)
+                
+                # Name
+                group_content = re.sub(r'(fill="#00BFFF"[^>]*>)\s*[^<]+\s*(</text>)', rf'\g<1>{repo["name"]}\g<2>', group_content)
+                
+                # Description (Truncate if too long)
+                desc = repo["description"] or "No description provided."
+                if len(desc) > 65: desc = desc[:62] + "..."
+                group_content = re.sub(r'(y="70"[^>]*>)\s*[^<]+\s*(</text>)', rf'\g<1>{desc}\g<2>', group_content)
+                
+                # Language
+                lang = repo["primaryLanguage"]["name"] if repo["primaryLanguage"] else "None"
+                color = repo["primaryLanguage"]["color"] if repo["primaryLanguage"] else "#8B949E"
+                group_content = re.sub(r'(cx="20"[^>]*fill=")[^"]+', rf'\g<1>{color}', group_content)
+                group_content = re.sub(r'(y="115"[^>]*fill="#C9D1D9"[^>]*>)\s*[^<]+\s*(</text>)', rf'\g<1>{lang}\g<2>', group_content)
+                
+                # Stars
+                group_content = re.sub(r'★\s*\d+', f'★ {repo["stargazerCount"]}', group_content)
+                
+                # Forks (not all have it in template, only if present)
+                if repo["forkCount"] > 0 and '⑂' in group_content:
+                    group_content = re.sub(r'⑂\s*\d+', f'⑂ {repo["forkCount"]}', group_content)
+                elif repo["forkCount"] > 0:
+                     # Add fork count if not present but we have forks? 
+                     # For simplicity, we just update if the template had it.
+                     pass
+
+                content = content.replace(match.group(0), group_content)
+
+        with open("pinned-repos.svg", "w") as f:
+            f.write(content)
+    except FileNotFoundError:
+        print("pinned-repos.svg not found, skipping.")
+
 if __name__ == "__main__":
     if not TOKEN:
         print("GITHUB_TOKEN not found.")
@@ -160,4 +234,5 @@ if __name__ == "__main__":
     stats = calculate_streaks(data)
     print(f"Stats calculated: {stats}")
     update_svg(stats)
-    print("SVG updated successfully.")
+    update_pinned_repos(stats["repos"])
+    print("SVGs updated successfully.")
