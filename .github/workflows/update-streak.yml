@@ -1,0 +1,37 @@
+name: Update GitHub Streak Stats
+
+on:
+  schedule:
+    - cron: '0 */3 * * *' # Every 3 hours
+  push:
+    branches:
+      - main
+      - v1
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run Update Script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_stats.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add streak-stats.svg
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update streak stats [skip ci]" && git push)
