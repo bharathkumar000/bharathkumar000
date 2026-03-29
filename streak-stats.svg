@@ -95,9 +95,7 @@
   <!-- ======= SECTION 1: TOTAL CONTRIBUTIONS (Left) ======= -->
   <g>
     <!-- Big Number -->
-    <text x="200" y="145" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="72" font-weight="900" fill="#39FF14" filter="url(#glow-streak)">
-      686
-    </text>
+    <text x="200" y="145" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="72" font-weight="900" fill="#39FF14" filter="url(#glow-streak)">706</text>
 
     <!-- Label -->
     <text x="200" y="190" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="22" font-weight="bold" fill="#39FF14" letter-spacing="1">
@@ -105,9 +103,7 @@
     </text>
 
     <!-- Date Range -->
-    <text x="200" y="222" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="18" fill="#8b949e">
-      Jan 7 - Present
-    </text>
+    <text x="200" y="222" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="18" fill="#8b949e">Jan 1, 2026 - Present</text>
   </g>
 
   <!-- ======= SECTION 2: CURRENT STREAK (Center) ======= -->
@@ -148,9 +144,7 @@
     </g>
 
     <!-- Big Number -->
-    <text x="600" y="155" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="52" font-weight="900" fill="#FFFFFF" filter="url(#glow-streak)">
-      21
-    </text>
+    <text x="600" y="155" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="52" font-weight="900" fill="#FFFFFF" filter="url(#glow-streak)">2</text>
 
     <!-- Label -->
     <text x="600" y="235" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="22" font-weight="bold" fill="#00F2FF" letter-spacing="1" filter="url(#glow-streak)">
@@ -158,17 +152,13 @@
     </text>
 
     <!-- Date Range -->
-    <text x="600" y="265" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="18" fill="#8b949e">
-      Mar 8 - Mar 28
-    </text>
+    <text x="600" y="265" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="18" fill="#8b949e">Mar 28 - Mar 29</text>
   </g>
 
   <!-- ======= SECTION 3: LONGEST STREAK (Right) ======= -->
   <g>
     <!-- Big Number -->
-    <text x="1000" y="145" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="72" font-weight="900" fill="#39FF14" filter="url(#glow-streak)">
-      48
-    </text>
+    <text x="1000" y="145" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="72" font-weight="900" fill="#39FF14" filter="url(#glow-streak)">47</text>
 
     <!-- Label -->
     <text x="1000" y="190" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="22" font-weight="bold" fill="#39FF14" letter-spacing="1">
@@ -176,9 +166,7 @@
     </text>
 
     <!-- Date Range -->
-    <text x="1000" y="222" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="18" fill="#8b949e">
-      Jan 18 - Mar 6
-    </text>
+    <text x="1000" y="222" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="18" fill="#8b949e">Jan 19 - Mar 6</text>
   </g>
 
   <!-- Scanning Bar -->
