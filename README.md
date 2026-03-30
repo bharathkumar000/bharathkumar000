@@ -4,7 +4,7 @@
 </div>
 
 <div align="center">
-<h1> ⚡ Welcome to my Digital Workspace ⚡ </h1>
+<h1> ⚡ Welcome to Digital Workspace ⚡ </h1>
 </div>
 <p align="center">
 <a href="https://www.instagram.com/_unknown.06__?igsh=OHgwdTE0djdvMzFq"><img src="https://skillicons.dev/icons?i=instagram&theme=dark" alt="Instagram" width="48" height="48"/></a>
