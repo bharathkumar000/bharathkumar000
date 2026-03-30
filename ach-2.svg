@@ -1,0 +1,56 @@
+<svg width="550" height="200" viewBox="0 0 550 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg-2" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#001529" />
+      <stop offset="100%" stop-color="#040404" />
+    </radialGradient>
+    <pattern id="grid-2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00F2FF" stroke-width="0.5" stroke-opacity="0.05" />
+    </pattern>
+    <filter id="glow-2">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="550" height="200" fill="url(#bg-2)" rx="8" stroke="#00F2FF" stroke-opacity="0.15" />
+
+  <g stroke="#00F2FF" stroke-opacity="0.08" stroke-width="1" fill="none">
+    <path d="M550 40 H510 L490 60 H430" />
+    <path d="M0 160 H40 L60 140 H180" />
+    <path d="M200 0 V30 L170 60" stroke-opacity="0.05" />
+    <path d="M400 200 V170 L430 140" stroke-opacity="0.05" />
+  </g>
+  
+  <g fill="none">
+    <path d="M550 40 H510 L490 60 H430" stroke="#00ffff" stroke-width="2" stroke-dasharray="15, 100">
+      <animate attributeName="stroke-dashoffset" from="-115" to="0" dur="3.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M0 160 H40 L60 140 H180" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="20, 150">
+      <animate attributeName="stroke-dashoffset" from="170" to="0" dur="4.5s" repeatCount="indefinite" />
+    </path>
+    <!-- New Data Flow -->
+    <path d="M400 0 V40 L370 70 H250" stroke="#00ffff" stroke-width="1" stroke-dasharray="15, 100" opacity="0.3">
+      <animate attributeName="stroke-dashoffset" from="110" to="0" dur="2s" repeatCount="indefinite" />
+    </path>
+    <path d="M550 150 H490 L460 120" stroke="#00ffff" stroke-width="0.8" stroke-dasharray="10, 90" opacity="0.4">
+      <animate attributeName="stroke-dashoffset" from="-100" to="0" dur="3s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <text x="25" y="54" font-family="sans-serif" font-size="20">🥉</text>
+  <text x="65" y="54" font-family="'Courier New', monospace" font-size="24" font-weight="bold" fill="#00F2FF" filter="url(#glow-2)">3rd PLACE — State Level Hackathon</text>
+  
+  <text x="25" y="92" font-family="monospace" font-size="16" fill="#8b949e">📂</text>
+  <text x="55" y="90" font-family="'Courier New', monospace" font-size="16" fill="#00BFFF" text-decoration="underline">RESQLINK</text>
+  <text x="150" y="90" font-family="monospace" font-size="16" fill="#c9d1d9" font-weight="bold">· PESCE MANDYA</text>
+  
+  <text x="25" y="125" font-family="sans-serif" font-size="15" fill="#8b949e">IoT-based solution for real-time natural disaster</text>
+  <text x="25" y="145" font-family="sans-serif" font-size="15" fill="#8b949e">monitoring and automated alerts.</text>
+
+  <rect x="25" y="165" width="75" height="22" rx="4" fill="#FFCA28" />
+  <text x="62" y="180" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#000">FIREBASE</text>
+  <rect x="110" y="165" width="100" height="22" rx="4" fill="#4285F4" />
+  <text x="160" y="180" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#fff">GOOGLE MAPS</text>
+  <rect x="220" y="165" width="70" height="22" rx="4" fill="#339933" />
+  <text x="255" y="180" text-anchor="middle" font-family="monospace" font-size="10" font-weight="bold" fill="#fff">NODE.JS</text>
+</svg>

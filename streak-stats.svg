@@ -1,0 +1,183 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg-streak" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#001529" />
+      <stop offset="100%" stop-color="#040404" />
+    </radialGradient>
+    <linearGradient id="grid-streak" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FF" stop-opacity="0.04" />
+      <stop offset="50%" stop-color="#7000FF" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#00F2FF" stop-opacity="0.04" />
+    </linearGradient>
+    <pattern id="grid-streak-p" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="url(#grid-streak)" stroke-width="0.5" />
+    </pattern>
+    <filter id="glow-streak" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="glow-big" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Cyan Ring Gradient -->
+    <linearGradient id="ring-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00F2FF" />
+      <stop offset="50%" stop-color="#00E5FF" />
+      <stop offset="100%" stop-color="#00D4FF" />
+    </linearGradient>
+
+    <!-- Fire Gradient -->
+    <linearGradient id="fire-grad" x1="0.5" y1="1" x2="0.5" y2="0">
+      <stop offset="0%" stop-color="#FF6B6B" />
+      <stop offset="60%" stop-color="#FF8E53" />
+      <stop offset="100%" stop-color="#FFA726" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="320" fill="url(#bg-streak)" rx="12" />
+  <rect width="1200" height="320" fill="url(#grid-streak-p)" rx="12" />
+
+  <!-- Circuit Lines -->
+  <g stroke="#00F2FF" stroke-opacity="0.08" stroke-width="1" fill="none">
+    <path d="M0 60 H70 L100 90 H200" />
+    <path d="M1200 60 H1130 L1100 90 H1000" />
+    <path d="M0 260 H50 L80 290 V320" />
+    <path d="M1200 260 H1150 L1120 290 V320" />
+    <path d="M400 0 V30 L430 60 H480" />
+    <path d="M800 320 V290 L770 260 H720" />
+  </g>
+
+  <!-- Animated Flow -->
+  <path d="M0 60 H70 L100 90 H200" stroke="#00ffff" stroke-width="2" stroke-dasharray="20, 140" fill="none">
+    <animate attributeName="stroke-dashoffset" from="160" to="0" dur="3s" repeatCount="indefinite" />
+  </path>
+  <path d="M1200 60 H1130 L1100 90 H1000" stroke="#00ffff" stroke-width="2" stroke-dasharray="20, 140" fill="none">
+    <animate attributeName="stroke-dashoffset" from="-160" to="0" dur="3.5s" repeatCount="indefinite" />
+  </path>
+  <path d="M400 0 V30 L430 60 H480" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="15, 120" fill="none">
+    <animate attributeName="stroke-dashoffset" from="135" to="0" dur="2.5s" repeatCount="indefinite" />
+  </path>
+  <path d="M800 320 V290 L770 260 H720" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="15, 120" fill="none">
+    <animate attributeName="stroke-dashoffset" from="-135" to="0" dur="2.8s" repeatCount="indefinite" />
+  </path>
+
+  <!-- Pulsing Nodes -->
+  <circle cx="100" cy="90" r="2" fill="#00ffff">
+    <animate attributeName="r" values="2;4;2" dur="1.5s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="1100" cy="90" r="2" fill="#00ffff">
+    <animate attributeName="r" values="2;4;2" dur="1.2s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="430" cy="60" r="1.5" fill="#00ffff">
+    <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="770" cy="260" r="1.5" fill="#00ffff">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- HUD Brackets -->
+  <g stroke="#00F2FF" stroke-width="1.5" fill="none" stroke-opacity="0.25">
+    <path d="M20 20 H55 M20 20 V55" />
+    <path d="M1180 20 H1145 M1180 20 V55" />
+    <path d="M20 300 H55 M20 300 V265" />
+    <path d="M1180 300 H1145 M1180 300 V265" />
+  </g>
+
+  <!-- ======= DIVIDER LINES (Vertical separators) ======= -->
+  <line x1="400" y1="70" x2="400" y2="250" stroke="#8b949e" stroke-opacity="0.2" stroke-width="1" />
+  <line x1="800" y1="70" x2="800" y2="250" stroke="#8b949e" stroke-opacity="0.2" stroke-width="1" />
+
+  <!-- ======= SECTION 1: TOTAL CONTRIBUTIONS (Left) ======= -->
+  <g>
+    <!-- Big Number -->
+    <text x="200" y="145" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="72" font-weight="900" fill="#39FF14" filter="url(#glow-streak)">705</text>
+
+    <!-- Label -->
+    <text x="200" y="190" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="22" font-weight="bold" fill="#39FF14" letter-spacing="1">
+      Total Contributions
+    </text>
+
+    <!-- Date Range -->
+    <text x="200" y="222" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="18" fill="#8b949e">Jan 1, 2026 - Present</text>
+  </g>
+
+  <!-- ======= SECTION 2: CURRENT STREAK (Center) ======= -->
+  <g>
+    <!-- Outer Ring Background (Track) -->
+    <circle cx="600" cy="140" r="65" fill="none" stroke="#1a2a3a" stroke-width="8" />
+
+    <!-- Animated Cyan Ring (Progress Arc) -->
+    <circle cx="600" cy="140" r="65" fill="none" stroke="url(#ring-grad)" stroke-width="8" stroke-linecap="round"
+      stroke-dasharray="340, 408" stroke-dashoffset="0" transform="rotate(-90 600 140)">
+      <animate attributeName="stroke-dashoffset" values="408;68;408" dur="8s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Glow Ring -->
+    <circle cx="600" cy="140" r="65" fill="none" stroke="#00F2FF" stroke-width="12" stroke-opacity="0.08" filter="url(#glow-big)"
+      stroke-dasharray="340, 408" stroke-dashoffset="0" transform="rotate(-90 600 140)">
+      <animate attributeName="stroke-dashoffset" values="408;68;408" dur="8s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Fire Icon -->
+    <g transform="translate(600, 80)">
+      <!-- Outer flame -->
+      <path d="M0,-18 C-4,-14 -10,-6 -10,2 C-10,8 -6,14 0,16 C6,14 10,8 10,2 C10,-6 4,-14 0,-18Z" fill="url(#fire-grad)" opacity="0.9">
+        <animate attributeName="d" 
+          values="M0,-18 C-4,-14 -10,-6 -10,2 C-10,8 -6,14 0,16 C6,14 10,8 10,2 C10,-6 4,-14 0,-18Z;
+                  M0,-20 C-5,-15 -11,-5 -11,3 C-11,9 -6,15 0,17 C6,15 11,9 11,3 C11,-5 5,-15 0,-20Z;
+                  M0,-18 C-4,-14 -10,-6 -10,2 C-10,8 -6,14 0,16 C6,14 10,8 10,2 C10,-6 4,-14 0,-18Z"
+          dur="1s" repeatCount="indefinite" />
+      </path>
+      <!-- Inner flame -->
+      <path d="M0,-8 C-2,-5 -5,0 -5,4 C-5,7 -3,10 0,11 C3,10 5,7 5,4 C5,0 2,-5 0,-8Z" fill="#FFEB3B" opacity="0.85">
+        <animate attributeName="d" 
+          values="M0,-8 C-2,-5 -5,0 -5,4 C-5,7 -3,10 0,11 C3,10 5,7 5,4 C5,0 2,-5 0,-8Z;
+                  M0,-10 C-3,-6 -6,0 -6,5 C-6,8 -3,11 0,12 C3,11 6,8 6,5 C6,0 3,-6 0,-10Z;
+                  M0,-8 C-2,-5 -5,0 -5,4 C-5,7 -3,10 0,11 C3,10 5,7 5,4 C5,0 2,-5 0,-8Z"
+          dur="0.8s" repeatCount="indefinite" />
+      </path>
+    </g>
+
+    <!-- Big Number -->
+    <text x="600" y="155" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="52" font-weight="900" fill="#FFFFFF" filter="url(#glow-streak)">3</text>
+
+    <!-- Label -->
+    <text x="600" y="235" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="22" font-weight="bold" fill="#00F2FF" letter-spacing="1" filter="url(#glow-streak)">
+      Current Streak
+    </text>
+
+    <!-- Date Range -->
+    <text x="600" y="265" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="18" fill="#8b949e">Mar 28 - Mar 30</text>
+  </g>
+
+  <!-- ======= SECTION 3: LONGEST STREAK (Right) ======= -->
+  <g>
+    <!-- Big Number -->
+    <text x="1000" y="145" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="72" font-weight="900" fill="#39FF14" filter="url(#glow-streak)">47</text>
+
+    <!-- Label -->
+    <text x="1000" y="190" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="22" font-weight="bold" fill="#39FF14" letter-spacing="1">
+      Longest Streak
+    </text>
+
+    <!-- Date Range -->
+    <text x="1000" y="222" text-anchor="middle" font-family="'Segoe UI', sans-serif" font-size="18" fill="#8b949e">Jan 19 - Mar 6</text>
+  </g>
+
+  <!-- Scanning Bar -->
+  <rect x="40" y="40" width="1120" height="1" fill="#00F2FF" fill-opacity="0.04">
+    <animate attributeName="y" from="20" to="300" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="fill-opacity" values="0;0.06;0" dur="5s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Bottom Glow -->
+  <rect x="0" y="318" width="1200" height="2" fill="#00F2FF" fill-opacity="0.12" rx="1">
+    <animate attributeName="fill-opacity" values="0.08;0.2;0.08" dur="3s" repeatCount="indefinite" />
+  </rect>
+
+</svg>

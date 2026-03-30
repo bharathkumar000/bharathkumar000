@@ -1,0 +1,68 @@
+<svg width="550" height="200" viewBox="0 0 550 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .repo-title { font: bold 22px 'Courier New', monospace; fill: #00F2FF; filter: url(#glow); }
+    .repo-desc { font: 14px 'Segoe UI', sans-serif; fill: #8b949e; }
+    .repo-stat { font: 13px 'Courier New', monospace; fill: #c9d1d9; }
+    .repo-link { font: 14px 'Courier New', monospace; fill: #00BFFF; text-decoration: underline; }
+  </style>
+  <defs>
+    <radialGradient id="bg-repo" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#001529" />
+      <stop offset="100%" stop-color="#040404" />
+    </radialGradient>
+    <pattern id="grid-repo" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00F2FF" stroke-width="0.5" stroke-opacity="0.05" />
+    </pattern>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="550" height="200" fill="url(#bg-repo)" rx="10" stroke="#00F2FF" stroke-opacity="0.1" />
+  <rect width="550" height="200" fill="url(#grid-repo)" rx="10" />
+
+  <!-- Scanning Beam -->
+  <line x1="0" y1="0" x2="550" y2="0" stroke="#00F2FF" stroke-opacity="0.1" stroke-width="2">
+    <animate attributeName="y1" from="0" to="200" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="y2" from="0" to="200" dur="4s" repeatCount="indefinite" />
+  </line>
+
+  <!-- HUD Accents -->
+  <g stroke="#00F2FF" stroke-width="1.5" stroke-opacity="0.3">
+    <path d="M 10 30 V 10 H 30" />
+    <path d="M 520 190 H 540 V 170" />
+  </g>
+
+  <!-- Data Flow Circuits -->
+  <g stroke="#00F2FF" stroke-opacity="0.08" stroke-width="1" fill="none">
+    <path d="M0 40 H40 L60 60 H120" />
+    <path d="M550 160 H510 L490 140 H380" />
+  </g>
+  <path d="M0 40 H40 L60 60 H120" stroke="#00ffff" stroke-width="1" stroke-dasharray="10, 50" fill="none">
+    <animate attributeName="stroke-dashoffset" from="60" to="0" dur="3s" repeatCount="indefinite" />
+  </path>
+
+  <!-- Content -->
+  <text x="25" y="45" font-size="18">🚀</text>
+  <text x="60" y="46" class="repo-title">connect-and-prep</text>
+  
+  <text x="25" y="80" font-size="14">📂</text>
+  <text x="50" y="80" class="repo-link">Source Repository</text>
+
+  <text x="25" y="115" class="repo-desc">No description provided.</text>
+
+  <!-- Footer Stats -->
+  <g transform="translate(25, 160)">
+    <circle cx="5" cy="0" r="5" fill="#F1E05A" id="lang-color" />
+    <text x="20" y="5" class="repo-stat">JavaScript</text>
+    
+    <g transform="translate(140, 0)">
+       <text y="5" class="repo-stat" fill="#00F2FF" style="filter:url(#glow)">★ 0</text>
+    </g>
+    
+    <g transform="translate(210, 0)">
+       <text y="5" class="repo-stat" fill="#00F2FF" style="filter:url(#glow)">⑂ 2</text>
+    </g>
+  </g>
+</svg>
