@@ -20,6 +20,20 @@
 
 # 👤 <span style="color: #00F2FF;">ABOUT_ME</span>
 
+<p align="center">
+<div align="center">
+  <a href="https://linkedin.com/in/bharathkumara">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://instagram.com/_unknown.06__">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+  </a>
+  <a href="mailto:bharatthece2006@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+  </a>
+</div>
+</p>
+
 <div align="center">
   <img src="about-me.svg" width="100%"/>
 </div>
@@ -55,7 +69,7 @@
 </div>
 
 <div align="center">
-  <img src="streak-stats.svg" width="100%"/>
+  <img src="streak-stats.svg" width="48%"/>
 </div>
   
 # 🏆 <span style="color: #00F2FF;">MISSION_LOG / ACHIEVEMENTS</span>
@@ -72,7 +86,6 @@
     </tr>
   </table>
 </div>
-
 
 # 🚀 <span style="color: #00F2FF;">REPOS_DEEP_DIVE / FEATURED_PROJECTS</span>
 
