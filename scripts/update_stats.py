@@ -185,19 +185,19 @@ def update_pinned_repos(repos):
         for i, repo in enumerate(repos):
             content = template
             
-            # Name
-            content = re.sub(r'(fill="#00BFFF"[^>]*>)\s*[^<]+\s*(</text>)', rf'\g<1>{repo["name"]}\g<2>', content)
+            # Repo Name
+            content = re.sub(r'(class="repo-title">)\s*[^<]*\s*(</text>)', rf'\g<1>{repo["name"]}\g<2>', content)
             
-            # Description (Truncate if too long)
+            # Description (Truncate)
             desc = repo["description"] or "No description provided."
             if len(desc) > 65: desc = desc[:62] + "..."
-            content = re.sub(r'(y="50"[^>]*>)\s*[^<]+\s*(</text>)', rf'\g<1>{desc}\g<2>', content)
+            content = re.sub(r'(class="repo-desc">)\s*[^<]*\s*(</text>)', rf'\g<1>{desc}\g<2>', content)
             
             # Language
             lang = repo["primaryLanguage"]["name"] if repo["primaryLanguage"] else "None"
             color = repo["primaryLanguage"]["color"] if repo["primaryLanguage"] else "#8B949E"
-            content = re.sub(r'(cy="85"[^>]*fill=")[^"]+', rf'\g<1>{color}', content)
-            content = re.sub(r'(y="90"[^>]*fill="#C9D1D9"[^>]*>)\s*[^<]+\s*(</text>)', rf'\g<1>{lang}\g<2>', content)
+            content = re.sub(r'(id="lang-color"\s*fill=")[^"]*', rf'\g<1>{color}', content)
+            content = re.sub(r'(>)\s*Language\s*(</text>)', rf'\g<1>{lang}\g<2>', content)
             
             # Stars & Forks
             content = re.sub(r'★\s*\d+', f'★ {repo["stargazerCount"]}', content)
