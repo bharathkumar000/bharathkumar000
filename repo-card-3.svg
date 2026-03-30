@@ -1,0 +1,38 @@
+<svg width="550" height="150" viewBox="0 0 550 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="card-bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a2a3a" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#040404" stop-opacity="0.2" />
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="550" height="150" rx="8" fill="#1a2a3a" fill-opacity="0.2" stroke="#00F2FF" stroke-opacity="0.2" />
+  
+  <!-- Corners -->
+  <path d="M 10 20 V 10 H 20" stroke="#00F2FF" stroke-width="1.5" stroke-opacity="0.4" />
+  <path d="M 540 130 V 140 H 530" stroke="#00F2FF" stroke-width="1.5" stroke-opacity="0.4" />
+
+  <!-- Content Group -->
+  <g transform="translate(20, 30)">
+    <!-- Repo Icon -->
+    <path d="M0,5 C0,2 2,0 5,0 H15 C18,0 20,2 20,5" stroke="#00F2FF" stroke-width="2" fill="none" stroke-opacity="0.8"/>
+    <rect y="5" width="20" height="15" rx="2" stroke="#00F2FF" stroke-width="2" fill="none" stroke-opacity="0.8"/>
+    
+    <!-- Name (Target Color for replacement) -->
+    <text x="35" y="18" font-family="'Courier New', monospace" font-size="22" font-weight="bold" fill="#00BFFF" filter="url(#glow)">mysurumarga</text>
+    
+    <!-- Description (Target y=50 for replacement) -->
+    <text y="50" font-family="sans-serif" font-size="14" fill="#8B949E">No description provided.</text>
+    
+    <!-- Stats Row (Target y=90 for replacement) -->
+    <circle cy="85" r="5" fill="#f1e05a"/>
+    <text x="15" y="90" font-family="monospace" font-size="14" fill="#C9D1D9">JavaScript</text>
+    <text x="100" y="90" font-family="monospace" font-size="14" fill="#00F2FF">★ 0</text>
+    <text x="160" y="90" font-family="monospace" font-size="14" fill="#00F2FF">⑂ 0</text>
+  </g>
+</svg>
