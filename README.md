@@ -65,8 +65,13 @@
 # 📊 GitHub Stats:
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=bharathkumar000&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0d1117&title_color=00ffff&text_color=c9d1d9&icon_color=00ffff" width="48%" />
-  <img src="streak-stats.svg" width="48%"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=bharathkumar000&show_icons=true&theme=tokyonight&hide_border=true&title_color=00ffff&text_color=c9d1d9&icon_color=00ffff&bg_color=0d1117&cache_seconds=1800" width="90%" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="streak-stats.svg" width="90%"/>
 </div>
   
 # 🏆 <span style="color: #00F2FF;">MISSION_LOG / ACHIEVEMENTS</span>
