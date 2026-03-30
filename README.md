@@ -66,9 +66,6 @@
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=bharathkumar000&show_icons=true&theme=chartreuse-dark&hide_border=true&bg_color=0d1117&title_color=00ffff&text_color=c9d1d9&icon_color=00ffff" width="48%" />
-</div>
-
-<div align="center">
   <img src="streak-stats.svg" width="48%"/>
 </div>
   
