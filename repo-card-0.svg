@@ -19,41 +19,73 @@
     </filter>
   </defs>
 
-  <rect width="550" height="200" fill="url(#bg-repo)" rx="10" stroke="#00F2FF" stroke-opacity="0.1" />
+  <rect width="550" height="200" fill="url(#bg-repo)" rx="10" stroke="#00F2FF" stroke-opacity="0.15" />
   <rect width="550" height="200" fill="url(#grid-repo)" rx="10" />
 
-  <!-- Scanning Beam -->
+  <!-- Scanning Beam (Double Activity) -->
   <line x1="0" y1="0" x2="550" y2="0" stroke="#00F2FF" stroke-opacity="0.1" stroke-width="2">
-    <animate attributeName="y1" from="0" to="200" dur="4s" repeatCount="indefinite" />
-    <animate attributeName="y2" from="0" to="200" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="y1" from="0" to="200" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="y2" from="0" to="200" dur="3s" repeatCount="indefinite" />
+  </line>
+  <line x1="0" y1="0" x2="550" y2="0" stroke="#00F2FF" stroke-opacity="0.05" stroke-width="1">
+    <animate attributeName="y1" from="200" to="0" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="y2" from="200" to="0" dur="5s" repeatCount="indefinite" />
   </line>
 
-  <!-- HUD Accents -->
-  <g stroke="#00F2FF" stroke-width="1.5" stroke-opacity="0.3">
+  <!-- COMPLEX CIRCUIT FLOWS (X5 Animation) -->
+  <g stroke="#00F2FF" stroke-opacity="0.06" stroke-width="1" fill="none">
+    <path d="M0 40 H60 L80 60 H200" />
+    <path d="M550 160 H490 L470 140 H300" />
+    <path d="M400 0 V40 L430 70 H550" />
+    <path d="M150 200 V160 L120 130 H0" />
+    <path d="M300 0 V30 L280 50 H240" />
+  </g>
+  
+  <g fill="none" stroke-width="1.5">
+    <path d="M0 40 H60 L80 60 H200" stroke="#00ffff" stroke-dasharray="15, 80">
+      <animate attributeName="stroke-dashoffset" from="95" to="0" dur="2s" repeatCount="indefinite" />
+    </path>
+    <path d="M550 160 H490 L470 140 H300" stroke="#39FF14" stroke-dasharray="20, 100" stroke-opacity="0.4">
+      <animate attributeName="stroke-dashoffset" from="-120" to="0" dur="4.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M400 0 V40 L430 70 H550" stroke="#00ffff" stroke-dasharray="12, 60">
+      <animate attributeName="stroke-dashoffset" from="72" to="0" dur="1.8s" repeatCount="indefinite" />
+    </path>
+    <path d="M150 200 V160 L120 130 H0" stroke="#00ffff" stroke-dasharray="30, 150" opacity="0.5">
+      <animate attributeName="stroke-dashoffset" from="-180" to="0" dur="6s" repeatCount="indefinite" />
+    </path>
+    <path d="M300 0 V30 L280 50 H240" stroke="#00ffff" stroke-dasharray="8, 40">
+      <animate attributeName="stroke-dashoffset" from="48" to="0" dur="1.2s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- Pulsing Nodes -->
+  <circle cx="80" cy="60" r="2" fill="#00ffff">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="470" cy="140" r="1.5" fill="#39FF14">
+    <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- HUD Corner Brackets -->
+  <g stroke="#00F2FF" stroke-width="1.5" stroke-opacity="0.4">
     <path d="M 10 30 V 10 H 30" />
     <path d="M 520 190 H 540 V 170" />
+    <path d="M 540 30 V 10 H 520" />
+    <path d="M 10 170 V 190 H 30" />
   </g>
 
-  <!-- Data Flow Circuits -->
-  <g stroke="#00F2FF" stroke-opacity="0.08" stroke-width="1" fill="none">
-    <path d="M0 40 H40 L60 60 H120" />
-    <path d="M550 160 H510 L490 140 H380" />
-  </g>
-  <path d="M0 40 H40 L60 60 H120" stroke="#00ffff" stroke-width="1" stroke-dasharray="10, 50" fill="none">
-    <animate attributeName="stroke-dashoffset" from="60" to="0" dur="3s" repeatCount="indefinite" />
-  </path>
-
-  <!-- Content -->
-  <text x="25" y="45" font-size="18">🚀</text>
-  <text x="60" y="46" class="repo-title">connect-and-prep</text>
+  <!-- Content Group -->
+  <text x="30" y="45" font-size="20">🚀</text>
+  <text x="65" y="46" class="repo-title">connect-and-prep</text>
   
-  <text x="25" y="80" font-size="14">📂</text>
-  <text x="50" y="80" class="repo-link">Source Repository</text>
+  <text x="30" y="82" font-size="14">📂</text>
+  <text x="55" y="82" class="repo-link">Source Repository Analysis</text>
 
-  <text x="25" y="115" class="repo-desc">No description provided.</text>
+  <text x="30" y="120" class="repo-desc">No description provided.</text>
 
   <!-- Footer Stats -->
-  <g transform="translate(25, 160)">
+  <g transform="translate(30, 165)">
     <circle cx="5" cy="0" r="5" fill="#F1E05A" id="lang-color" />
     <text x="20" y="5" class="repo-stat">JavaScript</text>
     
