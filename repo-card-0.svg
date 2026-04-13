@@ -45,7 +45,7 @@
 
   <!-- Content -->
   <text x="25" y="45" font-size="18">🚀</text>
-  <text x="60" y="46" class="repo-title">connect-and-prep</text>
+  <text x="60" y="46" class="repo-title">connect-and-prep-school</text>
   
   <text x="25" y="80" font-size="14">📂</text>
   <text x="50" y="80" class="repo-link">Source Repository</text>
