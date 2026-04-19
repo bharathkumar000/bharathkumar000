@@ -120,9 +120,9 @@
     <text x="80" y="275" fill="#00F2FF" font-size="26" font-weight="bold" letter-spacing="1">STATUS</text>
     <text x="310" y="275" fill="#8b949e" font-size="26" font-weight="bold">:</text>
     <text x="340" y="275" fill="#27c93f" font-size="22" font-weight="bold">[ ONLINE ]</text>
-    <text x="560" y="275" fill="#c9d1d9" font-size="20" font-weight="600">– Continuously learning and innovating</text>
+    <text x="500" y="275" fill="#c9d1d9" font-size="20" font-weight="600">– Continuously learning and innovating</text>
     <!-- Cursor -->
-    <rect x="545" y="255" width="2" height="25" fill="#27c93f">
+    <rect x="485" y="255" width="2" height="25" fill="#27c93f">
       <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite" />
     </rect>
 
