@@ -7,14 +7,10 @@
 <h1> ⚡ Welcome to Digital Workspace ⚡ </h1>
 </div>
 <div align="center">
-  <table border="0">
-    <tr>
-      <td><a href="https://www.instagram.com/_unknown.06__?igsh=OHgwdTE0djdvMzFq"><img src="https://skillicons.dev/icons?i=instagram&theme=dark" alt="Instagram" width="48" height="48"/></a></td>
-      <td><a href="https://www.linkedin.com/in/bharathkumara"><img src="https://skillicons.dev/icons?i=linkedin&theme=dark" alt="LinkedIn" width="48" height="48"/></a></td>
-      <td><a href="mailto:bharathece2006@gmail.com"><img src="https://skillicons.dev/icons?i=gmail&theme=dark" alt="Gmail" width="48" height="48"/></a></td>
-      <td><a href="https://github.com/bharathkumar000"><img src="https://skillicons.dev/icons?i=github&theme=dark" alt="GitHub" width="48" height="48"/></a></td>
-    </tr>
-  </table>
+  <a href="https://www.instagram.com/_unknown.06__?igsh=OHgwdTE0djdvMzFq"><img src="https://skillicons.dev/icons?i=instagram&theme=dark" alt="Instagram" width="48" height="48"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/bharathkumara"><img src="https://skillicons.dev/icons?i=linkedin&theme=dark" alt="LinkedIn" width="48" height="48"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="mailto:bharathece2006@gmail.com"><img src="https://skillicons.dev/icons?i=gmail&theme=dark" alt="Gmail" width="48" height="48"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/bharathkumar000"><img src="https://skillicons.dev/icons?i=github&theme=dark" alt="GitHub" width="48" height="48"/></a>
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
