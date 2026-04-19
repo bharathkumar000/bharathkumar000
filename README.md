@@ -4,16 +4,11 @@
 </div>
 
 <div align="center">
-<h1> ⚡ Welcome to my Digital Workspace ⚡ </h1>
+  <h1> ⚡ Welcome to Digital Workspace ⚡ </h1>
 </div>
+
 <p align="center">
-<a href="https://www.instagram.com/_unknown.06__?igsh=OHgwdTE0djdvMzFq"><img src="https://skillicons.dev/icons?i=instagram&theme=dark" alt="Instagram" width="48" height="48"/></a>
-&nbsp;&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/bharathkumara"><img src="https://skillicons.dev/icons?i=linkedin&theme=dark" alt="LinkedIn" width="48" height="48"/></a>
-&nbsp;&nbsp;&nbsp;
-<a href="mailto:bharathece2006@gmail.com"><img src="https://skillicons.dev/icons?i=gmail&theme=dark" alt="Gmail" width="48" height="48"/></a>
-&nbsp;&nbsp;&nbsp;
-<a href="https://github.com/bharathkumar000"><img src="https://skillicons.dev/icons?i=github&theme=dark" alt="GitHub" width="48" height="48"/></a>
+  <a href="https://www.instagram.com/_unknown.06__?igsh=OHgwdTE0djdvMzFq"><img src="https://skillicons.dev/icons?i=instagram&theme=dark" width="48"></a> &nbsp; <a href="https://www.linkedin.com/in/bharathkumara"><img src="https://skillicons.dev/icons?i=linkedin&theme=dark" width="48"></a> &nbsp; <a href="mailto:bharathece2006@gmail.com"><img src="https://skillicons.dev/icons?i=gmail&theme=dark" width="48"></a> &nbsp; <a href="https://github.com/bharathkumar000"><img src="https://skillicons.dev/icons?i=github&theme=dark" width="48"></a>
 </p>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
@@ -47,6 +42,14 @@
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
   <img src="https://img.shields.io/badge/Embedded_C-00599C?style=for-the-badge&logo=c&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenAI_API-412991?style=for-the-badge&logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
 </p>
 
 # 📊 GitHub Stats:
@@ -62,6 +65,10 @@
 </div>
   
 # 🏆 <span style="color: #00F2FF;">MISSION_LOG / ACHIEVEMENTS</span>
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=bharathkumar000&theme=tokyonight&no-bg=true&no-frame=true&column=7&margin-w=15&margin-h=15" width="100%" />
+</div>
 
 <div align="center">
   <table border="0">
