@@ -75,9 +75,9 @@
     <path d="M 10 170 V 190 H 30" />
   </g>
 
-  <!-- Content -->
-  <text x="25" y="45" font-size="18">🚀</text>
-  <text x="60" y="46" class="repo-title">connect-and-prep-school</text>
+  <!-- Content Group -->
+  <text x="30" y="45" font-size="20">🚀</text>
+  <text x="65" y="46" class="repo-title">connect-and-prep-school</text>
   
   <text x="30" y="82" font-size="14">📂</text>
   <text x="55" y="82" class="repo-link">Source Repository Analysis</text>
