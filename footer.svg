@@ -34,23 +34,23 @@
   </g>
 
   <!-- Top Border Glow -->
-  <rect width="1200" height="2" fill="#00ffff" fill-opacity="0.6">
-    <animate attributeName="fill-opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite" />
+  <rect width="1200" height="2" fill="#00ffff" fill-opacity="0.3">
+    <animate attributeName="fill-opacity" values="0.1;0.4;0.1" dur="4s" repeatCount="indefinite" />
   </rect>
   
-  <!-- Flow Lines -->
-  <g stroke="#00ffff" stroke-opacity="0.3" stroke-width="1.2" fill="none">
+  <!-- Flow Lines (Subtle Animated) -->
+  <g stroke="#00ffff" stroke-opacity="0.15" stroke-width="1" fill="none">
     <path d="M0 40 H120 L160 80 H300 L340 40 H500" />
     <path d="M1200 80 H1080 L1040 40 H900 L860 80 H720" />
     <path d="M600 0 V30 L570 60 H450" />
     <path d="M600 120 V90 L630 60 H750" />
     
-    <!-- Flow Drips -->
-    <path d="M0 40 H120 L160 80 H300 L340 40 H500" stroke="#00ffff" stroke-width="2.5" stroke-dasharray="30, 150">
-      <animate attributeName="stroke-dashoffset" from="180" to="0" dur="2.5s" repeatCount="indefinite" />
+    <!-- Flow Drips (Slower & Longer) -->
+    <path d="M0 40 H120 L160 80 H300 L340 40 H500" stroke="#00ffff" stroke-width="2" stroke-dasharray="100, 500" stroke-opacity="0.2">
+      <animate attributeName="stroke-dashoffset" from="600" to="0" dur="14s" repeatCount="indefinite" />
     </path>
-    <path d="M1200 80 H1080 L1040 40 H900 L860 80 H720" stroke="#00ffff" stroke-width="2.5" stroke-dasharray="30, 150">
-      <animate attributeName="stroke-dashoffset" from="-180" to="0" dur="3s" repeatCount="indefinite" />
+    <path d="M1200 80 H1080 L1040 40 H900 L860 80 H720" stroke="#00ffff" stroke-width="2" stroke-dasharray="100, 500" stroke-opacity="0.2">
+      <animate attributeName="stroke-dashoffset" from="-600" to="0" dur="16s" repeatCount="indefinite" />
     </path>
   </g>
 
@@ -67,33 +67,22 @@
   </g>
 
   <!-- Pulsing Nodes -->
-  <g fill="#00ffff">
+  <g fill="#00ffff" fill-opacity="0.3">
     <circle cx="160" cy="80" r="2.5">
-      <animate attributeName="r" values="2.5;6;2.5" dur="1s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="1s" repeatCount="indefinite" />
+      <animate attributeName="r" values="2.5;4;2.5" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite" />
     </circle>
     <circle cx="1040" cy="40" r="2.5">
-      <animate attributeName="r" values="2.5;6;2.5" dur="1.5s" repeatCount="indefinite" />
+      <animate attributeName="r" values="2.5;4;2.5" dur="2.5s" repeatCount="indefinite" />
     </circle>
   </g>
 
   <!-- HUD Style Text / Decorations -->
-  <g fill="#00ffff" font-family="monospace" font-size="10" font-weight="bold" opacity="0.7">
+  <g fill="#00ffff" font-family="monospace" font-size="10" font-weight="bold" opacity="0.4">
     <text x="20" y="105">[ SYSTEM SECURE ]</text>
-    <rect x="20" y="110" width="80" height="2" fill-opacity="0.3" />
-    <rect x="20" y="110" width="40" height="2">
-      <animate attributeName="width" values="0;80;20;60;0" dur="4s" repeatCount="indefinite" />
+    <rect x="20" y="110" width="80" height="2" fill-opacity="0.1" />
+    <rect x="20" y="110" width="40" height="2" fill-opacity="0.3">
+      <animate attributeName="width" values="0;80;20;60;0" dur="10s" repeatCount="indefinite" />
     </rect>
   </g>
-
-  <!-- Fast Scanning Vertical HUD Bar -->
-  <rect x="0" y="0" width="3" height="120" fill="#00ffff" fill-opacity="0.4">
-    <animate attributeName="x" from="0" to="1200" dur="5s" repeatCount="indefinite" />
-  </rect>
-
-  <!-- Horizontal Scanning Light -->
-  <rect x="0" y="0" width="400" height="4" fill="#00ffff">
-    <animate attributeName="x" from="-400" to="1200" dur="1.8s" repeatCount="indefinite" />
-    <animate attributeName="opacity" values="0;0.7;0" dur="1.8s" repeatCount="indefinite" />
-  </rect>
 </svg>
