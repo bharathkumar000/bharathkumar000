@@ -39,17 +39,17 @@
     <path d="M1200 200 H1100 L1070 230" />
     
     <!-- Animated Flow Drips -->
-    <path d="M0 100 H100 L150 150 H300 L350 100 H500" stroke="#00ffff" stroke-width="2.5" stroke-dasharray="30, 200">
-      <animate attributeName="stroke-dashoffset" from="230" to="0" dur="3s" repeatCount="indefinite" />
+    <path d="M0 100 H100 L150 150 H300 L350 100 H500" stroke="#00ffff" stroke-width="2" stroke-dasharray="80, 400" stroke-opacity="0.3">
+      <animate attributeName="stroke-dashoffset" from="480" to="0" dur="10s" repeatCount="indefinite" />
     </path>
-    <path d="M1200 300 H1100 L1050 250 H900 L850 300 H700" stroke="#00ffff" stroke-width="2.5" stroke-dasharray="30, 200">
-      <animate attributeName="stroke-dashoffset" from="-230" to="0" dur="3.5s" repeatCount="indefinite" />
+    <path d="M1200 300 H1100 L1050 250 H900 L850 300 H700" stroke="#00ffff" stroke-width="2" stroke-dasharray="80, 400" stroke-opacity="0.3">
+      <animate attributeName="stroke-dashoffset" from="-480" to="0" dur="12s" repeatCount="indefinite" />
     </path>
-    <path d="M600 0 V50 L550 100 H400" stroke="#00ffff" stroke-width="2" stroke-dasharray="20, 150">
-      <animate attributeName="stroke-dashoffset" from="170" to="0" dur="2s" repeatCount="indefinite" />
+    <path d="M600 0 V50 L550 100 H400" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="50, 300" stroke-opacity="0.2">
+      <animate attributeName="stroke-dashoffset" from="350" to="0" dur="15s" repeatCount="indefinite" />
     </path>
-    <path d="M600 400 V350 L650 300 H800" stroke="#00ffff" stroke-width="2" stroke-dasharray="20, 150">
-      <animate attributeName="stroke-dashoffset" from="-170" to="0" dur="2.5s" repeatCount="indefinite" />
+    <path d="M600 400 V350 L650 300 H800" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="50, 300" stroke-opacity="0.2">
+      <animate attributeName="stroke-dashoffset" from="-350" to="0" dur="18s" repeatCount="indefinite" />
     </path>
     
     <!-- Pulsing Nodes -->
