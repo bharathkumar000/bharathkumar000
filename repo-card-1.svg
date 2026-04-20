@@ -22,10 +22,14 @@
   <rect width="550" height="200" fill="url(#bg-repo)" rx="10" stroke="#00F2FF" stroke-opacity="0.15" />
   <rect width="550" height="200" fill="url(#grid-repo)" rx="10" />
 
-  <!-- Scanning Beam (Reduced Intensity) -->
+  <!-- Scanning Beam (Double Activity) -->
+  <line x1="0" y1="0" x2="550" y2="0" stroke="#00F2FF" stroke-opacity="0.1" stroke-width="2">
+    <animate attributeName="y1" from="0" to="200" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="y2" from="0" to="200" dur="3s" repeatCount="indefinite" />
+  </line>
   <line x1="0" y1="0" x2="550" y2="0" stroke="#00F2FF" stroke-opacity="0.05" stroke-width="1">
-    <animate attributeName="y1" from="0" to="200" dur="10s" repeatCount="indefinite" />
-    <animate attributeName="y2" from="0" to="200" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="y1" from="200" to="0" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="y2" from="200" to="0" dur="5s" repeatCount="indefinite" />
   </line>
 
   <!-- COMPLEX CIRCUIT FLOWS (X5 Animation) -->
@@ -37,12 +41,21 @@
     <path d="M300 0 V30 L280 50 H240" />
   </g>
   
-  <g fill="none" stroke-width="1" stroke-opacity="0.3">
-    <path d="M0 40 H60 L80 60 H200" stroke="#00ffff" stroke-dasharray="80, 200">
-      <animate attributeName="stroke-dashoffset" from="280" to="0" dur="12s" repeatCount="indefinite" />
+  <g fill="none" stroke-width="1.5">
+    <path d="M0 40 H60 L80 60 H200" stroke="#00ffff" stroke-dasharray="15, 80">
+      <animate attributeName="stroke-dashoffset" from="95" to="0" dur="2s" repeatCount="indefinite" />
     </path>
-    <path d="M550 160 H490 L470 140 H300" stroke="#00ffff" stroke-dasharray="100, 300">
-      <animate attributeName="stroke-dashoffset" from="-400" to="0" dur="15s" repeatCount="indefinite" />
+    <path d="M550 160 H490 L470 140 H300" stroke="#39FF14" stroke-dasharray="20, 100" stroke-opacity="0.4">
+      <animate attributeName="stroke-dashoffset" from="-120" to="0" dur="4.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M400 0 V40 L430 70 H550" stroke="#00ffff" stroke-dasharray="12, 60">
+      <animate attributeName="stroke-dashoffset" from="72" to="0" dur="1.8s" repeatCount="indefinite" />
+    </path>
+    <path d="M150 200 V160 L120 130 H0" stroke="#00ffff" stroke-dasharray="30, 150" opacity="0.5">
+      <animate attributeName="stroke-dashoffset" from="-180" to="0" dur="6s" repeatCount="indefinite" />
+    </path>
+    <path d="M300 0 V30 L280 50 H240" stroke="#00ffff" stroke-dasharray="8, 40">
+      <animate attributeName="stroke-dashoffset" from="48" to="0" dur="1.2s" repeatCount="indefinite" />
     </path>
   </g>
 
