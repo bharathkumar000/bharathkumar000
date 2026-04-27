@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 # Configuration
 USERNAME = os.getenv("GITHUB_REPOSITORY_OWNER", "bharathkumar000")
 SVG_PATH = "streak-stats.svg"
-TOKEN = os.getenv("GITHUB_TOKEN")
+TOKEN = os.getenv("GH_PAT") or os.getenv("GITHUB_TOKEN")
 
 GRAPHQL_QUERY = """
 query($username: String!) {
@@ -105,7 +105,7 @@ def calculate_streaks(data):
     curr_start = None
     curr_end = None
     
-    # Simple way: find the last day with contributions
+    # Find the last day with contributions
     last_contributed_day_index = -1
     for i in range(len(days)-1, -1, -1):
         if days[i][1] > 0:
@@ -114,10 +114,18 @@ def calculate_streaks(data):
     
     if last_contributed_day_index != -1:
         last_date = days[last_contributed_day_index][0]
-        # Streak is "current" if the last contribution was today or yesterday
-        if last_date == today or last_date == yesterday:
+        
+        # Robust check for "current" streak:
+        # A streak is current if the last contribution was today, yesterday, 
+        # or even "tomorrow" (due to timezone shifts in the API vs runner)
+        # We'll consider it current if it's within 1 day of the runner's today.
+        last_dt = datetime.strptime(last_date, "%Y-%m-%d")
+        today_dt_obj = datetime.now()
+        diff = (today_dt_obj - last_dt).days
+        
+        if diff <= 1: # Today or Yesterday (or 0 or negative if timezone ahead)
             curr_end = last_date
-            # Walk backwards
+            # Walk backwards to count the streak
             for i in range(last_contributed_day_index, -1, -1):
                 if days[i][1] > 0:
                     current_streak += 1
