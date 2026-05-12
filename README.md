@@ -83,7 +83,7 @@
   </table>
 </div>
 
-# 🚀 <span style="color: #00F2FF;">REPOS_DEEP_DIVE / FEATURED_PROJECTS</span>
+# 🚀 <span style="color: #00F2FF;"> FEATURED_PROJECTS</span>
 
 <div align="center">
   <table border="0">
