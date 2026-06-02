@@ -1,0 +1,103 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg-ongoing" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#001529" />
+      <stop offset="100%" stop-color="#040404" />
+    </radialGradient>
+    <linearGradient id="grid-ongoing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FF" stop-opacity="0.04" />
+      <stop offset="50%" stop-color="#7000FF" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#00F2FF" stop-opacity="0.04" />
+    </linearGradient>
+    <pattern id="grid-ongoing-p" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="url(#grid-ongoing)" stroke-width="0.5" />
+    </pattern>
+    <filter id="glow-ongoing">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="260" fill="url(#bg-ongoing)" rx="12" />
+  <rect width="1200" height="260" fill="url(#grid-ongoing-p)" rx="12" />
+
+  <!-- Circuit Lines decoration -->
+  <g stroke="#00F2FF" stroke-opacity="0.08" stroke-width="1" fill="none">
+    <path d="M0 45 H1200" />
+    <path d="M50 0 V45" />
+    <path d="M1150 0 V45" />
+    <path d="M390 145 H430" />
+    <path d="M770 145 H810" />
+  </g>
+
+  <!-- Title / Header -->
+  <text x="50" y="30" font-family="'Courier New', Courier, monospace" font-size="18" font-weight="bold" fill="#00F2FF" filter="url(#glow-ongoing)" letter-spacing="1">
+    ⚡ ACTIVE_DEVELOPMENT / ONGOING_MISSIONS
+  </text>
+  <text x="1150" y="30" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="14" fill="#8b949e">
+    STATUS: SYNCED
+  </text>
+
+  <!-- ================= CARD 1: Connect & Prep ================= -->
+  <g>
+    <!-- Card Border & Glow -->
+    <rect x="50" y="70" width="340" height="155" fill="#0d0d1a" fill-opacity="0.6" rx="8" stroke="#00F2FF" stroke-opacity="0.15" />
+    <!-- Content -->
+    <text x="70" y="102" font-family="'Courier New', Courier, monospace" font-size="20" font-weight="bold" fill="#FFFFFF">Connect &amp; Prep</text>
+    <text x="370" y="102" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="bold" fill="#00ffff" filter="url(#glow-ongoing)">[ ACTIVE_BUILD ]</text>
+    
+    <text x="70" y="132" font-family="sans-serif" font-size="13.5" fill="#8b949e">Engineering portal with P2P tutoring</text>
+    <text x="70" y="152" font-family="sans-serif" font-size="13.5" fill="#8b949e">and automated attendance lifecycle.</text>
+    
+    <!-- Progress Bar -->
+    <rect x="70" y="185" width="250" height="6" fill="#1b2a3a" rx="3" />
+    <rect x="70" y="185" width="200" height="6" fill="#00ffff" rx="3" filter="url(#glow-ongoing)" />
+    <text x="370" y="191" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" fill="#00ffff">80%</text>
+  </g>
+
+  <!-- ================= CARD 2: Humanoid Robot ================= -->
+  <g>
+    <!-- Card Border & Glow -->
+    <rect x="430" y="70" width="340" height="155" fill="#0d0d1a" fill-opacity="0.6" rx="8" stroke="#00F2FF" stroke-opacity="0.15" />
+    <!-- Content -->
+    <text x="450" y="102" font-family="'Courier New', Courier, monospace" font-size="20" font-weight="bold" fill="#FFFFFF">Humanoid Robot</text>
+    <text x="750" y="102" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="bold" fill="#39FF14" filter="url(#glow-ongoing)">[ PROTOTYPING ]</text>
+    
+    <text x="450" y="132" font-family="sans-serif" font-size="13.5" fill="#8b949e">Bipedal walking simulation, kinematics,</text>
+    <text x="450" y="152" font-family="sans-serif" font-size="13.5" fill="#8b949e">and spatial awareness mapping.</text>
+    
+    <!-- Progress Bar -->
+    <rect x="450" y="185" width="250" height="6" fill="#1b2a3a" rx="3" />
+    <rect x="450" y="185" width="75" height="6" fill="#39FF14" rx="3" filter="url(#glow-ongoing)" />
+    <text x="750" y="191" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" fill="#39FF14">30%</text>
+  </g>
+
+  <!-- ================= CARD 3: Nexus Twin Mysuru ================= -->
+  <g>
+    <!-- Card Border & Glow -->
+    <rect x="810" y="70" width="340" height="155" fill="#0d0d1a" fill-opacity="0.6" rx="8" stroke="#00F2FF" stroke-opacity="0.15" />
+    <!-- Content -->
+    <text x="830" y="102" font-family="'Courier New', Courier, monospace" font-size="20" font-weight="bold" fill="#FFFFFF">Nexus Twin Mysuru</text>
+    <text x="1130" y="102" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="bold" fill="#FFA726" filter="url(#glow-ongoing)">[ ARCH_UPGRADE ]</text>
+    
+    <text x="830" y="132" font-family="sans-serif" font-size="13.5" fill="#8b949e">3D spatial simulation and real-time</text>
+    <text x="830" y="152" font-family="sans-serif" font-size="13.5" fill="#8b949e">utility impact conflict detection.</text>
+    
+    <!-- Progress Bar -->
+    <rect x="830" y="185" width="250" height="6" fill="#1b2a3a" rx="3" />
+    <rect x="830" y="185" width="175" height="6" fill="#FFA726" rx="3" filter="url(#glow-ongoing)" />
+    <text x="1130" y="191" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" fill="#FFA726">70%</text>
+  </g>
+
+  <!-- Scanning Line Animation -->
+  <line x1="0" y1="45" x2="1200" y2="45" stroke="#00F2FF" stroke-opacity="0.15" stroke-width="1.5">
+    <animate attributeName="y1" values="45;260;45" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="45;260;45" dur="8s" repeatCount="indefinite" />
+  </line>
+
+  <!-- Bottom Border Glow -->
+  <rect x="0" y="258" width="1200" height="2" fill="#00F2FF" fill-opacity="0.1" rx="1">
+    <animate attributeName="fill-opacity" values="0.05;0.2;0.05" dur="3s" repeatCount="indefinite" />
+  </rect>
+</svg>

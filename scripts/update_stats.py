@@ -11,6 +11,20 @@ TOKEN = os.getenv("GH_PAT") or os.getenv("GITHUB_TOKEN")
 
 GRAPHQL_QUERY = """
 query($username: String!) {
+  viewer {
+    login
+    contributionsCollection {
+      contributionCalendar {
+        totalContributions
+        weeks {
+          contributionDays {
+            contributionCount
+            date
+          }
+        }
+      }
+    }
+  }
   user(login: $username) {
     contributionsCollection {
       contributionCalendar {
@@ -56,7 +70,13 @@ def fetch_contribution_data(username, token):
         return json.loads(response.read().decode())
 
 def calculate_streaks(data):
-    calendar = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+    viewer_data = data["data"].get("viewer")
+    if viewer_data and viewer_data.get("login") == USERNAME:
+        calendar = viewer_data["contributionsCollection"]["contributionCalendar"]
+        print("Using authenticated viewer calendar (includes private contributions).")
+    else:
+        calendar = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+        print("Using public user calendar.")
     days = []
     for week in calendar["weeks"]:
         for day in week["contributionDays"]:
