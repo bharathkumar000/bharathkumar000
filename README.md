@@ -87,15 +87,9 @@
     <tr>
       <td valign="top" width="50%">
         <a href="https://github.com/bharathkumar000/nexus-twin"><img src="ach-5.svg" width="100%"></a>
-        <p align="center" style="margin-top: 5px; font-family: monospace;">
-          <a href="https://github.com/bharathkumar000/nexus-twin">💻 Repository</a> &nbsp;|&nbsp; <a href="https://github.com/bharathkumar000/nexus-twin/blob/main/SYSTEM_ARCHITECTURE.md">📄 Project Report</a>
-        </p>
       </td>
       <td valign="top" width="50%">
         <a href="https://github.com/bharathkumar000/connect-and-prep"><img src="ach-6.svg" width="100%"></a>
-        <p align="center" style="margin-top: 5px; font-family: monospace;">
-          <a href="https://github.com/bharathkumar000/connect-and-prep">💻 Repository</a>
-        </p>
       </td>
     </tr>
     <tr>
