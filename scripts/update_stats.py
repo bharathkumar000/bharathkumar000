@@ -55,6 +55,7 @@ fragment RepoFields on Repository {
     color
   }
 }
+"""
 PUBLIC_QUERY = """
 query($username: String!) {
   user(login: $username) {
