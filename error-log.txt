@@ -1,0 +1,11 @@
+Error: GITHUB_TOKEN or GH_PAT not found in environment.
+
+Traceback:
+Traceback (most recent call last):
+  File "/home/runner/work/bharathkumar000/bharathkumar000/scripts/update_stats.py", line 256, in <module>
+    raise ValueError("GITHUB_TOKEN or GH_PAT not found in environment.")
+ValueError: GITHUB_TOKEN or GH_PAT not found in environment.
+
+Environment diagnostics:
+GH_PAT env present: False (len: 0)
+GITHUB_TOKEN env present: False (len: 0)
