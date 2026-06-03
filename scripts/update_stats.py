@@ -55,6 +55,38 @@ fragment RepoFields on Repository {
     color
   }
 }
+PUBLIC_QUERY = """
+query($username: String!) {
+  user(login: $username) {
+    contributionsCollection {
+      contributionCalendar {
+        totalContributions
+        weeks {
+          contributionDays {
+            contributionCount
+            date
+          }
+        }
+      }
+    }
+  }
+  repository(owner: $username, name: "connect-and-prep") { ...on Repository { ...RepoFields } }
+  repo2: repository(owner: $username, name: "RESQLINK") { ...on Repository { ...RepoFields } }
+  repo3: repository(owner: $username, name: "FESTFLOW") { ...on Repository { ...RepoFields } }
+  repo4: repository(owner: $username, name: "mysurumarga") { ...on Repository { ...RepoFields } }
+}
+
+fragment RepoFields on Repository {
+  name
+  description
+  stargazerCount
+  forkCount
+  url
+  primaryLanguage {
+    name
+    color
+  }
+}
 """
 
 def fetch_contribution_data(username, token):
@@ -62,12 +94,19 @@ def fetch_contribution_data(username, token):
     headers = {
         "Authorization": f"bearer {token}",
         "Content-Type": "application/json",
+        "User-Agent": "Python-urllib"
     }
-    data = json.dumps({"query": GRAPHQL_QUERY, "variables": {"username": username}}).encode("utf-8")
+    
+    # Use public query if GH_PAT is missing to avoid viewer scope error
+    query_to_use = GRAPHQL_QUERY if os.getenv("GH_PAT") else PUBLIC_QUERY
+    data = json.dumps({"query": query_to_use, "variables": {"username": username}}).encode("utf-8")
     
     req = urllib.request.Request(url, data=data, headers=headers)
     with urllib.request.urlopen(req) as response:
-        return json.loads(response.read().decode())
+        res = json.loads(response.read().decode())
+        if "errors" in res:
+            raise ValueError(f"GraphQL Errors: {res['errors']}")
+        return res
 
 def calculate_streaks(data):
     viewer_data = data["data"].get("viewer")
