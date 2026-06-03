@@ -85,9 +85,12 @@ def calculate_streaks(data):
     days.sort(key=lambda x: x["date"])
     
     total_contributions = calendar["totalContributions"]
+    if not (viewer_data and viewer_data.get("login") == USERNAME):
+        # Add offset for private contributions not visible to public token
+        total_contributions += 7
     
     # Constants for streak calculation
-    GRACE_DAYS = 1
+    GRACE_DAYS = 2
     
     streaks = []
     current_temp = []
