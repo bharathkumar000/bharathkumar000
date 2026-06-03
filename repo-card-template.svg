@@ -23,17 +23,17 @@
   <rect width="550" height="200" fill="url(#grid-repo)" rx="10" />
 
   <!-- Scanning Beam (Double Activity) -->
-  <line x1="0" y1="0" x2="550" y2="0" stroke="#00F2FF" stroke-opacity="0.1" stroke-width="2">
+  <line x1="0" y1="0" x2="550" y2="0" stroke="#00F2FF" stroke-opacity="0.02" stroke-width="2">
     <animate attributeName="y1" from="0" to="200" dur="3s" repeatCount="indefinite" />
     <animate attributeName="y2" from="0" to="200" dur="3s" repeatCount="indefinite" />
   </line>
-  <line x1="0" y1="0" x2="550" y2="0" stroke="#00F2FF" stroke-opacity="0.05" stroke-width="1">
+  <line x1="0" y1="0" x2="550" y2="0" stroke="#00F2FF" stroke-opacity="0.01" stroke-width="1">
     <animate attributeName="y1" from="200" to="0" dur="5s" repeatCount="indefinite" />
     <animate attributeName="y2" from="200" to="0" dur="5s" repeatCount="indefinite" />
   </line>
 
   <!-- COMPLEX CIRCUIT FLOWS (X5 Animation) -->
-  <g stroke="#00F2FF" stroke-opacity="0.06" stroke-width="1" fill="none">
+  <g stroke="#00F2FF" stroke-opacity="0.015" stroke-width="1" fill="none">
     <path d="M0 40 H60 L80 60 H200" />
     <path d="M550 160 H490 L470 140 H300" />
     <path d="M400 0 V40 L430 70 H550" />
@@ -45,22 +45,22 @@
     <!-- Pulse Line 1 -->
     <path d="M0 40 H60 L80 60 H200" stroke="#00ffff" stroke-dasharray="15, 80">
       <animate attributeName="stroke-dashoffset" from="95" to="0" dur="2s" repeatCount="indefinite" />
-      <animate attributeName="stroke-opacity" values="0.2;0.8;0.2" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="stroke-opacity" values="0.04;0.15;0.04" dur="2s" repeatCount="indefinite" />
     </path>
     <!-- Energy Flow 2 -->
-    <path d="M550 160 H490 L470 140 H300" stroke="#39FF14" stroke-dasharray="2, 10" stroke-opacity="0.4">
+    <path d="M550 160 H490 L470 140 H300" stroke="#39FF14" stroke-dasharray="2, 10" stroke-opacity="0.08">
       <animate attributeName="stroke-dashoffset" from="-120" to="0" dur="3s" repeatCount="indefinite" />
     </path>
     <!-- Flow 3 -->
-    <path d="M400 0 V40 L430 70 H550" stroke="#00ffff" stroke-dasharray="12, 60">
+    <path d="M400 0 V40 L430 70 H550" stroke="#00ffff" stroke-dasharray="12, 60" stroke-opacity="0.08">
       <animate attributeName="stroke-dashoffset" from="72" to="0" dur="1.8s" repeatCount="indefinite" />
     </path>
     <!-- Flow 4 -->
-    <path d="M150 200 V160 L120 130 H0" stroke="#00ffff" stroke-dasharray="30, 150" opacity="0.5">
+    <path d="M150 200 V160 L120 130 H0" stroke="#00ffff" stroke-dasharray="30, 150" opacity="0.08">
       <animate attributeName="stroke-dashoffset" from="-180" to="0" dur="6s" repeatCount="indefinite" />
     </path>
     <!-- Fast Circuit 5 -->
-    <path d="M300 0 V30 L280 50 H240" stroke="#39FF14" stroke-dasharray="8, 40">
+    <path d="M300 0 V30 L280 50 H240" stroke="#39FF14" stroke-dasharray="8, 40" stroke-opacity="0.08">
       <animate attributeName="stroke-dashoffset" from="48" to="0" dur="0.8s" repeatCount="indefinite" />
     </path>
   </g>
@@ -68,17 +68,17 @@
   <!-- Pulsing Nodes (The "Tiny Things") -->
   <circle cx="80" cy="60" r="2" fill="#00ffff">
     <animate attributeName="r" values="2;3.5;2" dur="1.5s" repeatCount="indefinite" />
-    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.05;0.2;0.05" dur="1.5s" repeatCount="indefinite" />
   </circle>
   <circle cx="470" cy="140" r="1.5" fill="#39FF14">
     <animate attributeName="r" values="1.5;3;1.5" dur="1s" repeatCount="indefinite" />
-    <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.2;0.05;0.2" dur="1s" repeatCount="indefinite" />
   </circle>
   <circle cx="430" cy="70" r="1" fill="#00ffff">
-    <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0;0.2;0" dur="0.5s" repeatCount="indefinite" />
   </circle>
   <circle cx="120" cy="130" r="1" fill="#39FF14">
-    <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.2;0;0.2" dur="0.8s" repeatCount="indefinite" />
   </circle>
 
   <!-- HUD Corner Brackets -->
