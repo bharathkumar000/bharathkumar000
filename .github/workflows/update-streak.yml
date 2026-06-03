@@ -27,6 +27,7 @@ jobs:
       - name: Run Update Script
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/update_stats.py
 
       - name: Commit and Push Changes
