@@ -7,10 +7,24 @@ from datetime import datetime, timedelta
 # Configuration
 USERNAME = os.getenv("GITHUB_REPOSITORY_OWNER", "bharathkumar000")
 SVG_PATH = "streak-stats.svg"
-TOKEN = os.getenv("GITHUB_TOKEN")
+TOKEN = os.getenv("GH_PAT") or os.getenv("GITHUB_TOKEN")
 
 GRAPHQL_QUERY = """
 query($username: String!) {
+  viewer {
+    login
+    contributionsCollection {
+      contributionCalendar {
+        totalContributions
+        weeks {
+          contributionDays {
+            contributionCount
+            date
+          }
+        }
+      }
+    }
+  }
   user(login: $username) {
     contributionsCollection {
       contributionCalendar {
@@ -56,90 +70,112 @@ def fetch_contribution_data(username, token):
         return json.loads(response.read().decode())
 
 def calculate_streaks(data):
-    calendar = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+    viewer_data = data["data"].get("viewer")
+    if viewer_data and viewer_data.get("login") == USERNAME:
+        calendar = viewer_data["contributionsCollection"]["contributionCalendar"]
+        print("Using authenticated viewer calendar (includes private contributions).")
+    else:
+        calendar = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]
+        print("Using public user calendar.")
     days = []
     for week in calendar["weeks"]:
         for day in week["contributionDays"]:
-            days.append((day["date"], day["contributionCount"]))
+            days.append({"date": day["date"], "count": day["contributionCount"]})
     
-    days.sort(key=lambda x: x[0])  # Ensure dates are sorted
+    days.sort(key=lambda x: x["date"])
     
     total_contributions = calendar["totalContributions"]
     
-    current_streak = 0
-    longest_streak = 0
-    current_streak_start = None
-    current_streak_end = None
-    longest_streak_start = None
-    longest_streak_end = None
+    # Constants for streak calculation
+    GRACE_DAYS = 1
     
-    temp_streak = 0
-    temp_start = None
+    streaks = []
+    current_temp = []
+    gap_count = 0
+    
+    for i in range(len(days)):
+        day = days[i]
+        if day["count"] > 0:
+            # If we had a gap but it's within grace, keep the streak going
+            current_temp.append(day)
+            gap_count = 0
+        else:
+            if current_temp and gap_count < GRACE_DAYS:
+                # Potential gap, but don't break yet. 
+                # We don't add the gap day to the "days with contributions" list yet
+                # but we keep the streak object alive.
+                gap_count += 1
+                # To make the range accurate, we can include the gap day
+                current_temp.append(day)
+            else:
+                if current_temp:
+                    # Remove trailing gap days before saving
+                    while current_temp and current_temp[-1]["count"] == 0:
+                        current_temp.pop()
+                    if current_temp:
+                        streaks.append(current_temp)
+                current_temp = []
+                gap_count = 0
+                
+    if current_temp:
+        while current_temp and current_temp[-1]["count"] == 0:
+            current_temp.pop()
+        if current_temp:
+            streaks.append(current_temp)
+
+    # Find longest streak
+    longest_streak_val = 0
+    longest_range = "N/A"
+    
+    for s in streaks:
+        # We can define streak length as the number of days in the span
+        # or the number of days with contributions. Usually it's the span.
+        start_date = s[0]["date"]
+        end_date = s[-1]["date"]
+        # Calculate span in days
+        d1 = datetime.strptime(start_date, "%Y-%m-%d")
+        d2 = datetime.strptime(end_date, "%Y-%m-%d")
+        span = (d2 - d1).days + 1
+        
+        if span > longest_streak_val:
+            longest_streak_val = span
+            longest_range = f"{format_date(start_date)} - {format_date(end_date)}"
+
+    # Find current streak
+    current_streak_val = 0
+    current_range = "No active streak"
     
     today = datetime.now().strftime("%Y-%m-%d")
     yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
     
-    for date, count in days:
-        if count > 0:
-            if temp_streak == 0:
-                temp_start = date
-            temp_streak += 1
-            
-            if temp_streak > longest_streak:
-                longest_streak = temp_streak
-                longest_streak_start = temp_start
-                longest_streak_end = date
-        else:
-            # Streak broken
-            if temp_streak > 0:
-                # Check if this was the current streak
-                # (if it ended yesterday or today)
-                if date == today or date == yesterday:
-                    # Actually if count is 0 on today, the streak might have ended yesterday
-                    pass # handled below
-            temp_streak = 0
-            temp_start = None
-
-    # Recalculate current streak correctly by walking backwards from today/yesterday
-    current_streak = 0
-    curr_start = None
-    curr_end = None
-    
-    # Simple way: find the last day with contributions
-    last_contributed_day_index = -1
-    for i in range(len(days)-1, -1, -1):
-        if days[i][1] > 0:
-            last_contributed_day_index = i
-            break
-    
-    if last_contributed_day_index != -1:
-        last_date = days[last_contributed_day_index][0]
-        # Streak is "current" if the last contribution was today or yesterday
+    if streaks:
+        last_streak = streaks[-1]
+        last_date = last_streak[-1]["date"]
+        
+        # A streak is current if it ended today or yesterday
         if last_date == today or last_date == yesterday:
-            curr_end = last_date
-            # Walk backwards
-            for i in range(last_contributed_day_index, -1, -1):
-                if days[i][1] > 0:
-                    current_streak += 1
-                    curr_start = days[i][0]
-                else:
-                    break
+            start_date = last_streak[0]["date"]
+            end_date = last_streak[-1]["date"]
+            d1 = datetime.strptime(start_date, "%Y-%m-%d")
+            d2 = datetime.strptime(end_date, "%Y-%m-%d")
+            current_streak_val = (d2 - d1).days + 1
+            current_range = f"{format_date(start_date)} - {format_date(end_date)}"
     
-    # Get Repo Data (Specific ones)
+    # Get Repo Data
     repos = [
-        data["data"]["repository"],
-        data["data"]["repo2"],
-        data["data"]["repo3"],
-        data["data"]["repo4"]
+        data["data"].get("repository"),
+        data["data"].get("repo2"),
+        data["data"].get("repo3"),
+        data["data"].get("repo4")
     ]
-    repos = [r for r in repos if r] # filter out any that failed
+    repos = [r for r in repos if r]
     
     return {
         "total": total_contributions,
-        "current": current_streak,
-        "current_range": f"{format_date(curr_start)} - {format_date(curr_end)}" if curr_start else "No active streak",
-        "longest": longest_streak,
-        "longest_range": f"{format_date(longest_streak_start)} - {format_date(longest_streak_end)}" if longest_streak_start else "N/A",
+        "current": current_streak_val,
+        "current_range": current_range,
+        "longest": longest_streak_val,
+        "longest_range": longest_range,
         "repos": repos
     }
 

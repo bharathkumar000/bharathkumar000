@@ -40,17 +40,17 @@
 
   <!-- Animated Flow Drips -->
   <g fill="none">
-    <path d="M0 60 H80 L110 90 H200" stroke="#00ffff" stroke-width="2" stroke-dasharray="25, 150">
-      <animate attributeName="stroke-dashoffset" from="175" to="0" dur="3s" repeatCount="indefinite" />
+    <path d="M0 60 H80 L110 90 H200" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="60, 300" stroke-opacity="0.3">
+      <animate attributeName="stroke-dashoffset" from="360" to="0" dur="12s" repeatCount="indefinite" />
     </path>
-    <path d="M1200 60 H1120 L1090 90 H1000" stroke="#00ffff" stroke-width="2" stroke-dasharray="25, 150">
-      <animate attributeName="stroke-dashoffset" from="-175" to="0" dur="3.5s" repeatCount="indefinite" />
+    <path d="M1200 60 H1120 L1090 90 H1000" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="60, 300" stroke-opacity="0.3">
+      <animate attributeName="stroke-dashoffset" from="-360" to="0" dur="14s" repeatCount="indefinite" />
     </path>
-    <path d="M200 0 V30 L230 60" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="15, 120">
-      <animate attributeName="stroke-dashoffset" from="110" to="0" dur="2s" repeatCount="indefinite" />
+    <path d="M200 0 V30 L230 60" stroke="#00ffff" stroke-width="1" stroke-dasharray="40, 200" stroke-opacity="0.2">
+      <animate attributeName="stroke-dashoffset" from="240" to="0" dur="10s" repeatCount="indefinite" />
     </path>
-    <path d="M1000 480 V450 L970 420" stroke="#00ffff" stroke-width="1.5" stroke-dasharray="15, 120">
-      <animate attributeName="stroke-dashoffset" from="-110" to="0" dur="2.5s" repeatCount="indefinite" />
+    <path d="M1000 480 V450 L970 420" stroke="#00ffff" stroke-width="1" stroke-dasharray="40, 200" stroke-opacity="0.2">
+      <animate attributeName="stroke-dashoffset" from="-240" to="0" dur="12s" repeatCount="indefinite" />
     </path>
     <path d="M0 200 H50 L80 170" stroke="#00ffff" stroke-width="1" stroke-dasharray="10, 100" opacity="0.4">
       <animate attributeName="stroke-dashoffset" from="130" to="0" dur="4s" repeatCount="indefinite" />

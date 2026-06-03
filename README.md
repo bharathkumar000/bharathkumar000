@@ -24,6 +24,14 @@
  <img src="naga.svg.svg"/>
 </p>
 
+# ⚡ <span style="color: #00F2FF;">ACTIVE_DEVELOPMENT</span>
+
+<div align="center">
+  <img src="ongoing-projects.svg" width="100%"/>
+</div>
+
+---
+
 
 ## 🛠️ Tech Stack
 
@@ -50,6 +58,10 @@
   <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white" />
+  <img src="https://img.shields.io/badge/TLS_Config-000000?style=for-the-badge&logo=letsencrypt&logoColor=white" />
 </p>
 
 # 📊 GitHub Stats:
@@ -73,12 +85,26 @@
 <div align="center">
   <table border="0">
     <tr>
-      <td><a href="https://github.com/bharathkumar000/mysurumarga"><img src="ach-1.svg" width="100%"></a></td>
-      <td><a href="https://github.com/bharathkumar000/RESQLINK"><img src="ach-2.svg" width="100%"></a></td>
+      <td valign="top" width="50%">
+        <a href="https://github.com/bharathkumar000/nexus-twin"><img src="ach-5.svg" width="100%"></a>
+        <p align="center" style="margin-top: 5px; font-family: monospace;">
+          <a href="https://github.com/bharathkumar000/nexus-twin">💻 Repository</a> &nbsp;|&nbsp; <a href="https://github.com/bharathkumar000/nexus-twin/blob/main/SYSTEM_ARCHITECTURE.md">📄 Project Report</a>
+        </p>
+      </td>
+      <td valign="top" width="50%">
+        <a href="https://github.com/bharathkumar000/connect-and-prep"><img src="ach-6.svg" width="100%"></a>
+        <p align="center" style="margin-top: 5px; font-family: monospace;">
+          <a href="https://github.com/bharathkumar000/connect-and-prep">💻 Repository</a>
+        </p>
+      </td>
     </tr>
     <tr>
-      <td><a href="https://github.com/bharathkumar000/connect-and-prep"><img src="ach-3.svg" width="100%"></a></td>
-      <td><a href="https://github.com/bharathkumar000/tls-auditor"><img src="ach-4.svg" width="100%"></a></td>
+      <td valign="top"><a href="https://github.com/bharathkumar000/mysurumarga"><img src="ach-1.svg" width="100%"></a></td>
+      <td valign="top"><a href="https://github.com/bharathkumar000/RESQLINK"><img src="ach-2.svg" width="100%"></a></td>
+    </tr>
+    <tr>
+      <td valign="top"><a href="https://github.com/bharathkumar000/connect-and-prep"><img src="ach-3.svg" width="100%"></a></td>
+      <td valign="top"><a href="https://github.com/bharathkumar000/nexus-twin"><img src="ach-4.svg" width="100%"></a></td>
     </tr>
   </table>
 </div>
