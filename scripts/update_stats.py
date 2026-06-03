@@ -248,14 +248,39 @@ def update_pinned_repos(repos):
     except FileNotFoundError:
         print("repo-card-template.svg not found, skipping.")
 
+import traceback
+
 if __name__ == "__main__":
-    if not TOKEN:
-        print("GITHUB_TOKEN not found.")
-        exit(1)
-    
-    data = fetch_contribution_data(USERNAME, TOKEN)
-    stats = calculate_streaks(data)
-    print(f"Stats calculated: {stats}")
-    update_svg(stats)
-    update_pinned_repos(stats["repos"])
-    print("SVGs updated successfully.")
+    try:
+        if not TOKEN:
+            raise ValueError("GITHUB_TOKEN or GH_PAT not found in environment.")
+        
+        data = fetch_contribution_data(USERNAME, TOKEN)
+        stats = calculate_streaks(data)
+        print(f"Stats calculated: {stats}")
+        update_svg(stats)
+        update_pinned_repos(stats["repos"])
+        print("SVGs updated successfully.")
+        
+        # Clean up error-log if it exists from a previous run
+        if os.path.exists("error-log.txt"):
+            try:
+                os.remove("error-log.txt")
+            except Exception:
+                pass
+                
+    except Exception as e:
+        print(f"Exception caught in main execution: {e}")
+        traceback.print_exc()
+        try:
+            with open("error-log.txt", "w") as f:
+                f.write(f"Error: {str(e)}\n\n")
+                f.write("Traceback:\n")
+                f.write(traceback.format_exc())
+                f.write("\nEnvironment diagnostics:\n")
+                f.write(f"GH_PAT env present: {bool(os.getenv('GH_PAT'))} (len: {len(os.getenv('GH_PAT')) if os.getenv('GH_PAT') else 0})\n")
+                f.write(f"GITHUB_TOKEN env present: {bool(os.getenv('GITHUB_TOKEN'))} (len: {len(os.getenv('GITHUB_TOKEN')) if os.getenv('GITHUB_TOKEN') else 0})\n")
+        except Exception as log_err:
+            print(f"Failed to write error-log.txt: {log_err}")
+        # Exit with 0 so the GitHub Action can commit and push the error-log.txt file
+        exit(0)
