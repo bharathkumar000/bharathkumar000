@@ -1,28 +1,12 @@
-Error: HTTP Error 401: Unauthorized
+Error: GraphQL Errors: [{'type': 'NOT_FOUND', 'path': ['repository'], 'locations': [{'line': 16, 'column': 3}], 'message': "Could not resolve to a Repository with the name 'bharathkumar000/connect-and-prep'."}, {'type': 'NOT_FOUND', 'path': ['repo2'], 'locations': [{'line': 17, 'column': 3}], 'message': "Could not resolve to a Repository with the name 'bharathkumar000/RESQLINK'."}]
 
 Traceback:
 Traceback (most recent call last):
   File "/home/runner/work/bharathkumar000/bharathkumar000/scripts/update_stats.py", line 298, in <module>
     data = fetch_contribution_data(USERNAME, TOKEN)
-  File "/home/runner/work/bharathkumar000/bharathkumar000/scripts/update_stats.py", line 106, in fetch_contribution_data
-    with urllib.request.urlopen(req) as response:
-         ~~~~~~~~~~~~~~~~~~~~~~^^^^^
-  File "/opt/hostedtoolcache/Python/3.14.5/x64/lib/python3.14/urllib/request.py", line 187, in urlopen
-    return opener.open(url, data, timeout)
-           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.14.5/x64/lib/python3.14/urllib/request.py", line 493, in open
-    response = meth(req, response)
-  File "/opt/hostedtoolcache/Python/3.14.5/x64/lib/python3.14/urllib/request.py", line 602, in http_response
-    response = self.parent.error(
-        'http', request, response, code, msg, hdrs)
-  File "/opt/hostedtoolcache/Python/3.14.5/x64/lib/python3.14/urllib/request.py", line 531, in error
-    return self._call_chain(*args)
-           ~~~~~~~~~~~~~~~~^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.14.5/x64/lib/python3.14/urllib/request.py", line 464, in _call_chain
-    result = func(*args)
-  File "/opt/hostedtoolcache/Python/3.14.5/x64/lib/python3.14/urllib/request.py", line 611, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 401: Unauthorized
+  File "/home/runner/work/bharathkumar000/bharathkumar000/scripts/update_stats.py", line 109, in fetch_contribution_data
+    raise ValueError(f"GraphQL Errors: {res['errors']}")
+ValueError: GraphQL Errors: [{'type': 'NOT_FOUND', 'path': ['repository'], 'locations': [{'line': 16, 'column': 3}], 'message': "Could not resolve to a Repository with the name 'bharathkumar000/connect-and-prep'."}, {'type': 'NOT_FOUND', 'path': ['repo2'], 'locations': [{'line': 17, 'column': 3}], 'message': "Could not resolve to a Repository with the name 'bharathkumar000/RESQLINK'."}]
 
 Environment diagnostics:
 GH_PAT env present: False (len: 0)
