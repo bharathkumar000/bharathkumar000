@@ -91,7 +91,7 @@
 
   <!-- Content Group -->
   <text x="30" y="45" font-size="20">🚀</text>
-  <text x="65" y="46" class="repo-title">connect-and-prep-school</text>
+  <text x="65" y="46" class="repo-title">festflow</text>
   
   <text x="30" y="82" font-size="14">📂</text>
   <text x="55" y="82" class="repo-link">Source Repository Analysis</text>
@@ -108,7 +108,7 @@
     </g>
     
     <g transform="translate(210, 0)">
-       <text y="5" class="repo-stat" fill="#00F2FF" style="filter:url(#glow)">⑂ 4</text>
+       <text y="5" class="repo-stat" fill="#00F2FF" style="filter:url(#glow)">⑂ 0</text>
     </g>
   </g>
 </svg>
