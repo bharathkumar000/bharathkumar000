@@ -7,7 +7,6 @@ from datetime import datetime, timedelta
 # Configuration
 USERNAME = os.getenv("GITHUB_REPOSITORY_OWNER", "bharathkumar000")
 SVG_PATH = "streak-stats.svg"
-TOKEN = os.getenv("GH_PAT") or os.getenv("GITHUB_TOKEN")
 
 GRAPHQL_QUERY = """
 query($username: String!) {
@@ -90,7 +89,7 @@ fragment RepoFields on Repository {
 }
 """
 
-def fetch_contribution_data(username, token):
+def fetch_contribution_data(username, token, use_graphql_query=True):
     url = "https://api.github.com/graphql"
     headers = {
         "Authorization": f"bearer {token}",
@@ -98,15 +97,18 @@ def fetch_contribution_data(username, token):
         "User-Agent": "Python-urllib"
     }
     
-    # Use public query if GH_PAT is missing to avoid viewer scope error
-    query_to_use = GRAPHQL_QUERY if os.getenv("GH_PAT") else PUBLIC_QUERY
+    # Use the appropriate query
+    query_to_use = GRAPHQL_QUERY if use_graphql_query else PUBLIC_QUERY
     data = json.dumps({"query": query_to_use, "variables": {"username": username}}).encode("utf-8")
     
     req = urllib.request.Request(url, data=data, headers=headers)
     with urllib.request.urlopen(req) as response:
         res = json.loads(response.read().decode())
         if "errors" in res:
-            raise ValueError(f"GraphQL Errors: {res['errors']}")
+            print(f"GraphQL Warnings/Errors: {res['errors']}")
+            # Only raise if 'data' is missing or user/viewer is not present
+            if "data" not in res or not res["data"] or (not res["data"].get("user") and not res["data"].get("viewer")):
+                raise ValueError(f"GraphQL Critical Error: {res['errors']}")
         return res
 
 def calculate_streaks(data):
@@ -292,10 +294,27 @@ import traceback
 
 if __name__ == "__main__":
     try:
-        if not TOKEN:
-            raise ValueError("GITHUB_TOKEN or GH_PAT not found in environment.")
+        gh_pat = os.getenv("GH_PAT")
+        github_token = os.getenv("GITHUB_TOKEN")
         
-        data = fetch_contribution_data(USERNAME, TOKEN)
+        data = None
+        # Try GH_PAT first if available
+        if gh_pat:
+            print("Attempting to fetch data using GH_PAT...")
+            try:
+                data = fetch_contribution_data(USERNAME, gh_pat, use_graphql_query=True)
+                print("Successfully fetched data using GH_PAT.")
+            except Exception as e:
+                print(f"Failed to fetch data using GH_PAT: {e}. Falling back to GITHUB_TOKEN...")
+        
+        # Fall back to GITHUB_TOKEN if GH_PAT failed or wasn't provided
+        if not data:
+            if not github_token:
+                raise ValueError("Neither GH_PAT nor GITHUB_TOKEN was found/valid in environment.")
+            print("Attempting to fetch data using GITHUB_TOKEN...")
+            data = fetch_contribution_data(USERNAME, github_token, use_graphql_query=False)
+            print("Successfully fetched data using GITHUB_TOKEN.")
+
         stats = calculate_streaks(data)
         print(f"Stats calculated: {stats}")
         update_svg(stats)
@@ -324,3 +343,4 @@ if __name__ == "__main__":
             print(f"Failed to write error-log.txt: {log_err}")
         # Exit with 0 so the GitHub Action can commit and push the error-log.txt file
         exit(0)
+
