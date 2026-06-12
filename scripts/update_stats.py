@@ -233,6 +233,22 @@ def update_svg(stats):
     with open(SVG_PATH, "r") as f:
         content = f.read()
 
+    # Extract previous stats to prevent downgrades due to incomplete token permissions
+    prev_total = 0
+    total_match = re.search(r'<text[^>]*x="200"[^>]*y="145"[^>]*>\s*(\d+)\s*</text>', content)
+    if total_match:
+        prev_total = int(total_match.group(1))
+
+    # If the calculated total contributions is less than the previous total contributions,
+    # it means the token we used (like GITHUB_TOKEN fallback) is missing access to private contributions.
+    if stats["total"] < prev_total:
+        print(f"Warning: Calculated total contributions ({stats['total']}) is less than previous total ({prev_total}).")
+        print("This usually happens when falling back to GITHUB_TOKEN which lacks private contribution visibility.")
+        raise ValueError(
+            f"Incomplete contribution data fetched ({stats['total']} vs previous {prev_total}). "
+            f"Please verify that your GH_PAT secret is set up correctly in your GitHub repository settings."
+        )
+
     # Get current year start date (e.g., Jan 1)
     current_year = datetime.now().year
     total_range = f"Jan 1, {current_year} - Present"
@@ -242,6 +258,21 @@ def update_svg(stats):
     content = re.sub(r'(<text[^>]*x="200"[^>]*y="145"[^>]*>)\s*(\d+)\s*(</text>)', rf'\g<1>{stats["total"]}\g<3>', content)
     # Range (y=222)
     content = re.sub(r'(<text[^>]*x="200"[^>]*y="222"[^>]*>)\s*([^<]+)\s*(</text>)', rf'\g<1>{total_range}\g<3>', content)
+
+    # Extract previous longest streak to ensure history is never lost
+    prev_longest = 0
+    prev_longest_range = "N/A"
+    longest_match = re.search(r'<text[^>]*x="1000"[^>]*y="145"[^>]*>\s*(\d+)\s*</text>', content)
+    if longest_match:
+        prev_longest = int(longest_match.group(1))
+    longest_range_match = re.search(r'<text[^>]*x="1000"[^>]*y="222"[^>]*>\s*([^<]+)\s*</text>', content)
+    if longest_range_match:
+        prev_longest_range = longest_range_match.group(1).strip()
+
+    if stats["longest"] < prev_longest:
+        print(f"Calculated longest streak ({stats['longest']}) is less than previous longest streak ({prev_longest}). Preserving previous longest.")
+        stats["longest"] = prev_longest
+        stats["longest_range"] = prev_longest_range
 
     # Update Current Streak (x=600)
     # Number (y=155)
@@ -257,6 +288,7 @@ def update_svg(stats):
 
     with open(SVG_PATH, "w") as f:
         f.write(content)
+
 
 def update_pinned_repos(repos):
     try:

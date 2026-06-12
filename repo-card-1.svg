@@ -91,7 +91,7 @@
 
   <!-- Content Group -->
   <text x="30" y="45" font-size="20">🚀</text>
-  <text x="65" y="46" class="repo-title">mysurumarga</text>
+  <text x="65" y="46" class="repo-title">RESQLINK</text>
   
   <text x="30" y="82" font-size="14">📂</text>
   <text x="55" y="82" class="repo-link">Source Repository Analysis</text>
@@ -101,14 +101,14 @@
   <!-- Footer Stats -->
   <g transform="translate(30, 165)">
     <circle cx="5" cy="0" r="5" fill="#F1E05A" id="lang-color" />
-    <text x="20" y="5" class="repo-stat">JavaScript</text>
+    <text x="20" y="5" class="repo-stat">HTML</text>
     
     <g transform="translate(140, 0)">
        <text y="5" class="repo-stat" fill="#00F2FF" style="filter:url(#glow)">★ 0</text>
     </g>
     
     <g transform="translate(210, 0)">
-       <text y="5" class="repo-stat" fill="#00F2FF" style="filter:url(#glow)">⑂ 0</text>
+       <text y="5" class="repo-stat" fill="#00F2FF" style="filter:url(#glow)">⑂ 2</text>
     </g>
   </g>
 </svg>
