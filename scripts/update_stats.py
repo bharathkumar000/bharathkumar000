@@ -253,13 +253,24 @@ def update_svg(stats):
     if total_match:
         prev_total = int(total_match.group(1))
 
+    prev_current = 0
+    prev_current_range = "No active streak"
+    current_match = re.search(r'<text[^>]*x="600"[^>]*y="155"[^>]*>\s*(\d+)\s*</text>', content)
+    if current_match:
+        prev_current = int(current_match.group(1))
+    current_range_match = re.search(r'<text[^>]*x="600"[^>]*y="265"[^>]*>\s*([^<]+)\s*</text>', content)
+    if current_range_match:
+        prev_current_range = current_range_match.group(1).strip()
+
     # If the calculated total contributions is less than the previous total contributions,
     # it means the token we used (like GITHUB_TOKEN fallback) is missing access to private contributions.
-    # Preserve the higher total but still update streak dates.
+    # Preserve the higher total, current streak, and longest streak dates.
     if stats["total"] < prev_total:
         print(f"Warning: Calculated total contributions ({stats['total']}) is less than previous total ({prev_total}).")
-        print("Preserving previous total, but still updating streak dates.")
+        print("Preserving previous total, current streak, and longest streak dates due to incomplete token permissions.")
         stats["total"] = prev_total
+        stats["current"] = prev_current
+        stats["current_range"] = prev_current_range
 
     # Get current year start date (e.g., Jan 1)
     current_year = datetime.now().year
