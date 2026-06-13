@@ -67,12 +67,6 @@
 # 📊 GitHub Stats:
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=bharathkumar000&show_icons=true&theme=tokyonight&hide_border=true&title_color=00ffff&text_color=c9d1d9&icon_color=00ffff&bg_color=0d1117&cache_seconds=1800" width="100%" />
-</div>
-
-<br/>
-
-<div align="center">
   <img src="streak-stats.svg" width="100%"/>
 </div>
   
