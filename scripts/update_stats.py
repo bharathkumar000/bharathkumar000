@@ -102,14 +102,28 @@ def fetch_contribution_data(username, token, use_graphql_query=True):
     data = json.dumps({"query": query_to_use, "variables": {"username": username}}).encode("utf-8")
     
     req = urllib.request.Request(url, data=data, headers=headers)
-    with urllib.request.urlopen(req) as response:
-        res = json.loads(response.read().decode())
-        if "errors" in res:
-            print(f"GraphQL Warnings/Errors: {res['errors']}")
-            # Only raise if 'data' is missing or user/viewer is not present
-            if "data" not in res or not res["data"] or (not res["data"].get("user") and not res["data"].get("viewer")):
-                raise ValueError(f"GraphQL Critical Error: {res['errors']}")
-        return res
+    
+    import ssl
+    try:
+        # Try standard request first
+        with urllib.request.urlopen(req) as response:
+            res = json.loads(response.read().decode())
+    except Exception as e:
+        print(f"Standard request failed, trying with unverified SSL context: {e}")
+        try:
+            context = ssl._create_unverified_context()
+            with urllib.request.urlopen(req, context=context) as response:
+                res = json.loads(response.read().decode())
+        except Exception as retry_err:
+            print(f"Request failed with unverified context: {retry_err}")
+            raise e
+
+    if "errors" in res:
+        print(f"GraphQL Warnings/Errors: {res['errors']}")
+        # Only raise if 'data' is missing or user/viewer is not present
+        if "data" not in res or not res["data"] or (not res["data"].get("user") and not res["data"].get("viewer")):
+            raise ValueError(f"GraphQL Critical Error: {res['errors']}")
+    return res
 
 def calculate_streaks(data):
     viewer_data = data["data"].get("viewer")
