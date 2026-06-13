@@ -2,7 +2,8 @@ name: Update GitHub Streak Stats
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # Every 6 hours
+    # Runs every 6 hours at :05 past the hour (avoids GitHub's busy :00 slot)
+    - cron: '5 */6 * * *'
   push:
     branches:
       - main
@@ -17,10 +18,13 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
@@ -35,4 +39,4 @@ jobs:
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add streak-stats.svg repo-card-*.svg error-log.txt || true
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update streak and repo card stats [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update streak and repo card stats [$(date -u +%Y-%m-%d)]" && git push)

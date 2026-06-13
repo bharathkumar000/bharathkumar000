@@ -241,13 +241,11 @@ def update_svg(stats):
 
     # If the calculated total contributions is less than the previous total contributions,
     # it means the token we used (like GITHUB_TOKEN fallback) is missing access to private contributions.
+    # Preserve the higher total but still update streak dates.
     if stats["total"] < prev_total:
         print(f"Warning: Calculated total contributions ({stats['total']}) is less than previous total ({prev_total}).")
-        print("This usually happens when falling back to GITHUB_TOKEN which lacks private contribution visibility.")
-        raise ValueError(
-            f"Incomplete contribution data fetched ({stats['total']} vs previous {prev_total}). "
-            f"Please verify that your GH_PAT secret is set up correctly in your GitHub repository settings."
-        )
+        print("Preserving previous total, but still updating streak dates.")
+        stats["total"] = prev_total
 
     # Get current year start date (e.g., Jan 1)
     current_year = datetime.now().year
