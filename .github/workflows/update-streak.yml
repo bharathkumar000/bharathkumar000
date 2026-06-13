@@ -35,5 +35,11 @@ jobs:
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          git add streak-stats.svg repo-card-*.svg error-log.txt || true
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update streak and repo card stats [skip ci]" && git push 2> push_error.log || (cat push_error.log && exit 1))
+          
+          # Stage files carefully (avoiding missing pathspec aborting the add)
+          git add streak-stats.svg repo-card-*.svg || true
+          if [ -f error-log.txt ]; then
+            git add error-log.txt
+          fi
+          
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update streak and repo card stats [skip ci]" && git push)
