@@ -205,14 +205,17 @@ def calculate_streaks(data):
     current_range = "No active streak"
     
     today = datetime.now().strftime("%Y-%m-%d")
-    yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
     
     if streaks:
         last_streak = streaks[-1]
         last_date = last_streak[-1]["date"]
         
-        # A streak is current if it ended today or yesterday
-        if last_date == today or last_date == yesterday:
+        # Parse dates to handle timezone/runner differences correctly (e.g. last_date is tomorrow in runner's timezone)
+        d_last = datetime.strptime(last_date, "%Y-%m-%d")
+        d_today = datetime.strptime(today, "%Y-%m-%d")
+        
+        # A streak is current if it ended today, yesterday, or a future date (due to timezone differences)
+        if (d_last - d_today).days >= -1:
             start_date = last_streak[0]["date"]
             end_date = last_streak[-1]["date"]
             d1 = datetime.strptime(start_date, "%Y-%m-%d")
