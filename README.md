@@ -4,7 +4,7 @@
 </div>
 
 <div align="center">
-  <h1> ⚡ Welcome to Digital Workspace ⚡ </h1>
+  <h1> ⚡ Welcome to Digital  Workspace ⚡ </h1>
 </div>
 
 <p align="center">
