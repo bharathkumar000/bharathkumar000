@@ -267,13 +267,19 @@ def update_svg(stats):
 
     # If the calculated total contributions is less than the previous total contributions,
     # it means the token we used (like GITHUB_TOKEN fallback) is missing access to private contributions.
-    # Preserve the higher total, current streak, and longest streak dates.
+    # Raise an exception so that we generate an error-log.txt file to alert the user.
     if stats["total"] < prev_total:
-        print(f"Warning: Calculated total contributions ({stats['total']}) is less than previous total ({prev_total}).")
-        print("Preserving previous total, current streak, and longest streak dates due to incomplete token permissions.")
-        stats["total"] = prev_total
-        stats["current"] = prev_current
-        stats["current_range"] = prev_current_range
+        msg = (
+            f"Calculated total contributions ({stats['total']}) is less than previous total ({prev_total}).\n"
+            "This suggests the Personal Access Token (GH_PAT) has expired or is invalid, and the fallback GITHUB_TOKEN "
+            "cannot access your private contributions.\n\n"
+            "To fix this:\n"
+            "1. Generate a new Personal Access Token (classic) on GitHub with 'read:user' and 'repo' scopes.\n"
+            "2. Go to your repository settings on GitHub: bharathkumar000/bharathkumar000 -> Settings -> Secrets and variables -> Actions.\n"
+            "3. Update or create the 'GH_PAT' secret with the new token."
+        )
+        print(f"Error: {msg}")
+        raise ValueError(msg)
 
     # Get current year start date (e.g., Jan 1)
     current_year = datetime.now().year
