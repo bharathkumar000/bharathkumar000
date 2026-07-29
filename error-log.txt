@@ -1,0 +1,26 @@
+Error: Calculated total contributions (7) is less than previous total (3315).
+This suggests the Personal Access Token (GH_PAT) has expired or is invalid, and the fallback GITHUB_TOKEN cannot access your private contributions.
+
+To fix this:
+1. Generate a new Personal Access Token (classic) on GitHub with 'read:user' and 'repo' scopes.
+2. Go to your repository settings on GitHub: bharathkumar000/bharathkumar000 -> Settings -> Secrets and variables -> Actions.
+3. Update or create the 'GH_PAT' secret with the new token.
+
+Traceback:
+Traceback (most recent call last):
+  File "/home/runner/work/bharathkumar000/bharathkumar000/scripts/update_stats.py", line 384, in <module>
+    update_svg(stats)
+    ~~~~~~~~~~^^^^^^^
+  File "/home/runner/work/bharathkumar000/bharathkumar000/scripts/update_stats.py", line 282, in update_svg
+    raise ValueError(msg)
+ValueError: Calculated total contributions (7) is less than previous total (3315).
+This suggests the Personal Access Token (GH_PAT) has expired or is invalid, and the fallback GITHUB_TOKEN cannot access your private contributions.
+
+To fix this:
+1. Generate a new Personal Access Token (classic) on GitHub with 'read:user' and 'repo' scopes.
+2. Go to your repository settings on GitHub: bharathkumar000/bharathkumar000 -> Settings -> Secrets and variables -> Actions.
+3. Update or create the 'GH_PAT' secret with the new token.
+
+Environment diagnostics:
+GH_PAT env present: True (len: 40)
+GITHUB_TOKEN env present: True (len: 377)
