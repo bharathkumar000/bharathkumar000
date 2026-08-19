@@ -1,4 +1,4 @@
-Error: Calculated total contributions (3477) is less than previous total (3569).
+Error: Calculated total contributions (3488) is less than previous total (3569).
 This suggests the Personal Access Token (GH_PAT) has expired or is invalid, and the fallback GITHUB_TOKEN cannot access your private contributions.
 
 To fix this:
@@ -13,7 +13,7 @@ Traceback (most recent call last):
     ~~~~~~~~~~^^^^^^^
   File "/home/runner/work/bharathkumar000/bharathkumar000/scripts/update_stats.py", line 282, in update_svg
     raise ValueError(msg)
-ValueError: Calculated total contributions (3477) is less than previous total (3569).
+ValueError: Calculated total contributions (3488) is less than previous total (3569).
 This suggests the Personal Access Token (GH_PAT) has expired or is invalid, and the fallback GITHUB_TOKEN cannot access your private contributions.
 
 To fix this:
